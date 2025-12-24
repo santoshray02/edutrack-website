@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduTrack - AI-Powered School Management System. Track Every Student, Every Fee, Every Day. Built for Bihar & Madhya Pradesh CBSE schools with simplified workflow.">
+    <meta name="keywords" content="school management, fee management, student records, CBSE school software, Bihar school software, Madhya Pradesh school software, EduTrack">
+    <title>EduTrack - AI-Powered School Management System | Track Every Student, Every Fee, Every Day</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite Components -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a","950":"#172554"}
+                    }
+                },
+                fontFamily: {
+                    'body': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 fixed w-full z-50 top-0 shadow-sm">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="#" class="flex items-center">
+                <span class="text-4xl mr-2">📚</span>
+                <span class="self-center text-xl font-bold whitespace-nowrap dark:text-white bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">EduTrack</span>
+            </a>
+            <div class="flex items-center lg:order-2 space-x-2">
+                <a href="tel:+919939022412" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 hidden sm:inline-flex items-center">
+                    <span class="mr-2">📞</span> 9939022412
+                </a>
+                
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li><a href="#features" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a></li>
+                    <li><a href="#benefits" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Benefits</a></li>
+                    <li><a href="#pricing" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a></li>
+                    <li><a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-50 via-blue-50 to-white dark:bg-gray-900 pt-24">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    AI-Powered School Management System
+                </h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 font-bold">Track Every Student, Every Fee, Every Day.</span> Smart automation for fee collection, intelligent student insights, and AI-assisted decision making for CBSE schools.
+                </p>
+
+                <!-- Stats -->
+                <div class="flex flex-wrap gap-8 mb-8">
+                    <div>
+                        <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">71%</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Time Saved</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">5000+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Students Supported</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">4</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">User Roles</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+919939022412" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900">
+                        <span class="mr-2">📞</span> Call: 9939022412
+                    </a>
+                    <a href="https://wa.me/919939022412?text=Hi%2C%20I%27m%20interested%20in%20EduTrack%20for%20my%20school" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300">
+                        <span class="mr-2">💬</span> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <div class="w-full rounded-lg shadow-2xl bg-white dark:bg-gray-800 p-8">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg">
+                            <span class="text-3xl">🤖</span>
+                            <div>
+                                <div class="font-semibold text-gray-900 dark:text-white">AI-Powered Insights</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Smart recommendations</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg">
+                            <span class="text-3xl">⚡</span>
+                            <div>
+                                <div class="font-semibold text-gray-900 dark:text-white">One-Click Operations</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Simplified workflow</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg">
+                            <span class="text-3xl">📱</span>
+                            <div>
+                                <div class="font-semibold text-gray-900 dark:text-white">Mobile-First Design</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Work from anywhere</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-8 lg:mb-16 text-center mx-auto">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">AI-Enabled Features with Simplified Workflow</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Everything you need to manage your school efficiently</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
+                <!-- Feature 1 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-gradient-to-br from-purple-100 to-blue-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">AI-Powered Intelligence</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Smart recommendations for fee defaulters, intelligent student performance insights, automated pattern detection, and predictive analytics for better decision making.</p>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Smart defaulter prioritization</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Performance trend analysis</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Automated anomaly detection</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Predictive student insights</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-gradient-to-br from-purple-100 to-blue-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">One-Click Payment Collection</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Ultra-fast payment entry with autocomplete search. Process 50+ payments in minutes with keyboard shortcuts. Saves 71% of your time compared to traditional methods.</p>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Auto-complete student search</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Auto-load pending fees</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Keyboard shortcuts (Alt+P)</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> 4 seconds per payment</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-gradient-to-br from-purple-100 to-blue-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Unified Fee Catalog</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Single source of truth for all fee items. One-time, monthly, or yearly fees with class-based pricing. Automatic fee assignment on admission.</p>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Flexible fee types</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Class-based pricing</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Auto fee assignment</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Concessions & waivers</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-gradient-to-br from-purple-100 to-blue-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Smart Batch Management</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Automatic section assignment (A, B, C...) with intelligent strategies: alphabetical, merit-based, or balanced by gender/age. Class-wise tabs for easy navigation.</p>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Auto section assignment</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Multiple assignment strategies</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Class-wise student tabs</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Instant filtering</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-gradient-to-br from-purple-100 to-blue-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+                        <span class="text-2xl">👨‍👩‍👧</span>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Dual-Parent Guardian System</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Store both Father & Mother details per family. Select primary contact for SMS notifications. Complete family tree management with bulk import support.</p>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Both parents' information</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Primary contact selection</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Family tree management</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Bulk CSV import</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-shadow">
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-gradient-to-br from-purple-100 to-blue-100 lg:h-12 lg:w-12 dark:bg-purple-900">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Mobile-First Design</h3>
+                    <p class="text-gray-500 dark:text-gray-400 mb-4">Works perfectly on phones, tablets, and computers. Lightweight interface designed for low-bandwidth areas. Work from anywhere, anytime.</p>
+                    <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Responsive design</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Low-bandwidth optimized</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Touch-friendly interface</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2">✓</span> Works on all devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-8 lg:mb-16 text-center mx-auto">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Are You Struggling With These School Management Challenges?</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">You're not alone. Here's how EduTrack solves common pain points</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg dark:bg-red-900/10 dark:border-red-800">
+                    <h3 class="mb-2 text-xl font-bold text-red-800 dark:text-red-400">❌ Manual Fee Collection Takes Hours</h3>
+                    <p class="mb-3 text-gray-700 dark:text-gray-300">Spending 2-3 hours daily collecting fees manually? Dealing with calculation errors and missing receipts?</p>
+                    <p class="text-green-700 font-semibold dark:text-green-400">✓ Solution: Quick payment entry saves 71% time - process 50+ payments in 20 minutes</p>
+                </div>
+
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg dark:bg-red-900/10 dark:border-red-800">
+                    <h3 class="mb-2 text-xl font-bold text-red-800 dark:text-red-400">❌ Fee Defaulters Are Increasing</h3>
+                    <p class="mb-3 text-gray-700 dark:text-gray-300">Can't track who hasn't paid? Missing follow-ups? Parents claim they "forgot" to pay?</p>
+                    <p class="text-green-700 font-semibold dark:text-green-400">✓ Solution: AI identifies high-priority defaulters + automated SMS reminders</p>
+                </div>
+
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg dark:bg-red-900/10 dark:border-red-800">
+                    <h3 class="mb-2 text-xl font-bold text-red-800 dark:text-red-400">❌ Lost or Damaged Fee Registers</h3>
+                    <p class="mb-3 text-gray-700 dark:text-gray-300">Paper registers damaged by rain? Lost pages? Can't find old payment records when needed?</p>
+                    <p class="text-green-700 font-semibold dark:text-green-400">✓ Solution: Cloud-based storage with automatic backups - access anywhere, anytime</p>
+                </div>
+
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg dark:bg-red-900/10 dark:border-red-800">
+                    <h3 class="mb-2 text-xl font-bold text-red-800 dark:text-red-400">❌ Multiple Fee Types Create Confusion</h3>
+                    <p class="mb-3 text-gray-700 dark:text-gray-300">Tuition, hostel, transport, exam fees - managing different fee types manually is overwhelming?</p>
+                    <p class="text-green-700 font-semibold dark:text-green-400">✓ Solution: Unified fee catalog handles all types automatically with class-based pricing</p>
+                </div>
+
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg dark:bg-red-900/10 dark:border-red-800">
+                    <h3 class="mb-2 text-xl font-bold text-red-800 dark:text-red-400">❌ Parents Contact Wrong Staff</h3>
+                    <p class="mb-3 text-gray-700 dark:text-gray-300">Parents calling teachers for fee queries? WhatsApp messages going to wrong people?</p>
+                    <p class="text-green-700 font-semibold dark:text-green-400">✓ Solution: Role-based access - parents get automated SMS, staff see only their data</p>
+                </div>
+
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg dark:bg-red-900/10 dark:border-red-800">
+                    <h3 class="mb-2 text-xl font-bold text-red-800 dark:text-red-400">❌ Report Generation Takes Days</h3>
+                    <p class="mb-3 text-gray-700 dark:text-gray-300">Need to prepare reports for management meetings? Spend hours with Excel calculations?</p>
+                    <p class="text-green-700 font-semibold dark:text-green-400">✓ Solution: One-click reports with AI insights - daily collections, defaulters, trends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Affordable Pricing for Every School</h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">One-time setup + affordable yearly plans. No hidden fees.</p>
+            </div>
+            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                <!-- Pricing Card 1 -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">Small School</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Perfect for schools with 100-500 students</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">₹15,000</span>
+                        <span class="text-gray-500 dark:text-gray-400">/year</span>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">+ ₹5,000 one-time setup</p>
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Up to 500 students</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>5 user accounts</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>All AI-powered features</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Daily automatic backups</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Email support</span></li>
+                    </ul>
+                    <a href="tel:+919939022412" class="text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-purple-900">Call Now</a>
+                </div>
+
+                <!-- Pricing Card 2 - Featured -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border-2 border-purple-600 shadow-lg dark:border-purple-500 xl:p-8 dark:bg-gray-800 dark:text-white relative">
+                    <div class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-semibold">Most Popular</div>
+                    <h3 class="mb-4 text-2xl font-semibold">Medium School</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Ideal for schools with 500-2000 students</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">₹25,000</span>
+                        <span class="text-gray-500 dark:text-gray-400">/year</span>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">+ ₹8,000 one-time setup</p>
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Up to 2000 students</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>15 user accounts</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>All AI + Advanced Analytics</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Real-time backups</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Priority phone support</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Free training session</span></li>
+                    </ul>
+                    <a href="tel:+919939022412" class="text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-purple-900">Call Now</a>
+                </div>
+
+                <!-- Pricing Card 3 -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">Large School</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">For schools with 2000-5000 students</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">₹40,000</span>
+                        <span class="text-gray-500 dark:text-gray-400">/year</span>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">+ ₹12,000 one-time setup</p>
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Up to 5000 students</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>Unlimited user accounts</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>All features + API access</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>24/7 priority support</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>On-premise deployment</span></li>
+                        <li class="flex items-center space-x-3"><svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg><span>On-site training</span></li>
+                    </ul>
+                    <a href="tel:+919939022412" class="text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-purple-900">Call Now</a>
+                </div>
+            </div>
+
+            <!-- Payment Terms -->
+            <div class="mt-12 p-8 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <h3 class="text-2xl font-bold text-center mb-6 text-gray-900 dark:text-white">Payment Terms</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+                    <div class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span><span><strong>GST:</strong> 18% extra on all plans</span></div>
+                    <div class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span><span><strong>Payment:</strong> 100% advance via Bank Transfer/UPI</span></div>
+                    <div class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span><span><strong>Free 14-day trial</strong> available (no credit card required)</span></div>
+                    <div class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span><span><strong>Server & Hosting:</strong> ₹3,000 - ₹6,000/year (based on school size)</span></div>
+                    <div class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span><span><strong>SMS charges:</strong> ₹0.20 per SMS + ₹5,900 one-time DLT registration</span></div>
+                    <div class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span><span><strong>Support:</strong> Email (all plans), Phone (Medium & Large), WhatsApp (all plans)</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-blue-600">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-sm text-center">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-white">Ready to Simplify Your School Management?</h2>
+                <p class="mb-6 font-light text-gray-100 md:text-lg">Get started with EduTrack today. 14-day free trial available. No credit card required.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+919939022412" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-purple-700 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+                        <span class="mr-2">📞</span> Call: 9939022412
+                    </a>
+                    <a href="https://wa.me/919939022412?text=Hi%2C%20I%27m%20interested%20in%20EduTrack%20for%20my%20school" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:ring-green-300">
+                        <span class="mr-2">💬</span> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                <span class="text-4xl mr-2">📚</span>
+                <span class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">EduTrack</span>
+            </a>
+            <p class="my-6 text-gray-500 dark:text-gray-400">Track Every Student, Every Fee, Every Day<br>AI-Powered School Management for CBSE Schools in Bihar & Madhya Pradesh</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Developed by Santosh Kumar | GSTIN: 29DEQPK4166G1ZZ</p>
+            <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                <li><a href="#features" class="mr-4 hover:underline md:mr-6">Features</a></li>
+                <li><a href="#pricing" class="mr-4 hover:underline md:mr-6">Pricing</a></li>
+                <li><a href="#contact" class="mr-4 hover:underline md:mr-6">Contact</a></li>
+                <li><a href="mailto:rayskumar02@gmail.com" class="mr-4 hover:underline md:mr-6">Email</a></li>
+            </ul>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2024-2025 EduTrack by Santosh Kumar. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>

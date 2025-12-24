@@ -1,0 +1,18 @@
+# robots.txt for EduTrack - School Management System
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://edutrack.santoshray.in/sitemap.xml
+
+# Block old versions
+Disallow: /index-old.html
+Disallow: /index-v2.html
+
+# Allow all images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Crawl delay
+Crawl-delay: 1
