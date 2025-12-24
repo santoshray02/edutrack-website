@@ -1,265 +1,189 @@
-# SchoolPro Website
+# 🎓 EduTrack - GenAI School Management System
 
-Modern, lightweight marketing website for the School Management System.
+> **Talk to Your School Data Like ChatGPT**
+> India's GenAI-powered school management system for CBSE schools in Bihar & Madhya Pradesh
 
-## Features
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://YOUR_USERNAME.github.io/edutrack-website/)
+[![License](https://img.shields.io/badge/license-Proprietary-blue)](LICENSE)
+[![Version](https://img.shields.io/badge/version-2026-purple)](https://github.com/YOUR_USERNAME/edutrack-website)
 
-- **Modern AI-inspired design** with gradient themes
-- **Mobile-first responsive** design (works on all devices)
-- **Lightweight & fast** (< 100KB total, no external dependencies)
-- **Smooth animations** with Intersection Observer
-- **Form validation** with real-time feedback
-- **Accessibility** focused (semantic HTML, ARIA labels)
+---
 
-## File Structure
+## 🚀 What is EduTrack?
 
-```
-website/
-├── index.html          # Main landing page
-├── css/
-│   └── styles.css     # Modern CSS with AI theme
-├── js/
-│   └── script.js      # Lightweight interactions
-└── README.md          # This file
-```
+EduTrack is a **GenAI-powered school management system** designed specifically for CBSE schools in Bihar and Madhya Pradesh. Built for 2026, it combines:
 
-## Quick Start
+- 💬 **Conversational AI** - Ask questions in Hindi/English, get instant answers
+- 🎯 **Autonomous AI Agent** - 24/7 assistant that auto-generates reports
+- 🎤 **Voice Commands** - Speak naturally to control your school
+- 📊 **AI-Generated Reports** - LLM-written summaries and insights
+- 🔮 **Predictive Analytics** - ML-powered forecasting for fees and dropouts
+- ⚡ **Lightning-Fast Operations** - 71% time saved on fee collection
 
-### Option 1: Direct File Access
+---
 
-Simply open `index.html` in your browser:
+## ✨ Key Features
+
+### GenAI & Agentic AI (2026)
+- **Natural Language Interface**: "कक्षा 8 के कितने छात्रों ने फीस नहीं दी?"
+- **Voice-Activated**: "राज कुमार की फीस ₹5000 जमा करें"
+- **Autonomous Agent**: Auto-generates daily reports, sends reminders
+- **Context-Aware Conversations**: LLM-powered multi-turn dialogues
+- **Predictive Analytics**: Dropout risk detection, fee forecasting
+
+### Smart Automation
+- **One-Click Payment Collection**: Process 50+ payments in minutes
+- **Smart Batch Management**: Auto section assignment
+- **Dual-Parent System**: Complete family tree management
+- **Mobile-First Design**: Works offline, syncs automatically
+- **Works in Low-Bandwidth**: Optimized for rural Bihar/MP
+
+---
+
+## 💰 Pricing
+
+| Plan | Price | Students | GenAI Features |
+|------|-------|----------|----------------|
+| **Small** | ₹18,000/year | 100-500 | ✅ Full GenAI included |
+| **Medium** | ₹30,000/year | 500-2000 | ✅ GenAI + Predictive AI |
+| **Large** | ₹48,000/year | 2000-5000 | ✅ Enterprise GenAI + API |
+
+*All plans include: Conversational AI, Voice Commands, AI Agent, AI Reports*
+
+---
+
+## 🌐 Live Demo
+
+**Website**: [https://YOUR_USERNAME.github.io/edutrack-website/](https://YOUR_USERNAME.github.io/edutrack-website/)
+
+Try asking the AI:
+- "दिसंबर की फीस कलेक्शन रिपोर्ट बनाओ"
+- "Which students are at risk of dropping out?"
+- "Show me last month's collection trends"
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend**: HTML5, Tailwind CSS, Flowbite Components
+- **AI/LLM**: OpenAI GPT / Anthropic Claude / Local LLaMA
+- **Voice**: Whisper API / Google Speech-to-Text
+- **Analytics**: Python (scikit-learn, XGBoost for predictions)
+- **Hosting**: GitHub Pages (Free, CDN-enabled)
+
+---
+
+## 📦 Local Development
 
 ```bash
-cd website
-open index.html  # macOS
-# or
-xdg-open index.html  # Linux
-# or
-start index.html  # Windows
-```
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/edutrack-website.git
+cd edutrack-website
 
-### Option 2: Local Server (Recommended)
+# Open in browser
+open index.html
 
-Using Python:
-```bash
-cd website
+# Or start a local server
 python3 -m http.server 8080
 # Visit http://localhost:8080
 ```
 
-Using Node.js:
-```bash
-cd website
-npx serve
-# Visit http://localhost:3000
-```
+---
 
-### Option 3: Docker (Production-ready)
-
-Add to existing docker-compose.yml:
-```yaml
-  website:
-    image: nginx:alpine
-    container_name: schoolpro-website
-    ports:
-      - "10225:80"
-    volumes:
-      - ./website:/usr/share/nginx/html:ro
-    restart: unless-stopped
-```
-
-Then run:
-```bash
-docker compose up -d website
-# Visit http://localhost:10225
-```
-
-## Customization
-
-### Update School Details
-
-Edit `index.html` and update:
-
-1. **School Name**: Replace "SchoolPro" with your school name
-2. **Contact Details**: Update phone, email, WhatsApp in contact section
-3. **Pricing**: Modify pricing tiers and features
-4. **Hero Stats**: Update numbers in hero section
-5. **Demo URL**: Replace `http://internal3.paperentry.ai:10222` with your actual URL
-
-### Update Colors
-
-Edit `css/styles.css` CSS variables:
-
-```css
-:root {
-    --primary: #667eea;      /* Change primary color */
-    --accent: #4facfe;       /* Change accent color */
-    --secondary: #f093fb;    /* Change secondary color */
-}
-```
-
-### Update Form Submission
-
-Edit `js/script.js` and replace the demo form handler with actual API:
-
-```javascript
-// Line ~50 in script.js
-const response = await fetch('/api/demo-requests', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-});
-```
-
-## Performance
-
-- **First Contentful Paint**: < 1s
-- **Time to Interactive**: < 2s
-- **Total Size**: ~95KB (HTML + CSS + JS)
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-
-## Mobile Optimization
-
-- Responsive breakpoints: 768px (tablet), 1024px (desktop)
-- Touch-friendly buttons (min 44px tap targets)
-- Optimized images (when added)
-- Reduced motion support for accessibility
-
-## Browser Support
-
-- Chrome/Edge: Last 2 versions
-- Firefox: Last 2 versions
-- Safari: Last 2 versions
-- Mobile browsers: iOS 12+, Android 8+
-
-## SEO Optimization
-
-Already included:
-- ✓ Semantic HTML5 structure
-- ✓ Meta descriptions and keywords
-- ✓ Open Graph tags (add for social sharing)
-- ✓ Structured data (can be added)
-- ✓ Fast load times
-- ✓ Mobile-friendly
-
-### Add Open Graph Tags (Optional)
-
-Add to `<head>` in index.html:
-
-```html
-<meta property="og:title" content="SchoolPro - School Management System">
-<meta property="og:description" content="Complete school management for rural Bihar CBSE schools">
-<meta property="og:image" content="https://yoursite.com/og-image.jpg">
-<meta property="og:url" content="https://yoursite.com">
-<meta name="twitter:card" content="summary_large_image">
-```
-
-## Adding Images
-
-Create an `images/` folder and add:
-
-1. **Logo**: `images/logo.png` (200x200px)
-2. **Hero Image**: `images/hero.png` (1200x800px)
-3. **OG Image**: `images/og-image.jpg` (1200x630px)
-4. **Favicon**: `images/favicon.ico` (32x32px)
-
-Then update HTML:
-
-```html
-<link rel="icon" href="images/favicon.ico">
-<img src="images/logo.png" alt="SchoolPro Logo" loading="lazy">
-```
-
-## Deployment
-
-### Deploy to Netlify/Vercel (Free)
-
-1. Push website folder to GitHub
-2. Connect repository to Netlify/Vercel
-3. Set build folder to `website/`
-4. Deploy
+## 🚀 Deployment
 
 ### Deploy to GitHub Pages
 
 ```bash
-cd website
+# 1. Initialize git (if needed)
 git init
+
+# 2. Add remote
+git remote add origin https://github.com/YOUR_USERNAME/edutrack-website.git
+
+# 3. Commit and push
 git add .
-git commit -m "Initial website"
-git branch -M main
-git remote add origin <your-repo-url>
+git commit -m "Initial commit: EduTrack GenAI 2026"
 git push -u origin main
 
-# Enable GitHub Pages in repo settings
-# Visit https://<username>.github.io/<repo-name>
+# 4. Enable GitHub Pages in repository Settings → Pages
+
+# 5. Site will be live at:
+# https://YOUR_USERNAME.github.io/edutrack-website/
 ```
 
-### Deploy with Existing Backend
+**See [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) for detailed instructions.**
 
-The website is standalone and doesn't require the backend to run. You can:
+### Quick Deploy
 
-1. Serve from same domain using reverse proxy
-2. Host on separate domain/subdomain
-3. Embed in backend using static file serving
-
-Nginx config example:
-```nginx
-server {
-    listen 80;
-    server_name schoolpro.com;
-
-    # Marketing website
-    location / {
-        root /var/www/website;
-        try_files $uri $uri/ /index.html;
-    }
-
-    # API backend
-    location /api {
-        proxy_pass http://backend:10221;
-    }
-
-    # App
-    location /app {
-        proxy_pass http://frontend:10222;
-    }
-}
+```bash
+./deploy.sh "Your commit message"
 ```
-
-## Analytics (Optional)
-
-Add Google Analytics or Plausible:
-
-```html
-<!-- Add before </head> -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script>
-```
-
-## Maintenance
-
-- Update pricing as needed
-- Keep contact information current
-- Add testimonials/case studies
-- Update screenshots when features change
-- Monitor form submissions
-- Check broken links quarterly
-
-## License
-
-Same as main project (see root LICENSE file)
-
-## Support
-
-For website issues or customization help:
-- Email: support@schoolpro.in
-- GitHub Issues: [Create issue](https://github.com/your-repo/issues)
 
 ---
 
-**Built with ❤️ for Bihar schools**
+## 📱 Mobile Responsive
+
+Optimized for all devices:
+- ✅ Phones (320px+)
+- ✅ Tablets (768px+)
+- ✅ Desktops (1024px+)
+- ✅ Low-bandwidth areas
+- ✅ Offline-capable
+
+---
+
+## 🎯 Target Audience
+
+- **CBSE Schools** in Bihar & Madhya Pradesh
+- **School Size**: 100-5000 students
+- **Tech Comfort**: Zero training needed (just talk!)
+- **Budget**: ₹18K-48K/year (40% cheaper than competitors)
+
+---
+
+## 🤝 Why EduTrack Beats Competitors
+
+| Feature | Manual/Excel | Basic Software | EduTrack GenAI |
+|---------|-------------|----------------|----------------|
+| Natural Language | ❌ | ❌ | ✅ Hindi + English |
+| Voice Commands | ❌ | ❌ | ✅ Bilingual |
+| AI Agent | ❌ | ❌ | ✅ 24/7 Auto-pilot |
+| AI Reports | ❌ Manual | ⚠️ Templates | ✅ LLM-Written |
+| Predictive Analytics | ❌ | ❌ | ✅ ML-Powered |
+| Time to Answer | 15-30 min | 5-10 min | ⚡ 5 seconds |
+| Learning Curve | High | Medium | Zero (Just talk) |
+| Cost/Year | ₹5-10K* | ₹35-50K | ₹18-48K |
+
+*\+ hundreds of hours wasted*
+
+---
+
+## 📞 Contact
+
+**Developer**: Santosh Kumar
+**Phone**: [+91 9939022412](tel:+919939022412)
+**Email**: [rayskumar02@gmail.com](mailto:rayskumar02@gmail.com)
+**WhatsApp**: [Chat with us](https://wa.me/919939022412?text=Hi%2C%20I%27m%20interested%20in%20EduTrack)
+**GSTIN**: 29DEQPK4166G1ZZ
+
+---
+
+## 📄 License
+
+Proprietary software. All rights reserved.
+
+© 2024-2026 EduTrack by Santosh Kumar
+
+---
+
+## 🎉 Ready to Transform Your School?
+
+**14-day free trial** | **No credit card required** | **Setup in 1 day**
+
+[📞 Call Now: 9939022412](tel:+919939022412) | [💬 WhatsApp Us](https://wa.me/919939022412)
+
+---
+
+**Built with ❤️ for Bihar & Madhya Pradesh CBSE Schools**
+*Making school management as easy as talking to ChatGPT*
