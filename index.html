@@ -64,6 +64,15 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B2DLLXH62"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9B2DLLXH62');
+    </script>
+
     <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
     {
@@ -225,10 +234,10 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4 mb-6">
-                    <a href="https://wa.me/918602218736?text=Hi%2C%20I%27m%20interested%20in%20EdunodeX%20for%20my%20school" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900 shadow-lg hover:shadow-xl transition-shadow" target="_blank" rel="noopener noreferrer">
-                        See How GenAI Saves 15 Hours/Week
+                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-white rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-900 shadow-lg hover:shadow-xl transition-shadow" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Hero Request Demo'});">
+                        Request Free Demo
                     </a>
-                    <a href="tel:+918602218736" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-purple-700 bg-purple-50 rounded-lg hover:bg-purple-100 focus:ring-4 focus:ring-purple-300">
+                    <a href="tel:+918602218736" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-purple-700 bg-purple-50 rounded-lg hover:bg-purple-100 focus:ring-4 focus:ring-purple-300" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Hero Call Now'});">
                         Call Now
                     </a>
                 </div>
@@ -1272,13 +1281,27 @@
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://wa.me/918602218736?text=Hi%2C%20I%27m%20interested%20in%20reducing%20defaults%20with%20EdunodeX" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-purple-700 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 shadow-lg" target="_blank" rel="noopener noreferrer">
-                        See 5-Min WhatsApp Demo
+                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-purple-700 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 shadow-lg" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Main CTA Request Demo'});">
+                        Request Free Demo Now
                     </a>
-                    <a href="tel:+918602218736" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-white border-2 border-white rounded-lg hover:bg-white/10 focus:ring-4 focus:ring-white/20">
+                    <a href="tel:+918602218736" class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-medium text-center text-white border-2 border-white rounded-lg hover:bg-white/10 focus:ring-4 focus:ring-white/20" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Main CTA Call'});">
                         Call Now
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Request Section with Tally Form -->
+    <section id="contact" class="bg-white dark:bg-gray-900">
+        <div class="py-12 px-4 mx-auto max-w-screen-xl sm:py-20 lg:py-24 lg:px-6">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Request a Personalized Demo</h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">See how EdunodeX can reduce defaults by 77% and save 15 hours per week. Fill the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            <!-- Tally Form Embed -->
+            <div class="mx-auto max-w-3xl">
+                <iframe data-tally-src="https://tally.so/embed/VLJNXJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Request EdunodeX Demo"></iframe>
             </div>
         </div>
     </section>
@@ -1328,5 +1351,10 @@
 
     <!-- Flowbite JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <!-- Tally Forms Embed Script -->
+    <script>
+        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+    </script>
 </body>
 </html>
