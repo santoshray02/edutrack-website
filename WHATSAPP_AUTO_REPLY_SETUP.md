@@ -34,7 +34,7 @@ I'll get back to you within 30 minutes! ⚡
 
 - EdunodeX Team
 📞 +91 860 221 8736
-🌐 https://edutrack.santoshray.in
+🌐 https://edunodex.in
 ```
 
 **Quick Reply 2: Demo Request**
@@ -57,7 +57,7 @@ Our 5-minute WhatsApp demo will show you:
 Share your preferred time slot!
 
 Meanwhile, fill this quick form for customized pricing:
-👉 https://edutrack.santoshray.in/#contact
+👉 https://edunodex.in/#contact
 ```
 
 **Quick Reply 3: Pricing Info**
@@ -100,7 +100,7 @@ We're currently offline but will respond first thing in the morning!
 Quick actions while you wait:
 📋 Request Demo: https://tally.so/r/VLJNXJ
 📞 Call: +91 860 221 8736
-🌐 Website: https://edutrack.santoshray.in
+🌐 Website: https://edunodex.in
 
 We'll get back to you within 1 hour during business hours!
 
@@ -185,7 +185,7 @@ function onFormSubmit(e) {
   var phone = e.values[3]; // Phone number
 
   // WhatsApp message
-  var message = `Hi ${name}! Thanks for requesting EdunodeX demo. We'll call you within 1 hour at ${phone}. Meanwhile, check success stories: https://edutrack.santoshray.in`;
+  var message = `Hi ${name}! Thanks for requesting EdunodeX demo. We'll call you within 1 hour at ${phone}. Meanwhile, check success stories: https://edunodex.in`;
 
   // Send via WhatsApp API (using CallMeBot or similar free service)
   sendWhatsApp(phone, message);
