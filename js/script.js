@@ -317,8 +317,7 @@
     }
 
     // Console message for developers
-    console.log('%c🎓 SchoolPro Website', 'font-size: 20px; font-weight: bold; color: #667eea;');
-    console.log('%cBuilt with ❤️ for Bihar schools', 'font-size: 14px; color: #6b7280;');
-    console.log('%cInterested in our tech stack? Visit http://internal3.paperentry.ai:10222', 'font-size: 12px; color: #4facfe;');
+    console.log('%c🎓 EdunodeX', 'font-size: 20px; font-weight: bold; color: #667eea;');
+    console.log('%cGenAI-Powered School Management', 'font-size: 14px; color: #6b7280;');
 
 })();
