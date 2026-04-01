@@ -529,7 +529,11 @@
             event_label: 'AI Chatbot Lead',
             value: 1,
           });
-          gtag('event', 'conversion', { send_to: 'AW-18055680778' });
+          gtag('event', 'conversion', {
+              send_to: 'AW-18055680778/NQnJCOWvzpMcEIqmz6FD',
+              value: 1.0,
+              currency: 'INR'
+            });
         }
 
       } catch (err) {
