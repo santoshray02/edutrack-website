@@ -373,12 +373,35 @@
     // Inline mode
     var inlineEl = document.getElementById('edx-chat-inline');
     if (inlineEl) {
-      inlineEl.classList.add('edx-chat-inline');
-      inlineEl.appendChild(win);
-      win.classList.add('edx-open');
-      trigger.style.display = 'none';
-      isOpen = true;
-      if (messageHistory.length === 0) showWelcome();
+      // "data-inline-only" = no floating bubble (ads page)
+      // Without it = inline chat + floating bubble (main page)
+      var inlineOnly = inlineEl.hasAttribute('data-inline-only');
+      if (inlineOnly) {
+        inlineEl.classList.add('edx-chat-inline');
+        inlineEl.appendChild(win);
+        win.classList.add('edx-open');
+        trigger.style.display = 'none';
+        isOpen = true;
+        if (messageHistory.length === 0) showWelcome();
+      } else {
+        // Clone the chat into inline, keep floating bubble too
+        var inlineWin = win.cloneNode(true);
+        inlineEl.classList.add('edx-chat-inline');
+        inlineEl.appendChild(inlineWin);
+        inlineWin.classList.add('edx-open');
+        // Render welcome in inline clone
+        var inlineMsgs = inlineWin.querySelector('.edx-msgs');
+        if (inlineMsgs && inlineMsgs.children.length === 0) {
+          var row = document.createElement('div');
+          row.className = 'edx-msg-b';
+          row.appendChild(makeBotAvatar());
+          var body = document.createElement('div');
+          body.className = 'edx-msg-b-body';
+          body.innerHTML = renderMarkdown("Hi! I\u2019m **EdunodeX AI** \u2014 your guide to India\u2019s School OS.\n\nI can help with pricing, features, or set up a **free demo**. What brings you here?");
+          row.appendChild(body);
+          inlineMsgs.appendChild(row);
+        }
+      }
     }
 
     // --- Functions ---
