@@ -374,7 +374,10 @@
     }
 
     // --- Functions ---
+    var welcomeShown = false;
     function showWelcome() {
+      if (welcomeShown) return;
+      welcomeShown = true;
       addBotMsg("Hi! I\u2019m **EdunodeX AI** \u2014 your guide to India\u2019s School OS.\n\nI can help with pricing, features, or set up a **free demo**. What brings you here?");
       showQuickReplies([
         "\uD83D\uDCA1 What is EdunodeX?",
