@@ -160,7 +160,7 @@
     avatarDiv.className = 'edx-chat-avatar';
     var avatarImg = document.createElement('img');
     avatarImg.src = 'https://edunodex.in/images/favicon.png';
-    avatarImg.alt = 'Xena';
+    avatarImg.alt = 'EdunodeX AI';
     avatarImg.onerror = function() { this.parentElement.textContent = 'X'; };
     avatarDiv.appendChild(avatarImg);
     header.appendChild(avatarDiv);
@@ -169,7 +169,7 @@
     headerInfo.className = 'edx-chat-header-info';
     var headerName = document.createElement('div');
     headerName.className = 'edx-chat-header-name';
-    headerName.textContent = 'Xena \u2014 EdunodeX AI';
+    headerName.textContent = 'EdunodeX AI';
     headerInfo.appendChild(headerName);
     var headerStatus = document.createElement('div');
     headerStatus.className = 'edx-chat-header-status';
@@ -244,7 +244,7 @@
     var brandLink = document.createElement('a');
     brandLink.href = 'https://edunodex.in';
     brandLink.target = '_blank';
-    brandLink.textContent = 'Xentovia AI';
+    brandLink.textContent = 'EdunodeX AI';
     branding.appendChild(brandLink);
     chatWindow.appendChild(branding);
 
@@ -294,7 +294,7 @@
 
     // --- Functions ---
     function showWelcome() {
-      addBotMessage("Hi! I'm **Xena**, your AI guide to EdunodeX \u2014 India's School OS.\n\nI can help you with pricing, features, or set up a free demo. What brings you here today?");
+      addBotMessage("Hi! I'm **EdunodeX AI** \u2014 your guide to India's School OS.\n\nI can help you with pricing, features, or set up a free demo. What brings you here today?");
       showQuickReplies([
         { text: "What is EdunodeX?", icon: "\uD83D\uDCA1" },
         { text: "Show me pricing", icon: "\uD83D\uDCB0" },

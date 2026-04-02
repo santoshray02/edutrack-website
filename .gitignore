@@ -46,3 +46,6 @@ yarn.lock
 # Backup Files
 *.bak
 *.backup
+images/ads/node_modules/
+images/ads/package.json
+images/ads/package-lock.json
