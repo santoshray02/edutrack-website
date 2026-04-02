@@ -95,6 +95,12 @@
 .edx-hdr-name{color:#fff;font-weight:700;font-size:14px;line-height:1.2}\
 .edx-hdr-stat{color:rgba(255,255,255,.7);font-size:11.5px;display:flex;align-items:center;gap:5px}\
 .edx-hdr-stat::before{content:"";width:6px;height:6px;background:#34d399;border-radius:50%;display:inline-block}\
+.edx-hdr-actions{display:flex;align-items:center;gap:4px}\
+.edx-hdr-btn{background:rgba(255,255,255,.12);border:none;cursor:pointer;border-radius:8px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;transition:background .2s;text-decoration:none}\
+.edx-hdr-btn:hover{background:rgba(255,255,255,.22)}\
+.edx-hdr-btn svg{width:15px;height:15px}\
+.edx-hdr-btn-wa svg{fill:#fff}\
+.edx-hdr-btn-call svg{stroke:#fff;fill:none;stroke-width:2}\
 .edx-hdr-close{background:rgba(255,255,255,.12);border:none;cursor:pointer;border-radius:8px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;transition:background .2s}\
 .edx-hdr-close:hover{background:rgba(255,255,255,.22)}\
 .edx-hdr-close svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.2}\
@@ -144,14 +150,7 @@
 .edx-qr-btn:nth-child(4){animation-delay:.4s}\
 .edx-qr-btn:hover{border-color:#7c3aed;color:#7c3aed;background:#f8f5ff}\
 \
-.edx-cta{display:flex;gap:6px;padding:0 14px 6px;flex-shrink:0}\
-.edx-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:8px 10px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;transition:all .15s}\
-.edx-cta-wa{background:#25d366;color:#fff}\
-.edx-cta-wa:hover{background:#1fb855}\
-.edx-cta-wa svg{width:16px;height:16px;fill:#fff}\
-.edx-cta-call{background:#f4f4f8;color:#3a3a52;border:1px solid #e8e8ef}\
-.edx-cta-call:hover{background:#eeeef4}\
-.edx-cta-call svg{width:14px;height:14px;stroke:#666;fill:none}\
+\
 \
 .edx-input{padding:8px 12px;border-top:1px solid #f0f0f5;display:flex;align-items:center;gap:8px;flex-shrink:0;background:#fff}\
 .edx-input input{flex:1;border:1.5px solid #e8e8ef;border-radius:24px;padding:9px 14px;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s,box-shadow .2s;background:#fafafe}\
@@ -222,6 +221,44 @@
     hStat.textContent = 'Online now';
     hInfo.appendChild(hStat);
     hdr.appendChild(hInfo);
+
+    // Header action buttons: WhatsApp, Call, Close
+    var hdrActions = document.createElement('div');
+    hdrActions.className = 'edx-hdr-actions';
+
+    // WhatsApp button
+    var waBtn = document.createElement('a');
+    waBtn.className = 'edx-hdr-btn edx-hdr-btn-wa';
+    waBtn.href = 'https://wa.me/917880170555?text=Hi%2C%20I%27m%20interested%20in%20EdunodeX';
+    waBtn.target = '_blank';
+    waBtn.rel = 'noopener';
+    waBtn.setAttribute('aria-label', 'WhatsApp');
+    waBtn.title = 'Chat on WhatsApp';
+    var waSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    waSvg.setAttribute('viewBox', '0 0 24 24');
+    var waP = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    waP.setAttribute('d', 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z');
+    waSvg.appendChild(waP);
+    waBtn.appendChild(waSvg);
+    hdrActions.appendChild(waBtn);
+
+    // Call button
+    var callBtn = document.createElement('a');
+    callBtn.className = 'edx-hdr-btn edx-hdr-btn-call';
+    callBtn.href = 'tel:+917880170555';
+    callBtn.setAttribute('aria-label', 'Call');
+    callBtn.title = 'Call 7880170555';
+    var callSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    callSvg.setAttribute('viewBox', '0 0 24 24');
+    var callP = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    callP.setAttribute('stroke-linecap', 'round');
+    callP.setAttribute('stroke-linejoin', 'round');
+    callP.setAttribute('d', 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z');
+    callSvg.appendChild(callP);
+    callBtn.appendChild(callSvg);
+    hdrActions.appendChild(callBtn);
+
+    // Close button
     var closeBtn = document.createElement('button');
     closeBtn.className = 'edx-hdr-close';
     closeBtn.setAttribute('aria-label', 'Close');
@@ -234,7 +271,9 @@
     cSvg.appendChild(cl1);
     cSvg.appendChild(cl2);
     closeBtn.appendChild(cSvg);
-    hdr.appendChild(closeBtn);
+    hdrActions.appendChild(closeBtn);
+
+    hdr.appendChild(hdrActions);
     win.appendChild(hdr);
 
     // Messages
@@ -265,38 +304,6 @@
     qrBox.className = 'edx-qr';
     qrBox.id = 'edx-qr';
     win.appendChild(qrBox);
-
-    // Persistent CTA bar
-    var ctaBar = document.createElement('div');
-    ctaBar.className = 'edx-cta';
-    var waLink = document.createElement('a');
-    waLink.className = 'edx-cta-wa';
-    waLink.href = 'https://wa.me/917880170555?text=Hi%2C%20I%27m%20interested%20in%20EdunodeX';
-    waLink.target = '_blank';
-    waLink.rel = 'noopener';
-    var waSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    waSvg.setAttribute('viewBox', '0 0 24 24');
-    var waPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    waPath.setAttribute('d', 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z');
-    waSvg.appendChild(waPath);
-    waLink.appendChild(waSvg);
-    waLink.appendChild(document.createTextNode(' WhatsApp Us'));
-    ctaBar.appendChild(waLink);
-    var callLink = document.createElement('a');
-    callLink.className = 'edx-cta-call';
-    callLink.href = 'tel:+917880170555';
-    var callSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    callSvg.setAttribute('viewBox', '0 0 24 24');
-    callSvg.setAttribute('stroke-width', '2');
-    var callPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    callPath.setAttribute('stroke-linecap', 'round');
-    callPath.setAttribute('stroke-linejoin', 'round');
-    callPath.setAttribute('d', 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z');
-    callSvg.appendChild(callPath);
-    callLink.appendChild(callSvg);
-    callLink.appendChild(document.createTextNode(' Call 7880170555'));
-    ctaBar.appendChild(callLink);
-    win.appendChild(ctaBar);
 
     // Input
     var inputWrap = document.createElement('div');
