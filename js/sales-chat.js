@@ -610,6 +610,9 @@
           if (utm.utm_source) body.utm_source = utm.utm_source;
           if (utm.utm_medium) body.utm_medium = utm.utm_medium;
           if (utm.utm_campaign) body.utm_campaign = utm.utm_campaign;
+          // Send page context on first message
+          body.page_url = window.location.href;
+          body.referrer = document.referrer || '';
         }
 
         var resp = await fetch(API_BASE + '/message', {
