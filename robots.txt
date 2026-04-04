@@ -1,10 +1,10 @@
-# robots.txt for EduTrack - School Management System
+# robots.txt for EdunodeX - School Operating System
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://edutrack.santoshray.in/sitemap.xml
+Sitemap: https://edunodex.in/sitemap.xml
 
 # Block old versions
 Disallow: /index-old.html
