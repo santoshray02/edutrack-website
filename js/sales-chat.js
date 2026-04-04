@@ -382,7 +382,6 @@
         win.classList.add('edx-open');
         trigger.style.display = 'none';
         isOpen = true;
-        if (messageHistory.length === 0) showWelcome();
       } else {
         // Clone the chat into inline, keep floating bubble too
         var inlineWin = win.cloneNode(true);
@@ -694,6 +693,11 @@
         else addUserMsg(m.content, true);
       });
       messageHistory = saved;
+    }
+
+    // Show welcome if no history was restored (inline or floating)
+    if (messageHistory.length === 0 && isOpen) {
+      showWelcome();
     }
   }
 
