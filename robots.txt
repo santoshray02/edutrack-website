@@ -6,10 +6,6 @@ Allow: /
 # Sitemaps
 Sitemap: https://edunodex.in/sitemap.xml
 
-# Block old versions
-Disallow: /index-old.html
-Disallow: /index-v2.html
-
 # Allow all images
 User-agent: Googlebot-Image
 Allow: /images/
