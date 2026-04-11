@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All-in-One Modules - EdunodeX Mockup</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 628px; overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f3f4f6; display: flex;
+  }
+
+  /* Expanded Sidebar */
+  .sidebar {
+    width: 240px; background: #fff; border-right: 1px solid #e5e7eb;
+    display: flex; flex-direction: column; flex-shrink: 0; overflow: hidden;
+  }
+  .sidebar-logo { padding: 14px 14px 10px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #f3f4f6; }
+  .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, #0891B2, #06b6d4); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-size: 16px; }
+  .school-name { font-size: 13px; font-weight: 700; color: #111827; line-height: 1.2; }
+  .school-sub { font-size: 10px; color: #9ca3af; }
+
+  .sidebar-search {
+    margin: 8px 10px; padding: 7px 10px; border-radius: 8px; border: 1px solid #e5e7eb;
+    font-size: 12px; color: #9ca3af; background: #f9fafb; display: flex; align-items: center; gap: 6px;
+  }
+
+  .nav-scroll { flex: 1; overflow: hidden; padding-bottom: 8px; }
+  .nav-section { padding: 4px 8px 2px; }
+  .nav-label { font-size: 9px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.6px; padding: 6px 8px 3px; }
+  .nav-item {
+    display: flex; align-items: center; gap: 7px; padding: 6px 10px; border-radius: 7px;
+    font-size: 12.5px; color: #4b5563; margin: 1px 0; white-space: nowrap;
+  }
+  .nav-item:hover { background: #f9fafb; }
+  .nav-item.active { background: #ecfeff; color: #0e7490; font-weight: 600; }
+  .nav-icon { font-size: 14px; width: 20px; text-align: center; }
+  .nav-badge { background: #cffafe; color: #0e7490; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 99px; margin-left: auto; }
+  .nav-new { background: #dcfce7; color: #16a34a; font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 99px; margin-left: auto; text-transform: uppercase; }
+
+  /* Main */
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  .topbar { height: 52px; background: #fff; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; padding: 0 20px; gap: 12px; }
+  .topbar-title { font-size: 16px; font-weight: 700; color: #111827; }
+  .topbar-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+  .topbar-btn { width: 34px; height: 34px; border-radius: 8px; border: 1px solid #e5e7eb; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #6b7280; }
+  .notif-dot { position: relative; }
+  .notif-dot::after { content: ""; position: absolute; top: 5px; right: 6px; width: 7px; height: 7px; border-radius: 99px; background: #ef4444; border: 1.5px solid #fff; }
+  .avatar { width: 32px; height: 32px; border-radius: 99px; background: linear-gradient(135deg, #0891B2, #06b6d4); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+
+  .content { flex: 1; padding: 16px 20px; overflow: hidden; }
+
+  /* Dashboard Grid */
+  .dashboard-greeting {
+    margin-bottom: 14px;
+  }
+  .greeting-text { font-size: 20px; font-weight: 800; color: #111827; }
+  .greeting-sub { font-size: 13px; color: #6b7280; margin-top: 2px; }
+
+  .stats-row { display: flex; gap: 10px; margin-bottom: 14px; }
+  .stat-card {
+    flex: 1; background: #fff; border-radius: 12px; border: 1px solid #e5e7eb;
+    padding: 12px 14px; display: flex; align-items: center; gap: 10px;
+  }
+  .stat-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+  .stat-label { font-size: 10px; color: #9ca3af; font-weight: 500; }
+  .stat-value { font-size: 20px; font-weight: 800; color: #111827; }
+  .stat-change { font-size: 10px; color: #16a34a; font-weight: 600; }
+  .stat-change.down { color: #dc2626; }
+
+  /* Module Cards Grid */
+  .modules-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+  }
+  .module-card {
+    background: #fff; border-radius: 12px; border: 1px solid #e5e7eb;
+    padding: 14px; display: flex; flex-direction: column; gap: 8px;
+    transition: all 0.15s; cursor: pointer;
+  }
+  .module-card:hover { border-color: #0891B2; box-shadow: 0 2px 8px rgba(8,145,178,0.1); }
+  .module-icon {
+    width: 36px; height: 36px; border-radius: 10px; display: flex;
+    align-items: center; justify-content: center; font-size: 18px;
+  }
+  .module-name { font-size: 13px; font-weight: 700; color: #111827; }
+  .module-desc { font-size: 11px; color: #9ca3af; line-height: 1.4; }
+  .module-stat { font-size: 11px; color: #4b5563; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+  .module-stat .dot { width: 6px; height: 6px; border-radius: 99px; }
+</style>
+</head>
+<body>
+
+<!-- Expanded Sidebar with All Modules -->
+<div class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon">E</div>
+    <div><div class="school-name">Delhi Public School</div><div class="school-sub">Vasant Kunj, Delhi</div></div>
+  </div>
+  <div class="sidebar-search">🔍 Search modules or students...</div>
+  <div class="nav-scroll">
+    <div class="nav-section">
+      <div class="nav-label">Overview</div>
+      <div class="nav-item active"><span class="nav-icon">📊</span> Dashboard</div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Daily Operations</div>
+      <div class="nav-item"><span class="nav-icon">💰</span> Fee Collection <span class="nav-badge">47</span></div>
+      <div class="nav-item"><span class="nav-icon">👥</span> Students</div>
+      <div class="nav-item"><span class="nav-icon">📋</span> Attendance</div>
+      <div class="nav-item"><span class="nav-icon">📝</span> Admissions <span class="nav-badge">12</span></div>
+      <div class="nav-item"><span class="nav-icon">💬</span> WhatsApp</div>
+      <div class="nav-item"><span class="nav-icon">🤖</span> Xentovia AI <span class="nav-new">New</span></div>
+      <div class="nav-item"><span class="nav-icon">📑</span> Marks & Exams</div>
+      <div class="nav-item"><span class="nav-icon">📄</span> Report Cards</div>
+      <div class="nav-item"><span class="nav-icon">🚌</span> Transport</div>
+      <div class="nav-item"><span class="nav-icon">📚</span> Library</div>
+      <div class="nav-item"><span class="nav-icon">🏥</span> Health Records</div>
+      <div class="nav-item"><span class="nav-icon">📅</span> Events & Calendar</div>
+      <div class="nav-item"><span class="nav-icon">👨‍👩‍👧</span> PTM Scheduling</div>
+      <div class="nav-item"><span class="nav-icon">🛏️</span> Hostel</div>
+      <div class="nav-item"><span class="nav-icon">📦</span> Inventory</div>
+      <div class="nav-item"><span class="nav-icon">🚶</span> Visitor Log</div>
+      <div class="nav-item"><span class="nav-icon">📊</span> Staff Attendance</div>
+      <div class="nav-item"><span class="nav-icon">🗓️</span> Leave Management</div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Configuration</div>
+      <div class="nav-item"><span class="nav-icon">🎓</span> Fee Management</div>
+      <div class="nav-item"><span class="nav-icon">⚙️</span> Settings</div>
+      <div class="nav-item"><span class="nav-icon">🏫</span> Master Data</div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Dashboard -->
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title">Dashboard</div>
+    <div class="topbar-right">
+      <div class="topbar-btn notif-dot">🔔</div>
+      <div class="topbar-btn">⚙️</div>
+      <div class="avatar">SA</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="dashboard-greeting">
+      <div class="greeting-text">Good Morning, School Admin 👋</div>
+      <div class="greeting-sub">Thursday, 3 April 2026 · Academic Year 2025-26</div>
+    </div>
+
+    <!-- Top Stats -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#ecfeff;">👥</div>
+        <div>
+          <div class="stat-label">Total Students</div>
+          <div class="stat-value">487</div>
+          <div class="stat-change">↑ 23 new this month</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#dcfce7;">💰</div>
+        <div>
+          <div class="stat-label">Fee Collected (Apr)</div>
+          <div class="stat-value">₹18.4L</div>
+          <div class="stat-change">↑ 12% vs last month</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#fef3c7;">📋</div>
+        <div>
+          <div class="stat-label">Today's Attendance</div>
+          <div class="stat-value">94.2%</div>
+          <div class="stat-change">459 of 487 present</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#f3e8ff;">📱</div>
+        <div>
+          <div class="stat-label">WhatsApp Sent Today</div>
+          <div class="stat-value">234</div>
+          <div class="stat-change">84.6% read rate</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module Quick Access Grid -->
+    <div class="modules-grid">
+      <div class="module-card">
+        <div class="module-icon" style="background:#ecfeff;">💰</div>
+        <div class="module-name">Fee Collection</div>
+        <div class="module-desc">AI-prioritized queue with instant receipts</div>
+        <div class="module-stat"><div class="dot" style="background:#ef4444;"></div> 47 pending today</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#dcfce7;">📱</div>
+        <div class="module-name">WhatsApp</div>
+        <div class="module-desc">Automated reminders with payment links</div>
+        <div class="module-stat"><div class="dot" style="background:#22c55e;"></div> 234 sent today</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#f3e8ff;">🤖</div>
+        <div class="module-name">Xentovia AI</div>
+        <div class="module-desc">Ask anything in Hindi or English</div>
+        <div class="module-stat"><div class="dot" style="background:#8b5cf6;"></div> Multilingual AI</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#fef3c7;">📋</div>
+        <div class="module-name">Attendance</div>
+        <div class="module-desc">Mark & track daily attendance</div>
+        <div class="module-stat"><div class="dot" style="background:#22c55e;"></div> 94.2% today</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#fee2e2;">📑</div>
+        <div class="module-name">Marks & Exams</div>
+        <div class="module-desc">Entry, analytics & report cards</div>
+        <div class="module-stat"><div class="dot" style="background:#f59e0b;"></div> Term 2 active</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#dbeafe;">🚌</div>
+        <div class="module-name">Transport</div>
+        <div class="module-desc">Routes, stops & vehicle tracking</div>
+        <div class="module-stat"><div class="dot" style="background:#22c55e;"></div> 8 routes active</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#fce7f3;">📚</div>
+        <div class="module-name">Library</div>
+        <div class="module-desc">Issue, return & catalog management</div>
+        <div class="module-stat"><div class="dot" style="background:#f59e0b;"></div> 12 overdue books</div>
+      </div>
+      <div class="module-card">
+        <div class="module-icon" style="background:#e0e7ff;">📅</div>
+        <div class="module-name">Events</div>
+        <div class="module-desc">Academic calendar & scheduling</div>
+        <div class="module-stat"><div class="dot" style="background:#3b82f6;"></div> PTM on 10 Apr</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

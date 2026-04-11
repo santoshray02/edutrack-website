@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  body { font-family: 'Inter', system-ui, sans-serif; background: #f0f0f0; padding: 20px; }
+  .banner { width: 1200px; height: 628px; position: relative; overflow: hidden; margin: 20px auto; border-radius: 4px; }
+  .label { text-align: center; font-size: 14px; color: #666; margin-bottom: 5px; font-weight: 600; }
+
+  /* Banner 1: Fee Collection Hero */
+  .banner-1 {
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 50%, #06b6d4 100%);
+    display: flex; align-items: center; padding: 60px;
+  }
+  .banner-1 .left { flex: 1; color: white; }
+  .banner-1 .left h1 { font-size: 52px; font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+  .banner-1 .left h1 .highlight { color: #fbbf24; }
+  .banner-1 .left p { font-size: 22px; opacity: 0.9; margin-bottom: 30px; line-height: 1.5; }
+  .banner-1 .left .cta { display: inline-block; background: white; color: #7c3aed; font-weight: 800; font-size: 20px; padding: 16px 36px; border-radius: 12px; }
+  .banner-1 .right { width: 420px; margin-left: 40px; }
+  .banner-1 .phone-frame { background: white; border-radius: 32px; padding: 16px; box-shadow: 0 25px 60px rgba(0,0,0,0.3); }
+  .banner-1 .phone-screen { background: #f8fafc; border-radius: 20px; padding: 24px; }
+  .banner-1 .phone-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .banner-1 .phone-header img { width: 36px; height: 36px; border-radius: 8px; }
+  .banner-1 .phone-header span { font-weight: 700; font-size: 18px; color: #1e293b; }
+  .banner-1 .stat-card { background: white; border-radius: 14px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .banner-1 .stat-label { font-size: 13px; color: #64748b; font-weight: 500; }
+  .banner-1 .stat-value { font-size: 22px; font-weight: 800; }
+  .banner-1 .stat-value.green { color: #16a34a; }
+  .banner-1 .stat-value.red { color: #dc2626; }
+  .banner-1 .stat-value.blue { color: #2563eb; }
+  .banner-1 .stat-bar { height: 8px; border-radius: 4px; background: #e2e8f0; margin-top: 8px; }
+  .banner-1 .stat-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #7c3aed, #2563eb); }
+  .banner-1 .logo-row { display: flex; align-items: center; gap: 10px; position: absolute; top: 30px; right: 40px; }
+  .banner-1 .logo-row img { width: 44px; height: 44px; border-radius: 10px; }
+  .banner-1 .logo-row span { font-size: 22px; font-weight: 800; color: white; }
+
+  /* Banner 2: AI Chatbot Hindi */
+  .banner-2 {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+    display: flex; align-items: center; padding: 60px;
+  }
+  .banner-2 .left { flex: 1; color: white; }
+  .banner-2 .left h1 { font-size: 48px; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+  .banner-2 .left h1 .hindi { color: #a78bfa; font-style: italic; }
+  .banner-2 .left p { font-size: 20px; opacity: 0.85; margin-bottom: 24px; line-height: 1.5; }
+  .banner-2 .left .badge { display: inline-block; background: rgba(167,139,250,0.2); border: 1px solid rgba(167,139,250,0.4); color: #c4b5fd; font-weight: 600; font-size: 15px; padding: 10px 20px; border-radius: 8px; }
+  .banner-2 .right { width: 440px; margin-left: 40px; }
+  .banner-2 .chat-frame { background: white; border-radius: 28px; padding: 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.4); }
+  .banner-2 .chat-header { display: flex; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid #f1f5f9; margin-bottom: 16px; }
+  .banner-2 .chat-header img { width: 40px; height: 40px; border-radius: 10px; }
+  .banner-2 .chat-header .name { font-weight: 700; font-size: 16px; color: #1e293b; }
+  .banner-2 .chat-header .status { font-size: 12px; color: #16a34a; font-weight: 500; }
+  .banner-2 .msg { padding: 12px 16px; border-radius: 16px; margin-bottom: 10px; font-size: 15px; line-height: 1.5; max-width: 85%; }
+  .banner-2 .msg-user { background: #7c3aed; color: white; margin-left: auto; border-bottom-right-radius: 4px; text-align: right; }
+  .banner-2 .msg-bot { background: #f1f5f9; color: #1e293b; border-bottom-left-radius: 4px; }
+  .banner-2 .msg-bot strong { color: #7c3aed; }
+  .banner-2 .logo-row { display: flex; align-items: center; gap: 10px; position: absolute; top: 30px; right: 40px; }
+  .banner-2 .logo-row img { width: 44px; height: 44px; border-radius: 10px; }
+  .banner-2 .logo-row span { font-size: 22px; font-weight: 800; color: white; }
+
+  /* Banner 3: WhatsApp */
+  .banner-3 {
+    background: linear-gradient(135deg, #065f46 0%, #047857 50%, #059669 100%);
+    display: flex; align-items: center; padding: 60px;
+  }
+  .banner-3 .left { flex: 1; color: white; }
+  .banner-3 .left h1 { font-size: 48px; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+  .banner-3 .left p { font-size: 20px; opacity: 0.9; margin-bottom: 24px; line-height: 1.5; }
+  .banner-3 .left .features { list-style: none; }
+  .banner-3 .left .features li { font-size: 18px; padding: 8px 0; display: flex; align-items: center; gap: 12px; }
+  .banner-3 .left .features li .check { width: 28px; height: 28px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+  .banner-3 .right { width: 400px; margin-left: 40px; }
+  .banner-3 .wa-frame { background: #e5ddd5; border-radius: 28px; padding: 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.3); }
+  .banner-3 .wa-header { background: #075e54; color: white; margin: -20px -20px 16px; padding: 16px 20px; border-radius: 28px 28px 0 0; display: flex; align-items: center; gap: 12px; }
+  .banner-3 .wa-header img { width: 36px; height: 36px; border-radius: 50%; }
+  .banner-3 .wa-header .name { font-weight: 700; font-size: 16px; }
+  .banner-3 .wa-msg { background: white; padding: 12px 16px; border-radius: 12px; margin-bottom: 10px; font-size: 14px; line-height: 1.6; box-shadow: 0 1px 2px rgba(0,0,0,0.1); max-width: 90%; }
+  .banner-3 .wa-msg.green { background: #dcf8c6; margin-left: auto; }
+  .banner-3 .wa-msg .time { font-size: 11px; color: #999; text-align: right; margin-top: 4px; }
+  .banner-3 .logo-row { display: flex; align-items: center; gap: 10px; position: absolute; top: 30px; right: 40px; }
+  .banner-3 .logo-row img { width: 44px; height: 44px; border-radius: 10px; }
+  .banner-3 .logo-row span { font-size: 22px; font-weight: 800; color: white; }
+
+  /* Banner 4: All-in-One */
+  .banner-4 {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    display: flex; align-items: center; padding: 60px; position: relative;
+  }
+  .banner-4::before {
+    content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%); border-radius: 50%;
+  }
+  .banner-4 .left { flex: 1; color: white; position: relative; z-index: 1; }
+  .banner-4 .left h1 { font-size: 50px; font-weight: 900; line-height: 1.1; margin-bottom: 16px; }
+  .banner-4 .left h1 .purple { color: #a78bfa; }
+  .banner-4 .left p { font-size: 20px; color: #94a3b8; margin-bottom: 28px; line-height: 1.5; }
+  .banner-4 .left .price-tag { display: inline-flex; align-items: baseline; gap: 6px; background: linear-gradient(135deg, #7c3aed, #2563eb); padding: 14px 28px; border-radius: 12px; }
+  .banner-4 .left .price-tag .amount { font-size: 36px; font-weight: 900; color: white; }
+  .banner-4 .left .price-tag .period { font-size: 16px; color: rgba(255,255,255,0.8); }
+  .banner-4 .right { width: 480px; margin-left: 40px; position: relative; z-index: 1; }
+  .banner-4 .modules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .banner-4 .module { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 18px; text-align: center; }
+  .banner-4 .module .icon { font-size: 32px; margin-bottom: 8px; }
+  .banner-4 .module .name { font-size: 14px; font-weight: 600; color: #e2e8f0; }
+  .banner-4 .logo-row { display: flex; align-items: center; gap: 10px; position: absolute; top: 30px; right: 40px; z-index: 2; }
+  .banner-4 .logo-row img { width: 44px; height: 44px; border-radius: 10px; }
+  .banner-4 .logo-row span { font-size: 22px; font-weight: 800; color: white; }
+</style>
+</head>
+<body>
+
+<!-- Banner 1: Fee Collection -->
+<p class="label">Banner 1: Fee Collection (1200x628)</p>
+<div class="banner banner-1" id="banner1">
+  <div class="logo-row"><img src="../../images/favicon.png"><span>EdunodeX</span></div>
+  <div class="left">
+    <h1>Cut Fee Defaults<br>by <span class="highlight">77%</span></h1>
+    <p>AI-powered fee reminders, UPI QR payments, and zero transaction fees. Schools recover ₹80L+ annually.</p>
+    <div class="cta">Start Free Trial →</div>
+  </div>
+  <div class="right">
+    <div class="phone-frame">
+      <div class="phone-screen">
+        <div class="phone-header">
+          <img src="../../images/favicon.png">
+          <span>Fee Dashboard</span>
+        </div>
+        <div class="stat-card">
+          <div>
+            <div class="stat-label">Total Collected</div>
+            <div class="stat-value green">₹24,50,000</div>
+          </div>
+          <div style="font-size:28px">📈</div>
+        </div>
+        <div class="stat-card">
+          <div>
+            <div class="stat-label">Pending Amount</div>
+            <div class="stat-value red">₹3,20,000</div>
+          </div>
+          <div style="font-size:28px">⚠️</div>
+        </div>
+        <div class="stat-card">
+          <div>
+            <div class="stat-label">Collection Rate</div>
+            <div class="stat-value blue">92%</div>
+          </div>
+          <div style="font-size:28px">🎯</div>
+        </div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:92%"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Banner 2: AI Chatbot Hindi -->
+<p class="label">Banner 2: AI Chatbot in Hindi (1200x628)</p>
+<div class="banner banner-2" id="banner2">
+  <div class="logo-row"><img src="../../images/favicon.png"><span>EdunodeX</span></div>
+  <div class="left">
+    <h1>Ask Your School AI<br>in <span class="hindi">Hindi</span> or English</h1>
+    <p>Xentovia AI understands natural language. No training needed. Instant answers for admins, teachers & parents.</p>
+    <div class="badge">🤖 Powered by Xentovia AI</div>
+  </div>
+  <div class="right">
+    <div class="chat-frame">
+      <div class="chat-header">
+        <img src="../../images/favicon.png">
+        <div>
+          <div class="name">Xena AI Assistant</div>
+          <div class="status">● Online</div>
+        </div>
+      </div>
+      <div class="msg msg-user">Class 5 ki pending fees dikhao</div>
+      <div class="msg msg-bot">
+        <strong>Class 5 — Pending Fees:</strong><br>
+        Total Students: 45<br>
+        Paid: 38 (₹4,56,000)<br>
+        Pending: 7 (₹84,000)<br><br>
+        Top defaulters:<br>
+        1. Rahul Sharma — ₹15,000<br>
+        2. Priya Singh — ₹12,000
+      </div>
+      <div class="msg msg-user">Inko WhatsApp reminder bhejo</div>
+      <div class="msg msg-bot">✅ WhatsApp reminders sent to 7 parents with payment links.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Banner 3: WhatsApp -->
+<p class="label">Banner 3: WhatsApp Integration (1200x628)</p>
+<div class="banner banner-3" id="banner3">
+  <div class="logo-row"><img src="../../images/favicon.png"><span>EdunodeX</span></div>
+  <div class="left">
+    <h1>WhatsApp-First<br>School Communication</h1>
+    <p>Fee reminders, report cards, circulars — all via WhatsApp. Parents actually read these.</p>
+    <ul class="features">
+      <li><span class="check">✓</span> Bulk fee reminders with UPI links</li>
+      <li><span class="check">✓</span> Report card PDFs via WhatsApp</li>
+      <li><span class="check">✓</span> Attendance alerts to parents</li>
+      <li><span class="check">✓</span> 99 ready-made templates</li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="wa-frame">
+      <div class="wa-header">
+        <img src="../../images/favicon.png">
+        <div class="name">Delhi Public School</div>
+      </div>
+      <div class="wa-msg">
+        🏫 <strong>Fee Reminder</strong><br><br>
+        Dear Parent,<br>
+        Fee of ₹12,000 for Rahul (Class 5-A) is due on 5th April 2026.<br><br>
+        💳 Pay now: <span style="color:#2563eb">pay.edunodex.in/s/dps/rahul</span><br><br>
+        — Delhi Public School
+        <div class="time">10:30 AM ✓✓</div>
+      </div>
+      <div class="wa-msg green">
+        Done! Paid via UPI 🙏
+        <div class="time">10:45 AM ✓✓</div>
+      </div>
+      <div class="wa-msg">
+        ✅ Payment of ₹12,000 received. Receipt: RCP-20260405-00012<br><br>
+        Thank you! 🎉
+        <div class="time">10:45 AM ✓✓</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Banner 4: All-in-One -->
+<p class="label">Banner 4: 25+ Modules at ₹10/student (1200x628)</p>
+<div class="banner banner-4" id="banner4">
+  <div class="logo-row"><img src="../../images/favicon.png"><span>EdunodeX</span></div>
+  <div class="left">
+    <h1>25+ Modules.<br><span class="purple">One Platform.</span></h1>
+    <p>Everything your school needs — fees, attendance, marks, WhatsApp, parent portal, transport, library, and more.</p>
+    <div class="price-tag">
+      <span class="amount">₹10</span>
+      <span class="period">/student/month</span>
+    </div>
+  </div>
+  <div class="right">
+    <div class="modules-grid">
+      <div class="module"><div class="icon">💰</div><div class="name">Fee Collection</div></div>
+      <div class="module"><div class="icon">📋</div><div class="name">Attendance</div></div>
+      <div class="module"><div class="icon">📝</div><div class="name">Marks & Report Cards</div></div>
+      <div class="module"><div class="icon">💬</div><div class="name">WhatsApp</div></div>
+      <div class="module"><div class="icon">👨‍👩‍👦</div><div class="name">Parent Portal</div></div>
+      <div class="module"><div class="icon">🚌</div><div class="name">Transport</div></div>
+      <div class="module"><div class="icon">📚</div><div class="name">Library</div></div>
+      <div class="module"><div class="icon">🤖</div><div class="name">AI Chatbot</div></div>
+      <div class="module"><div class="icon">🏠</div><div class="name">Hostel</div></div>
+      <div class="module"><div class="icon">📅</div><div class="name">Timetable</div></div>
+      <div class="module"><div class="icon">🧾</div><div class="name">Payroll</div></div>
+      <div class="module"><div class="icon">📊</div><div class="name">Analytics</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Instructions: Open this in Chrome, then use DevTools to screenshot each banner
+// Or use the Node.js script to auto-capture
+console.log('Open Chrome DevTools → Run: document.querySelectorAll(".banner").forEach((b,i) => console.log(`Banner ${i+1}: ${b.id}`))');
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-schools-moving-from-excel-to-erp-body.html?raw';
+import headHtml from '../../../raw/blog-schools-moving-from-excel-to-erp-head.html?raw';
+---
+<BaseLayout
+  title="Why Schools Are Moving from Tally + Excel to Integrated School ERP | EdunodeX"
+  description="Understand why Indian schools are switching from Tally and Excel to integrated school ERP software. Signs you have outgrown spreadsheets and how to switch."
+  keywords="school fee management excel to software, school accounting software india, school erp vs excel, tally for school accounting, school management software india"
+  canonical="https://edunodex.in/blog/schools-moving-from-excel-to-erp/"
+  ogType="article"
+  ogTitle="Why Schools Are Moving from Tally + Excel to Integrated School ERP"
+  ogDescription="Understand why Indian schools are switching from Tally and Excel to integrated school ERP. Signs you have outgrown spreadsheets and how to make the switch."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Why Schools Are Moving from Tally + Excel to Integrated School ERP"
+  twitterDescription="Why Indian schools are switching from Tally and Excel to integrated school ERP. Signs you have outgrown spreadsheets."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

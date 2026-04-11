@@ -1,0 +1,14 @@
+# robots.txt for EdunodeX - School Operating System
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://edunodex.in/sitemap.xml
+
+# Allow all images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Crawl delay
+Crawl-delay: 1

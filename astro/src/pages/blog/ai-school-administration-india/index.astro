@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-ai-school-administration-india-body.html?raw';
+import headHtml from '../../../raw/blog-ai-school-administration-india-head.html?raw';
+---
+<BaseLayout
+  title="How AI is Transforming School Administration in India | EdunodeX"
+  description="Discover 7 ways AI is changing school management in India: automated fee reminders, AI report cards, smart attendance, dropout prediction, and more."
+  keywords="AI school management software india, AI in education india, artificial intelligence school administration, smart school software, AI school ERP"
+  canonical="https://edunodex.in/blog/ai-school-administration-india/"
+  ogType="article"
+  ogTitle="How AI is Transforming School Administration in India"
+  ogDescription="Discover 7 ways AI is changing school management in India: automated fee reminders, AI report cards, smart attendance, and more."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="How AI is Transforming School Administration in India"
+  twitterDescription="Discover 7 ways AI is changing school management in India in 2026."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

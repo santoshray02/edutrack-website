@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-automated-fee-reminders-reduce-defaults-body.html?raw';
+import headHtml from '../../../raw/blog-automated-fee-reminders-reduce-defaults-head.html?raw';
+---
+<BaseLayout
+  title="Automated Fee Reminders: How Schools Improved On-Time Fee Collection | EdunodeX"
+  description="Case study: how Indian schools improved on-time fee collection by 15-25% using automated WhatsApp reminders with payment links. Before and after results included."
+  keywords="automated school fee reminders, reduce fee defaults school, whatsapp fee reminder automation, school fee collection automation india, school fee defaulters"
+  canonical="https://edunodex.in/blog/automated-fee-reminders-reduce-defaults/"
+  ogType="article"
+  ogTitle="Automated Fee Reminders: How Schools Improved On-Time Fee Collection"
+  ogDescription="Case study: how Indian schools improved on-time fee collection by 15-25% using automated WhatsApp reminders with payment links."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Automated Fee Reminders: How Schools Improved On-Time Fee Collection"
+  twitterDescription="Case study: how schools improved on-time fee collection by 15-25% using automated WhatsApp reminders."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

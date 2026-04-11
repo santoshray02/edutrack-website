@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-school-fee-collection-whatsapp-guide-body.html?raw';
+import headHtml from '../../../raw/blog-school-fee-collection-whatsapp-guide-head.html?raw';
+---
+<BaseLayout
+  title="School Fee Collection via WhatsApp: Complete 2026 Guide | EdunodeX"
+  description="Learn how schools in India improve on-time fee collection using WhatsApp reminders with payment links. Step-by-step setup guide for automated fee collection in 2026."
+  keywords="school fee collection whatsapp, whatsapp fee reminders, school fee payment link, automated fee collection india, school fee management whatsapp"
+  canonical="https://edunodex.in/blog/school-fee-collection-whatsapp-guide/"
+  ogType="article"
+  ogTitle="School Fee Collection via WhatsApp: Complete 2026 Guide"
+  ogDescription="Learn how schools in India improve on-time fee collection using WhatsApp reminders with payment links. Step-by-step setup guide for automated fee collection."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="School Fee Collection via WhatsApp: Complete 2026 Guide"
+  twitterDescription="Learn how schools in India improve on-time fee collection using WhatsApp reminders with payment links."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>
