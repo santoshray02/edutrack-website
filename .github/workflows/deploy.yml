@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Astro site
         working-directory: astro
-        run: bun --bun run astro build
+        run: bun run build
 
       - name: Sync built output to repo root
         run: |
