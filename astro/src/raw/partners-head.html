@@ -1,0 +1,35 @@
+    <script>
+        // Partner application form URL — update this when you create the Google Form
+        var PARTNER_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSd0t4AVbDGb2NBpJAOnvscpZ7qrp25XOkG4p-wyoTJOAgcWvw/viewform';
+        // Set your Google Form URL above, e.g.: var PARTNER_FORM_URL = 'https://forms.gle/YOUR_FORM_ID';
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('[data-partner-cta]').forEach(function(el) {
+                if (PARTNER_FORM_URL !== '#') {
+                    el.href = PARTNER_FORM_URL;
+                    el.target = '_blank';
+                    el.rel = 'noopener';
+                }
+            });
+        });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Who can become an EdunodeX partner?", "acceptedAnswer": {"@type": "Answer", "text": "Anyone with connections to schools — consultants, IT vendors, education professionals, or even school parents."}},
+        {"@type": "Question", "name": "Is there any fee to join the EdunodeX partner program?", "acceptedAnswer": {"@type": "Answer", "text": "No. The partner program is completely free to join."}},
+        {"@type": "Question", "name": "How are partner commissions paid?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly bank transfer. Minimum payout is ₹1,000."}},
+        {"@type": "Question", "name": "Can I combine partner types?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — you can be a Referral + Implementation partner and earn from both."}},
+        {"@type": "Question", "name": "What support do EdunodeX partners get?", "acceptedAnswer": {"@type": "Answer", "text": "Marketing kit, product training, dedicated partner manager, and priority support for your referred schools."}},
+        {"@type": "Question", "name": "How do I track my referrals?", "acceptedAnswer": {"@type": "Answer", "text": "We share a live tracking sheet with you. A partner dashboard is coming soon."}}
+      ]
+    }
+    </script>
+    <style>
+        .partner-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .partner-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -8px rgba(102, 126, 234, 0.25); }
+        .step-connector { position: relative; }
+        .step-connector::after { content: ''; position: absolute; top: 50%; right: -2rem; width: 2rem; height: 2px; background: linear-gradient(90deg, #667eea, #764ba2); }
+        @media (max-width: 768px) { .step-connector::after { display: none; } }
+    </style>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import bodyHtml from '../../raw/blog-index-body.html?raw';
+import headHtml from '../../raw/blog-index-head.html?raw';
+---
+<BaseLayout
+  title="EdunodeX Blog — School Management Insights | Tips, Guides & Case Studies"
+  description="School management blog India — expert guides on fee collection, parent communication, AI in education, CBSE school ERP, and affordable school software for Indian schools."
+  keywords="school management blog India, school fee collection tips, CBSE school ERP guide, AI school administration, parent communication app, school software India, WhatsApp school fees, digital report cards"
+  canonical="https://edunodex.in/blog/"
+  ogTitle="EdunodeX Blog — School Management Insights"
+  ogDescription="Expert guides on school fee collection, parent communication, AI in education, and affordable school software for Indian schools."
+  twitterTitle="EdunodeX Blog — School Management Insights"
+  twitterDescription="Expert guides on school fee collection, parent communication, AI in education, and affordable school software for Indian schools."
+  bodyClass="bg-gray-50 font-sans antialiased"
+  includeFlowbite={false}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

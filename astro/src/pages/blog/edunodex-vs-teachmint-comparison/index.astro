@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-edunodex-vs-teachmint-comparison-body.html?raw';
+import headHtml from '../../../raw/blog-edunodex-vs-teachmint-comparison-head.html?raw';
+---
+<BaseLayout
+  title="EdunodeX vs Teachmint: Which School Software Fits Your School? | EdunodeX"
+  description="Honest comparison of EdunodeX and Teachmint for Indian schools. Compare features, pricing, strengths, and weaknesses to find the right school management software."
+  keywords="teachmint alternative, edunodex vs teachmint, school management software comparison, school ERP india, teachmint pricing"
+  canonical="https://edunodex.in/blog/edunodex-vs-teachmint-comparison/"
+  ogType="article"
+  ogTitle="EdunodeX vs Teachmint: Which School Software Fits Your School?"
+  ogDescription="Honest comparison of EdunodeX and Teachmint for Indian schools. Compare features, pricing, strengths, and weaknesses."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="EdunodeX vs Teachmint: Which School Software Fits Your School?"
+  twitterDescription="Honest comparison of EdunodeX and Teachmint for Indian schools. Compare features, pricing, and more."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import bodyHtml from '../../raw/terms-body.html?raw';
+---
+<BaseLayout
+  title="Terms of Service - EdunodeX | Xentovia Tech Pvt Ltd"
+  description="Terms of Service for EdunodeX - India's School OS by Xentovia Tech Pvt Ltd"
+  canonical="https://edunodex.in/terms-of-service"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={false}
+  includeSalesChat={false}
+>
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

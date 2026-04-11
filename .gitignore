@@ -49,3 +49,10 @@ yarn.lock
 images/ads/node_modules/
 images/ads/package.json
 images/ads/package-lock.json
+
+# Tooling state
+.superpowers/
+.claude/
+
+# Astro generated (inside astro/)
+astro/.astro/

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-cbse-school-erp-features-guide-body.html?raw';
+import headHtml from '../../../raw/blog-cbse-school-erp-features-guide-head.html?raw';
+---
+<BaseLayout
+  title="CBSE School ERP: Features Every Principal Needs in 2026 | EdunodeX"
+  description="Complete guide to CBSE school ERP features: admissions, fee management, CBSE grading, report cards, transport, and more. What every principal must look for."
+  keywords="CBSE school ERP software, school ERP features, school management system CBSE, school software India 2026"
+  canonical="https://edunodex.in/blog/cbse-school-erp-features-guide/"
+  ogType="article"
+  ogTitle="CBSE School ERP: Features Every Principal Needs in 2026"
+  ogDescription="Complete guide to CBSE school ERP features: admissions, fee management, CBSE grading, report cards, transport, and more. What every principal must look for."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="CBSE School ERP: Features Every Principal Needs in 2026"
+  twitterDescription="Complete guide to CBSE school ERP features: admissions, fee management, CBSE grading, report cards, transport, and more. What every principal must look for."
+  twitterImage="https://edunodex.in/images/twitter-card.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

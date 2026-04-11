@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-parent-communication-app-vs-whatsapp-groups-body.html?raw';
+import headHtml from '../../../raw/blog-parent-communication-app-vs-whatsapp-groups-head.html?raw';
+---
+<BaseLayout
+  title="Parent Communication App vs WhatsApp Groups: What Works Better for Schools | EdunodeX"
+  description="Compare parent communication apps vs WhatsApp groups for schools. Discover why smart schools use WhatsApp API through a dedicated platform for better results."
+  keywords="parent communication app for schools, school WhatsApp group alternative, parent teacher communication app, school messaging platform India"
+  canonical="https://edunodex.in/blog/parent-communication-app-vs-whatsapp-groups/"
+  ogType="article"
+  ogTitle="Parent Communication App vs WhatsApp Groups: What Works Better for Schools"
+  ogDescription="Compare parent communication apps vs WhatsApp groups for schools. Discover why smart schools use WhatsApp API through a dedicated platform for better results."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Parent Communication App vs WhatsApp Groups: What Works Better for Schools"
+  twitterDescription="Compare parent communication apps vs WhatsApp groups for schools. Discover why smart schools use WhatsApp API through a dedicated platform for better results."
+  twitterImage="https://edunodex.in/images/twitter-card.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

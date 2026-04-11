@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-school-erp-india-buyers-guide-body.html?raw';
+import headHtml from '../../../raw/blog-school-erp-india-buyers-guide-head.html?raw';
+---
+<BaseLayout
+  title="School ERP India 2026: The Complete Buyer's Guide | EdunodeX"
+  description="Everything you need to know before buying a school ERP in India. Modules, pricing models, vendor questions, red flags, and implementation tips for 2026."
+  keywords="school ERP india, school management system india, school software buyer guide, best school ERP 2026, school management software india"
+  canonical="https://edunodex.in/blog/school-erp-india-buyers-guide/"
+  ogType="article"
+  ogTitle="School ERP India 2026: The Complete Buyer's Guide"
+  ogDescription="Everything you need to know before buying a school ERP in India. Modules, pricing, vendor questions, and red flags."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="School ERP India 2026: The Complete Buyer's Guide"
+  twitterDescription="Everything you need to know before buying a school ERP in India. Modules, pricing, and implementation tips."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

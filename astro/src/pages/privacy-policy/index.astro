@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import bodyHtml from '../../raw/privacy-body.html?raw';
+---
+<BaseLayout
+  title="Privacy Policy - EdunodeX | Xentovia Tech Pvt Ltd"
+  description="Privacy Policy for EdunodeX - India's School OS by Xentovia Tech Pvt Ltd"
+  canonical="https://edunodex.in/privacy-policy"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={false}
+  includeSalesChat={false}
+>
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

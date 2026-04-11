@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-school-fee-defaulter-management-guide-body.html?raw';
+import headHtml from '../../../raw/blog-school-fee-defaulter-management-guide-head.html?raw';
+---
+<BaseLayout
+  title="School Fee Defaulter Management: A Practical Guide for Indian Schools | EdunodeX"
+  description="A practical, empathetic guide to managing fee defaults in Indian schools. Learn tracking systems, installment plans, follow-up processes, and legal aspects."
+  keywords="school fee defaulter management, fee defaulter tracking, school fee recovery india, fee defaulter follow up, school fee installment plan"
+  canonical="https://edunodex.in/blog/school-fee-defaulter-management-guide/"
+  ogType="article"
+  ogTitle="School Fee Defaulter Management: A Practical Guide for Indian Schools"
+  ogDescription="A practical, empathetic guide to managing fee defaults in Indian schools. Tracking systems, installment plans, follow-up processes, and legal considerations."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="School Fee Defaulter Management: A Practical Guide for Indian Schools"
+  twitterDescription="A practical, empathetic guide to managing fee defaults in Indian schools. Tracking, installment plans, and follow-up processes."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

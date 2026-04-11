@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-best-school-management-software-india-body.html?raw';
+import headHtml from '../../../raw/blog-best-school-management-software-india-head.html?raw';
+---
+<BaseLayout
+  title="Best School Management Software in India (2026 Comparison) | EdunodeX"
+  description="Compare 8 best school management software in India for 2026. Features, pricing, and honest reviews of Teachmint, Entab, MyClassboard, Fedena, and more."
+  keywords="best school management software india, school ERP india, school management system comparison, school software india 2026, teachmint vs edunodex"
+  canonical="https://edunodex.in/blog/best-school-management-software-india/"
+  ogType="article"
+  ogTitle="Best School Management Software in India (2026 Comparison)"
+  ogDescription="Compare 8 best school management software in India for 2026. Features, pricing, and honest reviews of top platforms."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Best School Management Software in India (2026 Comparison)"
+  twitterDescription="Compare 8 best school management software in India for 2026 with features, pricing, and honest reviews."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

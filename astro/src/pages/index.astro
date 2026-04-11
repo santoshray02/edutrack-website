@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import bodyHtml from '../raw/index-body.html?raw';
+import headHtml from '../raw/index-head.html?raw';
+---
+<BaseLayout
+  title="EdunodeX - India's School OS Powered by EdunodeX AI | ₹10/student/month"
+  description="EdunodeX - India's first School OS powered by EdunodeX AI. AI chatbot, parent portal, academics, fee management. WhatsApp-first. ₹10/student/month."
+  keywords="school OS India, AI school platform, EdunodeX, EdunodeX AI, school operating system, WhatsApp school fees, AI school software Hindi, conversational AI CBSE, voice-enabled school software, predictive analytics education, per student pricing school software, school management India"
+  canonical="https://edunodex.in/"
+  ogTitle="EdunodeX - India's School OS Powered by EdunodeX AI"
+  ogDescription="India's first School OS powered by EdunodeX AI. 25+ modules, AI chatbot in Hindi, parent portal, WhatsApp-first. ₹10/student/month."
+  twitterTitle="EdunodeX - India's School OS Powered by EdunodeX AI"
+  twitterDescription="India's first School OS powered by EdunodeX AI. 25+ modules, AI chatbot in Hindi, parent portal, WhatsApp-first. ₹10/student/month."
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={true}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

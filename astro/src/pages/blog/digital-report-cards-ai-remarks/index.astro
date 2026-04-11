@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-digital-report-cards-ai-remarks-body.html?raw';
+import headHtml from '../../../raw/blog-digital-report-cards-ai-remarks-head.html?raw';
+---
+<BaseLayout
+  title="Digital Report Cards &amp; AI-Generated Remarks: The Future of Student Assessment | EdunodeX"
+  description="How digital report cards with AI-generated remarks save teachers weeks of work. CBSE-compliant, personalized student remarks generated in seconds, not hours."
+  keywords="digital report card software school, AI report card remarks, school report card generator, CBSE report card software"
+  canonical="https://edunodex.in/blog/digital-report-cards-ai-remarks/"
+  ogType="article"
+  ogTitle="Digital Report Cards &amp; AI-Generated Remarks: The Future of Student Assessment"
+  ogDescription="How digital report cards with AI-generated remarks save teachers weeks of work. CBSE-compliant, personalized student remarks generated in seconds, not hours."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Digital Report Cards &amp; AI-Generated Remarks: The Future of Student Assessment"
+  twitterDescription="How digital report cards with AI-generated remarks save teachers weeks of work. CBSE-compliant, personalized student remarks generated in seconds, not hours."
+  twitterImage="https://edunodex.in/images/twitter-card.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import bodyHtml from '../raw/partners-body.html?raw';
+import headHtml from '../raw/partners-head.html?raw';
+---
+<BaseLayout
+  title="EdunodeX Partner Program — Earn Recurring Income Selling India's School OS"
+  description="Join EdunodeX's partner program. Earn up to ₹1,45,000 per year as a school software reseller. Free to join, training provided, monthly payouts."
+  keywords="EdunodeX partner program, school software reseller India, education partner program, school ERP channel partner, referral program school software"
+  canonical="https://edunodex.in/partners"
+  ogTitle="EdunodeX Partner Program — Earn Recurring Income"
+  ogDescription="Join EdunodeX's partner program. 4 partner types, up to 20% revenue share, free to join. Help schools modernize across India."
+  twitterTitle="EdunodeX Partner Program — Earn Recurring Income"
+  twitterDescription="Join EdunodeX's partner program. 4 partner types, up to 20% revenue share, free to join."
+  bodyClass="font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

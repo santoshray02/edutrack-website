@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-whatsapp-integration-school-management-body.html?raw';
+import headHtml from '../../../raw/blog-whatsapp-integration-school-management-head.html?raw';
+---
+<BaseLayout
+  title="WhatsApp Integration for Schools: Report Cards, Fee Receipts & Attendance Alerts | EdunodeX"
+  description="Discover how WhatsApp integration in school management software helps send report cards, fee receipts, and attendance alerts to parents instantly in India."
+  keywords="whatsapp integration school management software, school whatsapp communication, whatsapp for schools india, school parent communication whatsapp, whatsapp business api school"
+  canonical="https://edunodex.in/blog/whatsapp-integration-school-management/"
+  ogType="article"
+  ogTitle="WhatsApp Integration for Schools: Send Report Cards, Fee Receipts & Attendance Alerts"
+  ogDescription="Discover how WhatsApp integration in school management software helps send report cards, fee receipts, and attendance alerts to parents instantly."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="WhatsApp Integration for Schools: Report Cards, Fee Receipts & Attendance Alerts"
+  twitterDescription="Discover how WhatsApp integration in school management software helps send report cards, fee receipts, and attendance alerts to parents instantly."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

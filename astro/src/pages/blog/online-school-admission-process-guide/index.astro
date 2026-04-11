@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-online-school-admission-process-guide-body.html?raw';
+import headHtml from '../../../raw/blog-online-school-admission-process-guide-head.html?raw';
+---
+<BaseLayout
+  title="How to Set Up Online Admissions for Your School in 2026 | EdunodeX"
+  description="Step-by-step guide to moving your school's admission process online. Covers forms, documents, payments, and tips for a smooth transition from paper-based admissions."
+  keywords="online school admission software india, school admission management, online admission process, school admission form online, digital admission system"
+  canonical="https://edunodex.in/blog/online-school-admission-process-guide/"
+  ogType="article"
+  ogTitle="How to Set Up Online Admissions for Your School in 2026"
+  ogDescription="Step-by-step guide to moving your school's admission process online. Forms, documents, payments, and transition tips."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="How to Set Up Online Admissions for Your School in 2026"
+  twitterDescription="Step-by-step guide to moving your school's admission process online. Covers forms, documents, payments, and more."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>
