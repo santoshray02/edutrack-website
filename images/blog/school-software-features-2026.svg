@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf5ff"/>
+      <stop offset="100%" style="stop-color:#eff6ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#fbg)"/>
+
+  <text x="500" y="45" text-anchor="middle" fill="#1e1b4b" font-size="24" font-weight="700">Top 8 Features Schools Demand in 2026</text>
+  <text x="500" y="70" text-anchor="middle" fill="#6b7280" font-size="13">Ranked by buyer priority across India-focused surveys</text>
+
+  <!-- Feature bars -->
+  <!-- 1. UPI Fee Collection -->
+  <rect x="300" y="95" width="620" height="36" rx="8" fill="#7c3aed" opacity="0.9"/>
+  <text x="290" y="118" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">UPI Fee Collection</text>
+  <text x="910" y="118" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">Govt Mandated</text>
+  <text x="310" y="118" fill="#ffffff" font-size="12">Ministry of Education directive — non-negotiable</text>
+
+  <!-- 2. Parent Mobile App -->
+  <rect x="300" y="145" width="580" height="36" rx="8" fill="#8b5cf6" opacity="0.85"/>
+  <text x="290" y="168" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">Native Parent App</text>
+  <text x="870" y="168" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">93%</text>
+  <text x="310" y="168" fill="#ffffff" font-size="12">iOS + Android — not mobile web</text>
+
+  <!-- 3. WhatsApp Automation -->
+  <rect x="300" y="195" width="560" height="36" rx="8" fill="#a78bfa" opacity="0.85"/>
+  <text x="290" y="218" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">WhatsApp Automation</text>
+  <text x="850" y="218" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">89%</text>
+  <text x="310" y="218" fill="#ffffff" font-size="12">98% open rate — deal-breaker if absent</text>
+
+  <!-- 4. Biometric + GPS -->
+  <rect x="300" y="245" width="500" height="36" rx="8" fill="#6366f1" opacity="0.8"/>
+  <text x="290" y="268" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">Biometric + GPS</text>
+  <text x="790" y="268" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">81%</text>
+  <text x="310" y="268" fill="#ffffff" font-size="12">Face recognition + bus tracking wired into ERP</text>
+
+  <!-- 5. AI Analytics -->
+  <rect x="300" y="295" width="460" height="36" rx="8" fill="#818cf8" opacity="0.75"/>
+  <text x="290" y="318" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">AI-Powered Analytics</text>
+  <text x="750" y="318" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">76%</text>
+  <text x="310" y="318" fill="#ffffff" font-size="12">Dropout prediction, auto-reminders, AI reports</text>
+
+  <!-- 6. NEP 2020 Report Cards -->
+  <rect x="300" y="345" width="420" height="36" rx="8" fill="#2563eb" opacity="0.75"/>
+  <text x="290" y="368" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">NEP 2020 Reports</text>
+  <text x="710" y="368" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">72%</text>
+  <text x="310" y="368" fill="#ffffff" font-size="12">Competency-based, 360-degree assessment</text>
+
+  <!-- 7. Cloud-First -->
+  <rect x="300" y="395" width="380" height="36" rx="8" fill="#3b82f6" opacity="0.7"/>
+  <text x="290" y="418" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">Cloud-First</text>
+  <text x="670" y="418" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">68%</text>
+  <text x="310" y="418" fill="#ffffff" font-size="12">On-premise is declining fast</text>
+
+  <!-- 8. Multi-Lingual -->
+  <rect x="300" y="445" width="340" height="36" rx="8" fill="#60a5fa" opacity="0.65"/>
+  <text x="290" y="468" text-anchor="end" fill="#1f2937" font-size="13" font-weight="600">Multi-Lingual</text>
+  <text x="630" y="468" text-anchor="end" fill="#ffffff" font-size="12" font-weight="700">64%</text>
+  <text x="310" y="468" fill="#ffffff" font-size="12">Hindi + regional for Tier 2/3 adoption</text>
+
+  <!-- EdunodeX checkmark callout -->
+  <rect x="200" y="510" width="600" height="60" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="500" y="538" text-anchor="middle" fill="#065f46" font-size="15" font-weight="700">EdunodeX checks ALL 8 boxes</text>
+  <text x="500" y="558" text-anchor="middle" fill="#047857" font-size="12">UPI + WhatsApp + AI Agents + Face Recognition + NEP + Cloud + Hindi + Parent App</text>
+</svg>
