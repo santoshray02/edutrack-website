@@ -31,7 +31,7 @@
             "@id": "https://edunodex.in/blog/whatsapp-integration-school-management/"
         }
     }
-    </script><link rel="stylesheet" href="/_astro/index.CV9MAVVD.css"></head> <body class="bg-white font-sans antialiased">   
+    </script><link rel="stylesheet" href="/_astro/index.Clp6Utaa.css"></head> <body class="bg-white font-sans antialiased">   
 
     <!-- Navigation -->
     <nav aria-label="Main navigation" class="bg-white border-b border-gray-100 px-4 lg:px-6 py-2.5 fixed w-full z-50 top-0">
@@ -80,6 +80,104 @@
                 </div>
             </div>
 
+            <!-- Hero SVG: School dashboard radiating WhatsApp message bubbles -->
+            <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6 sm:p-10">
+                <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="School dashboard at centre radiating five message bubbles representing fee reminder, attendance check, exam alert, report card, and announcement — delivered via WhatsApp to parent phones">
+                    <defs>
+                        <linearGradient id="brand-hero-wa" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9333ea"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="hub-wa" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9333ea" stop-opacity="0.12"/>
+                            <stop offset="100%" stop-color="#2563eb" stop-opacity="0.12"/>
+                        </linearGradient>
+                        <linearGradient id="bubble-wa" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#dcfce7"/>
+                            <stop offset="100%" stop-color="#bbf7d0"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Spoke lines from centre to bubbles -->
+                    <line x1="400" y1="180" x2="120" y2="70"  stroke="url(#brand-hero-wa)" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+                    <line x1="400" y1="180" x2="680" y2="70"  stroke="url(#brand-hero-wa)" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+                    <line x1="400" y1="180" x2="80"  y2="270" stroke="url(#brand-hero-wa)" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+                    <line x1="400" y1="180" x2="720" y2="270" stroke="url(#brand-hero-wa)" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+                    <line x1="400" y1="180" x2="400" y2="320" stroke="url(#brand-hero-wa)" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+
+                    <!-- Central hub circle -->
+                    <circle cx="400" cy="180" r="60" fill="url(#hub-wa)" stroke="url(#brand-hero-wa)" stroke-width="3"/>
+                    <circle cx="400" cy="180" r="50" fill="white" opacity="0.92"/>
+                    <!-- School building icon -->
+                    <rect x="382" y="170" width="36" height="24" rx="2" fill="none" stroke="url(#brand-hero-wa)" stroke-width="2"/>
+                    <polygon points="400,156 418,170 382,170" fill="url(#brand-hero-wa)" opacity="0.85"/>
+                    <rect x="394" y="178" width="12" height="16" rx="1" fill="url(#brand-hero-wa)" opacity="0.45"/>
+                    <text x="400" y="212" text-anchor="middle" font-size="9" font-weight="700" fill="#9333ea" font-family="sans-serif">SCHOOL</text>
+
+                    <!-- Bubble 1 — Fee Reminder (top-left) -->
+                    <rect x="40" y="36" width="110" height="54" rx="14" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                    <polygon points="66,90 60,104 80,90" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1"/>
+                    <!-- Rupee icon -->
+                    <text x="62" y="60" font-size="18" font-weight="700" fill="#16a34a" font-family="sans-serif">₹</text>
+                    <text x="82" y="57" font-size="10" font-weight="600" fill="#166534" font-family="sans-serif">Fee</text>
+                    <text x="82" y="70" font-size="9" fill="#166534" font-family="sans-serif">Reminder</text>
+                    <text x="95" y="83" font-size="8" fill="#15803d" font-family="sans-serif">Due 5th</text>
+
+                    <!-- Bubble 2 — Attendance (top-right) -->
+                    <rect x="650" y="36" width="110" height="54" rx="14" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                    <polygon points="724,90 730,104 710,90" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1"/>
+                    <!-- Tick / person icon -->
+                    <circle cx="672" cy="57" r="10" fill="none" stroke="#16a34a" stroke-width="2"/>
+                    <circle cx="672" cy="54" r="3" fill="#16a34a"/>
+                    <path d="M664,65 Q672,71 680,65" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+                    <text x="688" y="57" font-size="10" font-weight="600" fill="#166534" font-family="sans-serif">Absent</text>
+                    <text x="688" y="70" font-size="9" fill="#166534" font-family="sans-serif">Alert</text>
+                    <text x="688" y="83" font-size="8" fill="#15803d" font-family="sans-serif">Today 9:12 AM</text>
+
+                    <!-- Bubble 3 — Exam Alert (bottom-left) -->
+                    <rect x="20" y="244" width="110" height="54" rx="14" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                    <polygon points="46,244 40,230 60,244" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1"/>
+                    <!-- Calendar icon -->
+                    <rect x="40" y="255" width="20" height="18" rx="2" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+                    <line x1="40" y1="261" x2="60" y2="261" stroke="#16a34a" stroke-width="1"/>
+                    <line x1="46" y1="253" x2="46" y2="258" stroke="#16a34a" stroke-width="1.5"/>
+                    <line x1="54" y1="253" x2="54" y2="258" stroke="#16a34a" stroke-width="1.5"/>
+                    <text x="70" y="262" font-size="10" font-weight="600" fill="#166534" font-family="sans-serif">Exam</text>
+                    <text x="70" y="275" font-size="9" fill="#166534" font-family="sans-serif">Schedule</text>
+                    <text x="70" y="288" font-size="8" fill="#15803d" font-family="sans-serif">Mon–Fri</text>
+
+                    <!-- Bubble 4 — Report Card (bottom-right) -->
+                    <rect x="670" y="244" width="110" height="54" rx="14" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                    <polygon points="754,244 760,230 740,244" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1"/>
+                    <!-- Document icon -->
+                    <rect x="690" y="254" width="18" height="22" rx="2" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+                    <line x1="694" y1="261" x2="704" y2="261" stroke="#16a34a" stroke-width="1"/>
+                    <line x1="694" y1="266" x2="704" y2="266" stroke="#16a34a" stroke-width="1"/>
+                    <line x1="694" y1="271" x2="700" y2="271" stroke="#16a34a" stroke-width="1"/>
+                    <text x="714" y="262" font-size="10" font-weight="600" fill="#166534" font-family="sans-serif">Report</text>
+                    <text x="714" y="275" font-size="9" fill="#166534" font-family="sans-serif">Card PDF</text>
+                    <text x="714" y="288" font-size="8" fill="#15803d" font-family="sans-serif">Term 1</text>
+
+                    <!-- Bubble 5 — Announcement (bottom-centre) -->
+                    <rect x="328" y="298" width="144" height="50" rx="14" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                    <polygon points="354,298 348,284 368,298" fill="url(#bubble-wa)" stroke="#16a34a" stroke-width="1"/>
+                    <!-- Megaphone icon -->
+                    <path d="M346,315 L356,310 L356,326 L346,321 Z" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+                    <path d="M356,310 L366,304 L366,332 L356,326" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+                    <text x="374" y="316" font-size="10" font-weight="600" fill="#166534" font-family="sans-serif">Holiday</text>
+                    <text x="374" y="329" font-size="9" fill="#166534" font-family="sans-serif">Announcement</text>
+
+                    <!-- Parent phone silhouette right edge -->
+                    <rect x="746" y="148" width="36" height="64" rx="6" fill="white" stroke="#9333ea" stroke-width="2"/>
+                    <circle cx="764" cy="155" r="2" fill="#9333ea"/>
+                    <rect x="750" y="162" width="28" height="34" rx="2" fill="#f5f3ff"/>
+                    <circle cx="764" cy="204" r="3" fill="#9333ea" opacity="0.5"/>
+                    <!-- ping dot -->
+                    <circle cx="775" cy="148" r="6" fill="#16a34a" opacity="0.9"/>
+                    <circle cx="775" cy="148" r="3" fill="white"/>
+                </svg>
+            </div>
+
             <!-- Table of Contents -->
             <nav class="toc bg-gray-50 rounded-xl p-6 mb-10">
                 <h2 class="text-sm font-bold text-gray-900 uppercase tracking-wider mb-3" style="margin-top:0;font-size:0.875rem;">Table of Contents</h2>
@@ -119,6 +217,66 @@
                 <p><strong>No app download required.</strong> This is perhaps the most underrated advantage. Every school app struggles with the same problem: getting parents to download it. Adoption rates for standalone school apps typically plateau at 40-60% of the parent base. With WhatsApp, you start at near-100% reach from day one.</p>
 
                 <h2 id="what-schools-can-send">2. What Schools Can Send via WhatsApp</h2>
+
+                <!-- Inline diagram: 5-touchpoint icon strip -->
+                <div class="my-6 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-4 sm:p-6">
+                    <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Five icons showing what schools send via WhatsApp: Fee reminders, Attendance alerts, Exam schedules, Report cards, and Announcements">
+                        <defs>
+                            <linearGradient id="brand-strip-wa" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#9333ea"/>
+                                <stop offset="100%" stop-color="#2563eb"/>
+                            </linearGradient>
+                            <linearGradient id="card-wa" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#fefce8"/>
+                                <stop offset="100%" stop-color="#dcfce7"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Card backgrounds (5 columns) -->
+                        <rect x="20"  y="20" width="128" height="120" rx="14" fill="url(#card-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                        <rect x="164" y="20" width="128" height="120" rx="14" fill="url(#card-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                        <rect x="308" y="20" width="128" height="120" rx="14" fill="url(#card-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                        <rect x="452" y="20" width="128" height="120" rx="14" fill="url(#card-wa)" stroke="#16a34a" stroke-width="1.5"/>
+                        <rect x="596" y="20" width="128" height="120" rx="14" fill="url(#card-wa)" stroke="#16a34a" stroke-width="1.5"/>
+
+                        <!-- Icon 1: Fee (₹) -->
+                        <text x="84"  y="78" text-anchor="middle" font-size="32" fill="#16a34a" font-family="sans-serif">₹</text>
+                        <text x="84"  y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#166534" font-family="sans-serif">Fee</text>
+                        <text x="84"  y="124" text-anchor="middle" font-size="11" fill="#15803d" font-family="sans-serif">Reminders</text>
+
+                        <!-- Icon 2: Attendance (person + tick) -->
+                        <circle cx="228" cy="62" r="14" fill="none" stroke="#16a34a" stroke-width="2"/>
+                        <circle cx="228" cy="56" r="5" fill="#16a34a"/>
+                        <path d="M216,76 Q228,85 240,76" fill="none" stroke="#16a34a" stroke-width="2"/>
+                        <text x="228" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#166534" font-family="sans-serif">Attendance</text>
+                        <text x="228" y="124" text-anchor="middle" font-size="11" fill="#15803d" font-family="sans-serif">Alerts</text>
+
+                        <!-- Icon 3: Exam (calendar) -->
+                        <rect x="356" y="46" width="36" height="34" rx="4" fill="none" stroke="#16a34a" stroke-width="2"/>
+                        <line x1="356" y1="58" x2="392" y2="58" stroke="#16a34a" stroke-width="1.5"/>
+                        <line x1="366" y1="43" x2="366" y2="50" stroke="#16a34a" stroke-width="2"/>
+                        <line x1="382" y1="43" x2="382" y2="50" stroke="#16a34a" stroke-width="2"/>
+                        <circle cx="370" cy="68" r="3" fill="#16a34a"/>
+                        <circle cx="382" cy="68" r="3" fill="#16a34a"/>
+                        <text x="372" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#166534" font-family="sans-serif">Exam</text>
+                        <text x="372" y="124" text-anchor="middle" font-size="11" fill="#15803d" font-family="sans-serif">Schedules</text>
+
+                        <!-- Icon 4: Report Card (document with lines) -->
+                        <rect x="500" y="44" width="30" height="38" rx="3" fill="none" stroke="#16a34a" stroke-width="2"/>
+                        <line x1="506" y1="55" x2="524" y2="55" stroke="#16a34a" stroke-width="1.5"/>
+                        <line x1="506" y1="63" x2="524" y2="63" stroke="#16a34a" stroke-width="1.5"/>
+                        <line x1="506" y1="71" x2="518" y2="71" stroke="#16a34a" stroke-width="1.5"/>
+                        <text x="516" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#166534" font-family="sans-serif">Report</text>
+                        <text x="516" y="124" text-anchor="middle" font-size="11" fill="#15803d" font-family="sans-serif">Cards</text>
+
+                        <!-- Icon 5: Announcement (megaphone) -->
+                        <path d="M644,53 L656,46 L656,80 L644,73 Z" fill="none" stroke="#16a34a" stroke-width="2"/>
+                        <path d="M656,46 L672,38 L672,88 L656,80" fill="none" stroke="#16a34a" stroke-width="2"/>
+                        <circle cx="634" cy="63" r="6" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+                        <text x="660" y="108" text-anchor="middle" font-size="12" font-weight="700" fill="#166534" font-family="sans-serif">Announce-</text>
+                        <text x="660" y="124" text-anchor="middle" font-size="11" fill="#15803d" font-family="sans-serif">ments</text>
+                    </svg>
+                </div>
 
                 <p>When most people think of WhatsApp for schools, they think of group messages. But with proper WhatsApp Business API integration in a school management platform, the possibilities are far more structured and useful:</p>
 
