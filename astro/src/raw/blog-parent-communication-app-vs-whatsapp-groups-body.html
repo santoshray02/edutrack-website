@@ -41,6 +41,117 @@
             </div>
         </div>
 
+        <!-- Hero SVG: Split-screen chaotic WhatsApp groups vs clean structured channels -->
+        <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6 sm:p-10">
+            <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Split screen: left side shows chaotic overlapping message bubbles from multiple parent silhouettes in a WhatsApp group; right side shows clean structured channels — fee, attendance, and exam — each delivering one targeted message to a single parent">
+                <defs>
+                    <linearGradient id="brand-hero-pc" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#9333ea"/>
+                        <stop offset="100%" stop-color="#2563eb"/>
+                    </linearGradient>
+                    <linearGradient id="chaos-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f9fafb"/>
+                        <stop offset="100%" stop-color="#f3f4f6"/>
+                    </linearGradient>
+                    <linearGradient id="clean-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f5f3ff"/>
+                        <stop offset="100%" stop-color="#eff6ff"/>
+                    </linearGradient>
+                </defs>
+
+                <!-- Divider -->
+                <line x1="400" y1="20" x2="400" y2="320" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="6,4"/>
+
+                <!-- LEFT PANEL: Chaos -->
+                <rect x="16" y="16" width="370" height="308" rx="16" fill="url(#chaos-bg)" stroke="#d1d5db" stroke-width="1.5"/>
+                <text x="201" y="46" text-anchor="middle" font-size="13" font-weight="700" fill="#6b7280" font-family="sans-serif">WhatsApp Group</text>
+                <text x="201" y="62" text-anchor="middle" font-size="10" fill="#9ca3af" font-family="sans-serif">Class 5B — 44 Members</text>
+
+                <!-- Parent silhouettes (left) -->
+                <circle cx="60"  cy="100" r="14" fill="#d1d5db"/>
+                <circle cx="60"  cy="92"  r="5" fill="#9ca3af"/>
+                <path d="M48,112 Q60,120 72,112" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <circle cx="200" cy="85" r="14" fill="#d1d5db"/>
+                <circle cx="200" cy="77" r="5" fill="#9ca3af"/>
+                <path d="M188,97 Q200,105 212,97" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <circle cx="340" cy="104" r="14" fill="#d1d5db"/>
+                <circle cx="340" cy="96"  r="5" fill="#9ca3af"/>
+                <path d="M328,116 Q340,124 352,116" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <circle cx="130" cy="200" r="14" fill="#d1d5db"/>
+                <circle cx="130" cy="192" r="5" fill="#9ca3af"/>
+                <path d="M118,212 Q130,220 142,212" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <circle cx="290" cy="188" r="14" fill="#d1d5db"/>
+                <circle cx="290" cy="180" r="5" fill="#9ca3af"/>
+                <path d="M278,200 Q290,208 302,200" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+
+                <!-- Chaotic message bubbles (overlapping) -->
+                <rect x="76"  y="88"  width="100" height="26" rx="8" fill="#e5e7eb" opacity="0.9"/>
+                <text x="126" y="106" text-anchor="middle" font-size="9" fill="#6b7280" font-family="sans-serif">Good morning! 🙏</text>
+
+                <rect x="140" y="118" width="120" height="26" rx="8" fill="#e5e7eb" opacity="0.9" transform="rotate(-3,200,131)"/>
+                <text x="200" y="136" text-anchor="middle" font-size="9" fill="#6b7280" font-family="sans-serif">Please pay fees by 5th</text>
+
+                <rect x="40"  y="148" width="130" height="26" rx="8" fill="#e5e7eb" opacity="0.85" transform="rotate(2,105,161)"/>
+                <text x="105" y="166" text-anchor="middle" font-size="9" fill="#6b7280" font-family="sans-serif">Forward this msg 🙏🙏</text>
+
+                <rect x="200" y="155" width="110" height="26" rx="8" fill="#e5e7eb" opacity="0.9" transform="rotate(-2,255,168)"/>
+                <text x="255" y="173" text-anchor="middle" font-size="9" fill="#6b7280" font-family="sans-serif">What is homework today?</text>
+
+                <rect x="60"  y="216" width="140" height="26" rx="8" fill="#e5e7eb" opacity="0.9"/>
+                <text x="130" y="234" text-anchor="middle" font-size="9" fill="#6b7280" font-family="sans-serif">Off topic image (1/12)</text>
+
+                <rect x="170" y="245" width="150" height="26" rx="8" fill="#fef3c7" opacity="0.9" transform="rotate(1,245,258)"/>
+                <text x="245" y="263" text-anchor="middle" font-size="9" fill="#92400e" font-family="sans-serif">FEE DUE — missed in noise</text>
+
+                <text x="201" y="300" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="600" font-family="sans-serif">Noisy · Unstructured · No privacy</text>
+
+                <!-- RIGHT PANEL: Clean structured channels -->
+                <rect x="414" y="16" width="370" height="308" rx="16" fill="url(#clean-bg)" stroke="url(#brand-hero-pc)" stroke-width="1.5"/>
+                <text x="599" y="46" text-anchor="middle" font-size="13" font-weight="700" fill="#9333ea" font-family="sans-serif">Targeted Broadcasts</text>
+                <text x="599" y="62" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="sans-serif">Automated · Private · Tracked</text>
+
+                <!-- Channel rows -->
+                <!-- Fee channel -->
+                <rect x="432" y="76" width="334" height="62" rx="10" fill="white" stroke="#9333ea" stroke-width="1.2" opacity="0.9"/>
+                <rect x="432" y="76" width="6" height="62" rx="3" fill="#9333ea"/>
+                <text x="450" y="100" font-size="10" font-weight="700" fill="#9333ea" font-family="sans-serif">Fee Channel</text>
+                <text x="450" y="116" font-size="9" fill="#6b7280" font-family="sans-serif">Riya's fee of ₹4,200 is due on 5th May</text>
+                <text x="450" y="129" font-size="8" fill="#16a34a" font-family="sans-serif">✓ Delivered · ✓ Read</text>
+                <!-- parent icon right -->
+                <circle cx="742" cy="104" r="11" fill="#ede9fe"/>
+                <circle cx="742" cy="99"  r="4" fill="#9333ea" opacity="0.7"/>
+                <path d="M733,114 Q742,120 751,114" fill="none" stroke="#9333ea" stroke-width="1.5" opacity="0.7"/>
+
+                <!-- Attendance channel -->
+                <rect x="432" y="152" width="334" height="62" rx="10" fill="white" stroke="#2563eb" stroke-width="1.2" opacity="0.9"/>
+                <rect x="432" y="152" width="6" height="62" rx="3" fill="#2563eb"/>
+                <text x="450" y="176" font-size="10" font-weight="700" fill="#2563eb" font-family="sans-serif">Attendance Channel</text>
+                <text x="450" y="192" font-size="9" fill="#6b7280" font-family="sans-serif">Aarav was absent today (9 Apr). Please confirm.</text>
+                <text x="450" y="205" font-size="8" fill="#16a34a" font-family="sans-serif">✓ Delivered · ✓ Read</text>
+                <circle cx="742" cy="180" r="11" fill="#dbeafe"/>
+                <circle cx="742" cy="175" r="4" fill="#2563eb" opacity="0.7"/>
+                <path d="M733,190 Q742,196 751,190" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.7"/>
+
+                <!-- Exam channel -->
+                <rect x="432" y="228" width="334" height="62" rx="10" fill="white" stroke="#7c3aed" stroke-width="1.2" opacity="0.9"/>
+                <rect x="432" y="228" width="6" height="62" rx="3" fill="url(#brand-hero-pc)"/>
+                <text x="450" y="252" font-size="10" font-weight="700" fill="#7c3aed" font-family="sans-serif">Exam Channel</text>
+                <text x="450" y="268" font-size="9" fill="#6b7280" font-family="sans-serif">Class 7A Maths exam: Mon 12 May, 9–11 AM</text>
+                <text x="450" y="281" font-size="8" fill="#16a34a" font-family="sans-serif">✓ Delivered · ✓ Read</text>
+                <circle cx="742" cy="256" r="11" fill="#f3e8ff"/>
+                <circle cx="742" cy="251" r="4" fill="#7c3aed" opacity="0.7"/>
+                <path d="M733,266 Q742,272 751,266" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.7"/>
+
+                <!-- VS badge in centre -->
+                <circle cx="400" cy="170" r="22" fill="white" stroke="url(#brand-hero-pc)" stroke-width="2"/>
+                <text x="400" y="176" text-anchor="middle" font-size="14" font-weight="800" fill="#9333ea" font-family="sans-serif">VS</text>
+            </svg>
+        </div>
+
         <!-- Table of Contents -->
         <nav class="bg-gray-50 rounded-xl p-6 mb-10 border border-gray-100">
             <h2 class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-3">Table of Contents</h2>

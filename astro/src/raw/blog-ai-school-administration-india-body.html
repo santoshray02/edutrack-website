@@ -46,6 +46,102 @@
                 </div>
             </div>
 
+            <!-- Hero SVG -->
+            <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6 sm:p-10">
+                <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="AI brain at center with seven orbiting use-case icons: fee reminders, report cards, attendance, dropout detection, parent chatbot, question papers, and communication">
+                    <defs>
+                        <linearGradient id="brand-hero" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9333ea"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="brand-light-ai" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f3e8ff"/>
+                            <stop offset="100%" stop-color="#dbeafe"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Background -->
+                    <rect width="800" height="360" fill="url(#brand-light-ai)" rx="16"/>
+
+                    <!-- Outer orbit ring -->
+                    <circle cx="400" cy="180" r="138" fill="none" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3"/>
+                    <!-- Inner orbit ring -->
+                    <circle cx="400" cy="180" r="100" fill="none" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5" opacity="0.18"/>
+
+                    <!-- Central AI brain node -->
+                    <circle cx="400" cy="180" r="54" fill="url(#brand-hero)" opacity="0.95"/>
+                    <!-- Brain squiggle lines (abstract) -->
+                    <path d="M382 168 Q390 160 398 168 Q406 176 414 168" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+                    <path d="M378 180 Q388 172 398 180 Q408 188 418 180" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+                    <path d="M382 192 Q390 184 398 192 Q406 200 414 192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+                    <!-- Sparkle star on central node -->
+                    <polygon points="400,162 402,170 410,170 404,175 406,183 400,178 394,183 396,175 390,170 398,170" fill="white" opacity="0.9"/>
+                    <text x="400" y="205" text-anchor="middle" font-size="8" fill="white" font-weight="800" letter-spacing="1">AI CORE</text>
+
+                    <!-- Spoke lines (dashed, connecting center to satellites) -->
+                    <line x1="400" y1="126" x2="400" y2="76" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                    <line x1="440" y1="148" x2="516" y2="108" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                    <line x1="454" y1="195" x2="534" y2="240" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                    <line x1="400" y1="234" x2="400" y2="290" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                    <line x1="360" y1="212" x2="278" y2="254" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                    <line x1="342" y1="162" x2="270" y2="122" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                    <line x1="348" y1="148" x2="288" y2="74" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+
+                    <!-- Satellite 1: Fee Reminders — top center -->
+                    <circle cx="400" cy="52" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <text x="400" y="46" text-anchor="middle" font-size="18" fill="url(#brand-hero)" font-weight="bold">&#8377;</text>
+                    <text x="400" y="68" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Fee Reminders</text>
+
+                    <!-- Satellite 2: Report Cards — top-right -->
+                    <circle cx="542" cy="90" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <rect x="528" y="78" width="18" height="22" rx="3" fill="none" stroke="#9333ea" stroke-width="2"/>
+                    <line x1="531" y1="83" x2="543" y2="83" stroke="#9333ea" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="531" y1="87" x2="543" y2="87" stroke="#9333ea" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="531" y1="91" x2="540" y2="91" stroke="#9333ea" stroke-width="1.5" opacity="0.6"/>
+                    <polygon points="544,80 548,74 552,80" fill="#9333ea" opacity="0.7"/>
+                    <text x="542" y="108" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Report Cards</text>
+
+                    <!-- Satellite 3: Attendance — right -->
+                    <circle cx="562" cy="248" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <polyline points="527,248 534,257 550,238" stroke="#9333ea" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <line x1="555" y1="242" x2="567" y2="242" stroke="#9333ea" stroke-width="1.5" opacity="0.5"/>
+                    <line x1="555" y1="249" x2="567" y2="249" stroke="#9333ea" stroke-width="1.5" opacity="0.5"/>
+                    <text x="562" y="268" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Attendance</text>
+
+                    <!-- Satellite 4: Dropout Detection — bottom -->
+                    <circle cx="400" cy="314" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <line x1="400" y1="296" x2="400" y2="326" stroke="#9333ea" stroke-width="2" stroke-linecap="round"/>
+                    <polygon points="400,296 412,305 400,308 388,305" fill="#9333ea" opacity="0.7"/>
+                    <text x="400" y="333" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Dropout Alert</text>
+
+                    <!-- Satellite 5: Parent Chatbot — bottom-left -->
+                    <circle cx="248" cy="268" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <rect x="234" y="255" width="24" height="18" rx="5" fill="#2563eb" opacity="0.85"/>
+                    <circle cx="242" cy="276" r="3" fill="#2563eb" opacity="0.6"/>
+                    <text x="248" y="264" text-anchor="middle" font-size="8" fill="white" font-weight="bold">AI</text>
+                    <text x="248" y="287" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Chatbot</text>
+
+                    <!-- Satellite 6: Question Papers — top-left -->
+                    <circle cx="256" cy="110" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <rect x="243" y="97" width="20" height="26" rx="3" fill="none" stroke="#2563eb" stroke-width="2"/>
+                    <line x1="246" y1="102" x2="260" y2="102" stroke="#2563eb" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="246" y1="107" x2="260" y2="107" stroke="#2563eb" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="246" y1="112" x2="256" y2="112" stroke="#2563eb" stroke-width="1.5" opacity="0.6"/>
+                    <text x="256" y="129" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Question Papers</text>
+
+                    <!-- Satellite 7: Communication — left -->
+                    <circle cx="216" cy="182" r="28" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <path d="M203 172 L229 172 L229 187 L222 187 L218 193 L218 187 L203 187 Z" fill="none" stroke="#9333ea" stroke-width="2" stroke-linejoin="round"/>
+                    <text x="216" y="210" text-anchor="middle" font-size="7" fill="#6b7280" font-weight="600">Communication</text>
+
+                    <!-- Decorative sparkles -->
+                    <polygon points="70,55 72,63 80,63 74,68 76,76 70,71 64,76 66,68 58,63 68,63" fill="#9333ea" opacity="0.2"/>
+                    <polygon points="730,285 732,293 740,293 734,298 736,306 730,301 724,306 726,298 720,293 728,293" fill="#2563eb" opacity="0.22"/>
+                    <circle cx="100" cy="300" r="4" fill="#9333ea" opacity="0.18"/>
+                    <circle cx="710" cy="55" r="5" fill="#2563eb" opacity="0.18"/>
+                </svg>
+            </div>
+
             <!-- Table of Contents -->
             <nav class="toc bg-gray-50 rounded-xl p-6 mb-10">
                 <p class="font-semibold text-gray-900 mb-3">Table of Contents</p>
@@ -82,6 +178,90 @@
                 </ul>
 
                 <p>Most of this work is repetitive and rule-based, exactly the kind of work that AI excels at. The question is not whether AI can help, but how quickly schools can adopt it.</p>
+
+                <!-- 7 AI use-case icon card grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-8 not-prose">
+                    <!-- Card 1: Fee Reminders -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="3"/><path d="M17.66 5.34 16.24 6.76"/><line x1="20" y1="12" x2="22" y2="12"/>
+                                <path d="M17.66 18.66 16.24 17.24"/><line x1="12" y1="20" x2="12" y2="22"/><path d="M6.34 18.66 7.76 17.24"/>
+                                <line x1="2" y1="12" x2="4" y2="12"/><path d="M6.34 5.34 7.76 6.76"/>
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Fee Reminders</p>
+                        <p class="text-xs text-gray-500 mt-1">Personalized, timely</p>
+                    </div>
+                    <!-- Card 2: Report Card Remarks -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                <line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="13" y2="13"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Report Card Remarks</p>
+                        <p class="text-xs text-gray-500 mt-1">AI-drafted, teacher-approved</p>
+                    </div>
+                    <!-- Card 3: Attendance Analytics -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                                <polyline points="9 15 11 17 15 13"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Attendance Analytics</p>
+                        <p class="text-xs text-gray-500 mt-1">Patterns surfaced automatically</p>
+                    </div>
+                    <!-- Card 4: Dropout Detection -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-amber-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                                <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Dropout Detection</p>
+                        <p class="text-xs text-gray-500 mt-1">Early risk signals</p>
+                    </div>
+                    <!-- Card 5: Parent Chatbot -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                <line x1="9" y1="10" x2="15" y2="10"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Parent Chatbot</p>
+                        <p class="text-xs text-gray-500 mt-1">Hindi + English, 24/7</p>
+                    </div>
+                    <!-- Card 6: Question Papers -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Question Papers</p>
+                        <p class="text-xs text-gray-500 mt-1">Balanced, syllabus-aligned</p>
+                    </div>
+                    <!-- Card 7: Automated Communication — spans 2 cols -->
+                    <div class="rounded-xl border border-purple-100 bg-white p-4 flex flex-col items-center text-center shadow-sm col-span-2">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                        </div>
+                        <p class="text-xs font-semibold text-gray-800">Automated Communication</p>
+                        <p class="text-xs text-gray-500 mt-1">Proactive WhatsApp alerts for attendance, fees, events &amp; results — zero staff effort</p>
+                    </div>
+                </div>
 
                 <h2 id="fee-reminders">AI Use Case 1: Intelligent Fee Reminders</h2>
 
