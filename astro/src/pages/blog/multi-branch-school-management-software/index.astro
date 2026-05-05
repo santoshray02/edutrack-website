@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-multi-branch-school-management-software-body.html?raw';
+import headHtml from '../../../raw/blog-multi-branch-school-management-software-head.html?raw';
+---
+<BaseLayout
+  title="Multi-Branch School Management Software: A 2026 Guide for Indian School Groups | EdunodeX"
+  description="Running a 5-, 20-, or 50-branch school chain creates problems single-school software wasn't designed for. Cross-branch reporting, transfer-in/out, central HR, parent unification — here's what multi-branch software must handle in 2026."
+  keywords="multi-branch school management software, school chain ERP, school group software India, multi campus school ERP, franchisee school management, school group software, multi school ERP india"
+  canonical="https://edunodex.in/blog/multi-branch-school-management-software/"
+  ogType="article"
+  ogTitle="Multi-Branch School Management Software: A 2026 Guide for Indian School Groups"
+  ogDescription="Running a 5-, 20-, or 50-branch school chain creates problems single-school software wasn't designed for. Cross-branch reporting, transfer-in/out, central HR, parent unification."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Multi-Branch School Management Software: A 2026 Guide for Indian School Groups"
+  twitterDescription="What multi-branch school software must handle in 2026 — cross-branch reporting, student transfers, parent unification, and group-wide defaulter lists."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

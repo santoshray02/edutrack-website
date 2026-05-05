@@ -1,0 +1,435 @@
+
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation" class="bg-white border-b border-gray-100 px-4 lg:px-6 py-2.5 fixed w-full z-50 top-0">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="/" class="flex items-center">
+                <img src="/images/favicon.png" alt="EdunodeX Logo" class="h-8 mr-2">
+                <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">EdunodeX</span>
+            </a>
+            <div class="flex items-center lg:order-2 space-x-2">
+                <a href="/#contact" class="text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 font-medium rounded-lg text-sm px-4 py-2 shadow-lg">Request Demo</a>
+                <button data-collapse-toggle="blog-mobile-menu" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100" aria-controls="blog-mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="blog-mobile-menu">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li><a href="/#features" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Features</a></li>
+                    <li><a href="/partners.html" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Partners</a></li>
+                    <li><a href="/#contact" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Contact</a></li>
+                    <li><a href="/blog/" class="block py-3 pr-4 pl-3 text-purple-700 font-semibold lg:p-0">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <main class="max-w-3xl mx-auto px-6 pt-20 pb-12">
+
+        <article>
+            <div class="mb-8">
+                <div class="flex items-center gap-3 text-sm text-gray-500 mb-4">
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full font-medium">AI &amp; Technology</span>
+                    <span>May 14, 2026</span>
+                    <span>&middot;</span>
+                    <span>9 min read</span>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">Predicting Student Dropout Risk: How Indian Schools Are Using AI in 2026</h1>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">EX</div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">EdunodeX Team</p>
+                        <p class="text-xs text-gray-500">Xentovia Tech Pvt Ltd</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero SVG -->
+            <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6 sm:p-10">
+                <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Dashboard scene with student silhouettes, one highlighted with a medium-risk amber ring, a risk gauge, and an intervention scheduled notification card">
+                    <defs>
+                        <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9333ea"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="brandLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f3e8ff"/>
+                            <stop offset="100%" stop-color="#dbeafe"/>
+                        </linearGradient>
+                        <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#16a34a"/>
+                            <stop offset="50%" stop-color="#d97706"/>
+                            <stop offset="100%" stop-color="#dc2626"/>
+                        </linearGradient>
+                    </defs>
+
+                    <rect width="800" height="360" fill="url(#brandLight)" rx="16"/>
+
+                    <!-- Dashboard frame -->
+                    <rect x="30" y="30" width="480" height="300" rx="16" fill="white" stroke="#e9d5ff" stroke-width="2"/>
+                    <!-- Dashboard header bar -->
+                    <rect x="30" y="30" width="480" height="44" rx="16" fill="url(#brand)" opacity="0.9"/>
+                    <rect x="30" y="54" width="480" height="20" rx="0" fill="url(#brand)" opacity="0.9"/>
+                    <text x="270" y="58" text-anchor="middle" font-size="13" fill="white" font-weight="700">Student Retention Dashboard</text>
+
+                    <!-- Student silhouettes row -->
+                    <!-- Student A — normal (green ring) -->
+                    <circle cx="90" cy="145" r="18" fill="#ddd6fe"/>
+                    <circle cx="90" cy="133" r="7" fill="#7c3aed" opacity="0.7"/>
+                    <path d="M77 158 Q77 145 90 145 Q103 145 103 158" fill="#7c3aed" opacity="0.4"/>
+                    <circle cx="90" cy="145" r="24" fill="none" stroke="#16a34a" stroke-width="2.5" opacity="0.7"/>
+                    <text x="90" y="178" text-anchor="middle" font-size="8" fill="#374151">Aarav K.</text>
+                    <text x="90" y="188" text-anchor="middle" font-size="7" fill="#16a34a" font-weight="600">Low risk</text>
+
+                    <!-- Student B — at risk (amber ring, highlighted) -->
+                    <circle cx="175" cy="145" r="22" fill="#fef3c7"/>
+                    <circle cx="175" cy="133" r="7" fill="#d97706" opacity="0.8"/>
+                    <path d="M162 158 Q162 145 175 145 Q188 145 188 158" fill="#d97706" opacity="0.5"/>
+                    <circle cx="175" cy="145" r="30" fill="none" stroke="#d97706" stroke-width="3" stroke-dasharray="5 3"/>
+                    <text x="175" y="182" text-anchor="middle" font-size="8" fill="#374151">Priya S.</text>
+                    <text x="175" y="192" text-anchor="middle" font-size="7" fill="#d97706" font-weight="700">Medium risk</text>
+
+                    <!-- Student C — normal -->
+                    <circle cx="260" cy="145" r="18" fill="#ddd6fe"/>
+                    <circle cx="260" cy="133" r="7" fill="#7c3aed" opacity="0.7"/>
+                    <path d="M247 158 Q247 145 260 145 Q273 145 273 158" fill="#7c3aed" opacity="0.4"/>
+                    <circle cx="260" cy="145" r="24" fill="none" stroke="#16a34a" stroke-width="2.5" opacity="0.7"/>
+                    <text x="260" y="178" text-anchor="middle" font-size="8" fill="#374151">Rohan M.</text>
+                    <text x="260" y="188" text-anchor="middle" font-size="7" fill="#16a34a" font-weight="600">Low risk</text>
+
+                    <!-- Student D — high risk -->
+                    <circle cx="345" cy="145" r="18" fill="#fee2e2"/>
+                    <circle cx="345" cy="133" r="7" fill="#dc2626" opacity="0.7"/>
+                    <path d="M332 158 Q332 145 345 145 Q358 145 358 158" fill="#dc2626" opacity="0.4"/>
+                    <circle cx="345" cy="145" r="26" fill="none" stroke="#dc2626" stroke-width="3"/>
+                    <text x="345" y="178" text-anchor="middle" font-size="8" fill="#374151">Suresh T.</text>
+                    <text x="345" y="188" text-anchor="middle" font-size="7" fill="#dc2626" font-weight="700">High risk</text>
+
+                    <!-- Student E — normal -->
+                    <circle cx="430" cy="145" r="18" fill="#ddd6fe"/>
+                    <circle cx="430" cy="133" r="7" fill="#7c3aed" opacity="0.7"/>
+                    <path d="M417 158 Q417 145 430 145 Q443 145 430 158" fill="#7c3aed" opacity="0.4"/>
+                    <circle cx="430" cy="145" r="24" fill="none" stroke="#16a34a" stroke-width="2.5" opacity="0.7"/>
+                    <text x="430" y="178" text-anchor="middle" font-size="8" fill="#374151">Meena R.</text>
+                    <text x="430" y="188" text-anchor="middle" font-size="7" fill="#16a34a" font-weight="600">Low risk</text>
+
+                    <!-- Signal bars below students -->
+                    <rect x="50" y="210" width="80" height="28" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+                    <text x="90" y="228" text-anchor="middle" font-size="8" fill="#15803d">Attendance: 94%</text>
+
+                    <rect x="135" y="210" width="80" height="28" rx="6" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+                    <text x="175" y="228" text-anchor="middle" font-size="8" fill="#b45309">Attendance: 71%</text>
+
+                    <rect x="220" y="210" width="80" height="28" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+                    <text x="260" y="228" text-anchor="middle" font-size="8" fill="#15803d">Attendance: 91%</text>
+
+                    <rect x="305" y="210" width="80" height="28" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+                    <text x="345" y="228" text-anchor="middle" font-size="8" fill="#b91c1c">Attendance: 58%</text>
+
+                    <rect x="390" y="210" width="80" height="28" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+                    <text x="430" y="228" text-anchor="middle" font-size="8" fill="#15803d">Attendance: 96%</text>
+
+                    <!-- Divider -->
+                    <line x1="50" y1="255" x2="490" y2="255" stroke="#f3f4f6" stroke-width="1"/>
+
+                    <!-- Counselor action line -->
+                    <text x="55" y="275" font-size="9" fill="#6b7280">Intervention scheduled</text>
+                    <rect x="155" y="263" width="130" height="18" rx="4" fill="#fef3c7"/>
+                    <text x="220" y="275" text-anchor="middle" font-size="8" fill="#b45309" font-weight="600">Counselor call &#8212; Priya (Fri)</text>
+                    <rect x="295" y="263" width="130" height="18" rx="4" fill="#fee2e2"/>
+                    <text x="360" y="275" text-anchor="middle" font-size="8" fill="#b91c1c" font-weight="600">Principal meeting &#8212; Suresh (Thu)</text>
+
+                    <!-- Risk gauge (right side) -->
+                    <rect x="540" y="50" width="230" height="290" rx="16" fill="white" stroke="#e9d5ff" stroke-width="1.5"/>
+                    <text x="655" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#374151">Risk Gauge</text>
+
+                    <!-- Semicircle gauge -->
+                    <!-- Background arc -->
+                    <path d="M 575 200 A 80 80 0 0 1 735 200" fill="none" stroke="#f3f4f6" stroke-width="18" stroke-linecap="round"/>
+                    <!-- Colored arc (gradient approximated with segments) -->
+                    <path d="M 575 200 A 80 80 0 0 1 615 133" fill="none" stroke="#16a34a" stroke-width="18" stroke-linecap="round" opacity="0.8"/>
+                    <path d="M 615 133 A 80 80 0 0 1 655 120" fill="none" stroke="#65a30d" stroke-width="18" stroke-linecap="round" opacity="0.8"/>
+                    <path d="M 655 120 A 80 80 0 0 1 695 133" fill="none" stroke="#d97706" stroke-width="18" stroke-linecap="round" opacity="0.8"/>
+                    <path d="M 695 133 A 80 80 0 0 1 735 200" fill="none" stroke="#dc2626" stroke-width="18" stroke-linecap="round" opacity="0.8"/>
+
+                    <!-- Needle -->
+                    <line x1="655" y1="200" x2="685" y2="138" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="655" cy="200" r="7" fill="#374151"/>
+
+                    <!-- Labels -->
+                    <text x="560" y="220" font-size="9" fill="#16a34a" font-weight="600">Low</text>
+                    <text x="645" y="112" text-anchor="middle" font-size="9" fill="#d97706" font-weight="600">Med</text>
+                    <text x="740" y="220" font-size="9" fill="#dc2626" font-weight="600">High</text>
+
+                    <!-- Score display -->
+                    <text x="655" y="240" text-anchor="middle" font-size="24" font-weight="800" fill="#374151">62</text>
+                    <text x="655" y="256" text-anchor="middle" font-size="9" fill="#6b7280">/ 100 risk score</text>
+                    <rect x="605" y="268" width="100" height="20" rx="6" fill="#fef3c7"/>
+                    <text x="655" y="281" text-anchor="middle" font-size="9" fill="#b45309" font-weight="700">MEDIUM RISK</text>
+
+                    <!-- Contributing signals list -->
+                    <text x="560" y="310" font-size="9" fill="#6b7280">Contributing signals:</text>
+                    <text x="560" y="323" font-size="9" fill="#374151">&#8226; Attendance -18% over 6 weeks</text>
+                    <text x="560" y="335" font-size="9" fill="#374151">&#8226; Fee delayed 2 consecutive months</text>
+
+                    <!-- Sparkle decorations -->
+                    <polygon points="520,30 522,38 530,38 524,43 526,51 520,46 514,51 516,43 510,38 518,38" fill="#9333ea" opacity="0.2"/>
+                    <circle cx="770" cy="340" r="5" fill="#2563eb" opacity="0.15"/>
+                </svg>
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="toc bg-gray-50 rounded-xl p-6 mb-10">
+                <p class="font-semibold text-gray-900 mb-3">Table of Contents</p>
+                <ol class="list-decimal list-inside space-y-2 text-sm">
+                    <li><a href="#indian-dropout-reality">The Indian Dropout Reality</a></li>
+                    <li><a href="#six-signals">The Six Signals That Predict Dropout 60&#8211;90 Days Early</a></li>
+                    <li><a href="#what-system-looks-like">What an AI Early-Warning System Looks Like</a></li>
+                    <li><a href="#intervention-playbook">The Intervention Playbook</a></li>
+                    <li><a href="#privacy-stigma">Privacy and Stigma: How to Watch Without Labeling</a></li>
+                    <li><a href="#the-numbers">The Numbers from Schools Doing This Well</a></li>
+                    <li><a href="#edunodex-risk">How EdunodeX&#8217;s Risk Model Works in Practice</a></li>
+                </ol>
+            </nav>
+
+            <div class="prose">
+
+                <p>By the time a school realises a student is about to drop out, it is usually too late. The family has already decided. The conversations that could have made a difference — about fee support, about transport, about a struggling sibling at home — did not happen because no one noticed the warning signs early enough.</p>
+
+                <p>This is not a failure of care. It is a failure of information. A class teacher with forty students cannot track the subtle pattern of a child whose attendance has dropped by fifteen percentage points over six weeks, whose fee payments have become irregular, and whose marks have been slipping quietly since last term. Each signal is unremarkable alone. Together, they are a clear picture.</p>
+
+                <p>AI early-warning systems are designed to surface that picture before it is too late. Not as surveillance. Not as a label stuck on a child. As a quiet signal to a counselor that says: <em>this student might need someone to check in.</em></p>
+
+                <h2 id="indian-dropout-reality">The Indian Dropout Reality</h2>
+
+                <p>Private unaided schools — the segment EdunodeX serves — have considerably lower dropout rates than government schools, but the problem is not absent. Industry estimates and school network surveys suggest annual attrition in the range of <strong>3&#8211;5% in well-managed private schools</strong>, rising to 8&#8211;12% in tier-3 towns and among RTE-quota seats where financial pressure on families is higher.</p>
+
+                <p>To put 3% in concrete terms: a school with 800 students loses roughly 24 students per year to dropout or involuntary withdrawal. At an average annual fee of Rs 60,000, that is Rs 14.4 lakh in lost revenue, before factoring in the downstream effects on class sizes and sibling admissions. More importantly, each of those 24 students may face a significantly harder future. Research on education interruption in India consistently finds that mid-schooling dropout has long-term consequences on income, health outcomes, and the next generation&#8217;s education.</p>
+
+                <p>The cost to the school is real, but the cost to the student and family is generational. That is why early intervention is worth building infrastructure around.</p>
+
+                <h2 id="six-signals">The Six Signals That Predict Dropout 60&#8211;90 Days Early</h2>
+
+                <p>Early-warning research across school retention programmes — and patterns observed in Indian school data — points to six signals that, in combination, reliably predict dropout risk months before the family makes a final decision.</p>
+
+                <!-- 6-signal card grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8 not-prose">
+                    <div class="rounded-xl border border-purple-100 bg-white p-5 flex gap-4 shadow-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-amber-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                                <line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">1. Attendance Decline</p>
+                            <p class="text-xs text-gray-600">The earliest and most reliable signal. A drop of 10+ percentage points over a 6-week rolling window is a strong indicator. A single spike of absences is noise; a sustained downward trend is signal.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-purple-100 bg-white p-5 flex gap-4 shadow-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-red-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">2. Fee Payment Delays</p>
+                            <p class="text-xs text-gray-600">Two or more consecutive fee cycles delayed, especially when previously on-time, indicate household financial stress. When combined with attendance decline, the predictive power increases significantly.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-purple-100 bg-white p-5 flex gap-4 shadow-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">3. Academic Marks Slip</p>
+                            <p class="text-xs text-gray-600">A drop of 15+ marks in aggregate across two consecutive assessments, particularly in subjects the student previously performed well in. Declining marks often reflect disengagement before physical absence begins.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-purple-100 bg-white p-5 flex gap-4 shadow-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">4. Library and Portal Disengagement</p>
+                            <p class="text-xs text-gray-600">Students who stop borrowing books, stop submitting homework through the platform, or whose parents stop opening school messages are showing disengagement that often precedes withdrawal. Subtle but measurable.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-purple-100 bg-white p-5 flex gap-4 shadow-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-amber-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">5. Behavioral Incidents</p>
+                            <p class="text-xs text-gray-600">A rise in behavioral reports or disciplinary notes, particularly where this is new behavior for a previously well-settled student, often signals stress at home rather than a conduct problem. Context matters.</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-purple-100 bg-white p-5 flex gap-4 shadow-sm">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm mb-1">6. Sibling Withdrawal</p>
+                            <p class="text-xs text-gray-600">When a sibling in the same school has been withdrawn, the remaining child is at substantially higher risk. This is one of the strongest single-variable predictors in multi-child families. Often missed in manual tracking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>A critical caveat: <strong>each signal in isolation is not enough</strong>. Every school has students who miss a week due to illness, or whose marks dip in one term and recover. The predictive power comes from the combination of signals over a rolling time window — and this is where human monitoring reliably fails and machine monitoring reliably succeeds. No teacher tracks six signals for forty students simultaneously over six weeks.</p>
+
+                <h2 id="what-system-looks-like">What an AI Early-Warning System Looks Like</h2>
+
+                <p>A well-designed early-warning system is not a black box that says &#8220;this student will drop out.&#8221; That framing is both scientifically overconfident and practically useless. What it does is assign a risk score with context — and that context is what enables a counselor to act.</p>
+
+                <p>Here is what a counselor actually sees when a flag fires:</p>
+
+                <div class="bg-gray-50 rounded-xl p-6 mb-6 not-prose">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <!-- Mini gauge -->
+                            <svg viewBox="0 0 80 50" class="w-20 h-12">
+                                <path d="M 10 45 A 35 35 0 0 1 70 45" fill="none" stroke="#f3f4f6" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 10 45 A 35 35 0 0 1 45 12" fill="none" stroke="#d97706" stroke-width="8" stroke-linecap="round"/>
+                                <text x="40" y="44" text-anchor="middle" font-size="10" font-weight="800" fill="#374151">62</text>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 text-sm">Priya Sharma &mdash; Class 8B &mdash; Medium Risk (Score: 62)</p>
+                            <p class="text-xs text-gray-500 mt-1 mb-2">Flagged on: May 3, 2026 &middot; Review recommended within 7 days</p>
+                            <p class="text-xs text-gray-700 font-medium mb-1">Contributing signals:</p>
+                            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+                                <li>Attendance: 71% (down from 89% over 6 weeks)</li>
+                                <li>Fee: Delayed for April and March cycles (previously on-time)</li>
+                                <li>Marks: Dropped 22 points in Science and Maths (Term 2 vs Term 1)</li>
+                            </ul>
+                            <p class="text-xs text-gray-700 font-medium mt-2 mb-1">Suggested actions:</p>
+                            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+                                <li>Counselor check-in conversation (not about academics — about how she is doing)</li>
+                                <li>Fee restructuring option shared with class teacher for family conversation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p>The score is indicative, not deterministic. The counselor looks at this flag and makes a human judgment: Is there a known reason for the attendance drop (illness, family travel)? Is this family already known to be under financial stress? Does the teacher have additional context? The AI surfaces the pattern. The counselor decides what to do with it.</p>
+
+                <p>For data-sparse cases — new students who have been enrolled for less than one term — the model is appropriately cautious. It will not flag on insufficient data, because a flag based on two weeks of attendance during an unusual period is worse than no flag at all. Models trained on limited data for specific students should be treated with appropriate skepticism.</p>
+
+                <h2 id="intervention-playbook">The Intervention Playbook</h2>
+
+                <p>The value of an early-warning system is only realised if there is a clear plan for what happens after a flag fires. Here is how interventions map to risk levels.</p>
+
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full border border-gray-200 rounded-lg overflow-hidden text-sm">
+                        <thead>
+                            <tr class="bg-purple-50">
+                                <th class="px-4 py-3 text-left font-semibold text-gray-900">Risk Level</th>
+                                <th class="px-4 py-3 text-left font-semibold text-gray-900">Who Is Notified</th>
+                                <th class="px-4 py-3 text-left font-semibold text-gray-900">Recommended Actions</th>
+                                <th class="px-4 py-3 text-center font-semibold text-gray-900">Timeline</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr>
+                                <td class="px-4 py-3"><span class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-xs font-semibold">Low</span></td>
+                                <td class="px-4 py-3 text-sm text-gray-700">No automatic notification</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">Visible in counselor dashboard as a watch-list item. No action required unless score increases.</td>
+                                <td class="px-4 py-3 text-center text-sm text-gray-700">Monitor monthly</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3"><span class="inline-block bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full text-xs font-semibold">Medium</span></td>
+                                <td class="px-4 py-3 text-sm text-gray-700">Counselor + Class Teacher</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">Counselor schedules an informal check-in with the student. Class teacher monitors attendance closely. Fee restructuring discussed internally.</td>
+                                <td class="px-4 py-3 text-center text-sm text-gray-700">Within 7 days</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3"><span class="inline-block bg-red-100 text-red-700 px-2 py-0.5 rounded-full text-xs font-semibold">High</span></td>
+                                <td class="px-4 py-3 text-sm text-gray-700">Counselor + Principal</td>
+                                <td class="px-4 py-3 text-sm text-gray-700">Immediate action plan: principal-level parent conversation, fee support evaluation, academic scaffolding assessment, transport assistance check, peer mentoring assignment.</td>
+                                <td class="px-4 py-3 text-center text-sm text-gray-700">Within 48 hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Notice that &#8220;Low risk&#8221; triggers nothing automatic. This is intentional. Over-alerting is as harmful as under-alerting — if every counselor gets fifty flags a week, flags lose meaning. The system is calibrated to surface genuinely at-risk students, not every student with a single dip.</p>
+
+                <h2 id="privacy-stigma">Privacy and Stigma: How to Watch Without Labeling</h2>
+
+                <p>The most common objection to risk-scoring systems in schools is the fear of labeling. A child who is flagged as &#8220;high risk&#8221; by an algorithm should not carry that label into the classroom, the staffroom gossip, or the parent grapevine. A well-designed system prevents this.</p>
+
+                <ul>
+                    <li><strong>Risk scores are never visible to teachers.</strong> Only counselors and principals can see risk scores and the underlying signals. The class teacher receives only a general prompt: &#8220;Check in with Suresh this week&#8221; — not a risk number or a list of concerning signals.</li>
+                    <li><strong>No scores visible to peers or families.</strong> The risk model is an internal tool for the counseling team. No communication to parents is automated based on a risk score. Conversations with families happen as normal school-counselor interactions, not as &#8220;our AI flagged your child.&#8221;</li>
+                    <li><strong>The focus is on action, not classification.</strong> The system exists to trigger a human conversation, not to produce a report that sits in a file. If a flag fires and no one takes any action, the system has failed its purpose.</li>
+                    <li><strong>Regular audit of model accuracy.</strong> False positives (students flagged who were never at risk) and missed cases (students who dropped out without a flag) should both be tracked. A model that generates many false positives erodes trust; one that misses genuine cases fails in its core purpose.</li>
+                </ul>
+
+                <blockquote>
+                    <p>&#8220;The dashboard tells me which students to pay attention to. It does not tell me what is wrong or what to say. That is still my job as a counselor. What has changed is that I am no longer flying blind — I am not finding out a student has been struggling for three months because the teacher mentioned it in passing at a staff meeting. I know early, and I can help early.&#8221; &mdash; School Counselor, ICSE School, Hyderabad</p>
+                </blockquote>
+
+                <h2 id="the-numbers">The Numbers from Schools Doing This Well</h2>
+
+                <p>Retention improvement from AI early-warning systems is genuinely difficult to isolate, because many factors affect dropout rates simultaneously. Schools that have implemented these tools alongside active counseling programmes report improvements in the range of <strong>1.5&#8211;3 percentage points</strong> in annual retention rate.</p>
+
+                <p>What does that mean concretely? For a school with 800 students and a baseline dropout rate of 4% (32 students per year), a 2-point improvement means retaining roughly 16 additional students each year. At Rs 60,000 annual fees, that is approximately Rs 9.6 lakh in retained revenue — setting aside entirely the educational and human value of keeping those students in school.</p>
+
+                <p>These numbers should be read as plausible estimates based on patterns reported by schools, not as guaranteed outcomes. Results depend heavily on whether the intervention programme that follows the flag is resourced and taken seriously. An AI flag with no counselor to act on it is worth nothing.</p>
+
+                <p><strong>Where the model is less reliable:</strong> Schools with fewer than 300 students have limited historical data, which reduces prediction accuracy. Schools that have just onboarded — with less than one full academic year of records — do not yet have enough signal for reliable risk scoring. In both cases, the smart approach is to use the system for monitoring and pattern tracking, not for risk scoring, until sufficient data accumulates.</p>
+
+                <h2 id="edunodex-risk">How EdunodeX&#8217;s Risk Model Works in Practice</h2>
+
+                <p><strong>EdunodeX</strong> integrates risk scoring directly into the counselor and principal view — it is not a separate analytics product that requires export and manual review.</p>
+
+                <p><strong>Signal aggregation is automatic.</strong> Because EdunodeX manages attendance, fees, academics, library, and communication in one platform, all six signals are available without any integration effort. The risk model has access to the full picture rather than one or two data sources.</p>
+
+                <p><strong>Rolling window, not point-in-time.</strong> Risk scores update on a rolling basis as new data comes in. A student&#8217;s score is not calculated once per term — it reflects the most recent six weeks of behavior. This means a student who recovers (attendance improves, fees paid, marks stabilize) will see their score fall accordingly. The model is not deterministic.</p>
+
+                <p><strong>Counselor-first design.</strong> Every flag goes to the counselor by default, not to the class teacher or the principal (unless the risk is High, where the principal is included). This preserves the counselor&#8217;s role as the person who holds the confidential picture of each student&#8217;s situation.</p>
+
+                <p><strong>Audit trail for each flag.</strong> Every flag generated, every action taken, and every outcome is logged against the student record. Over time, this produces a record of which interventions worked for which types of risk profiles — useful feedback for refining both the model and the counseling programme.</p>
+
+                <p><strong>No automatic communication to families based on scores.</strong> The system will not send a message to a parent saying their child has been flagged as at risk. All family communication remains with the human counselor who knows the context.</p>
+
+                <p>Dropout prevention is ultimately a human task. An AI early-warning system is a better version of what a very attentive, data-literate administrator might do if they had unlimited time. Most schools do not have that administrator. EdunodeX provides the capability, and then gets out of the way of the human judgment that has to follow.</p>
+
+            </div>
+        </article>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-br from-purple-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Start Catching At-Risk Students Earlier</h2>
+            <p class="text-purple-100 mb-6 max-w-lg mx-auto">EdunodeX&#8217;s dropout risk model starts working from your first term of data. Start a free trial &mdash; no credit card required.</p>
+            <a href="https://in1.edunodex.in/signup" class="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-lg hover:bg-purple-50 transition">Start Free Trial &rarr;</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-3xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
+            <ul class="flex flex-wrap justify-center gap-4 mb-4 text-gray-600">
+                <li><a href="/" class="hover:text-purple-600">Home</a></li>
+                <li><a href="/#features" class="hover:text-purple-600">Features</a></li>
+                <li><a href="/partners.html" class="hover:text-purple-600">Partners</a></li>
+                <li><a href="/blog/" class="hover:text-purple-600">Blog</a></li>
+                <li><a href="/privacy-policy/" class="hover:text-purple-600">Privacy</a></li>
+                <li><a href="/terms-of-service/" class="hover:text-purple-600">Terms</a></li>
+            </ul>
+            <p>&copy; 2026 Xentovia Tech Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+

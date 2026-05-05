@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-tally-alternative-for-schools-body.html?raw';
+import headHtml from '../../../raw/blog-tally-alternative-for-schools-head.html?raw';
+---
+<BaseLayout
+  title="Tally for Schools? Why Indian School Accountants Are Moving On in 2026 | EdunodeX"
+  description="Tally is the workhorse of Indian SME accounting — but for schools, it's missing fee tracking, parent receipts, and student-level ledgers. Here's what to use instead and how to make the switch."
+  keywords="tally alternative for schools, school accounting software India, replace tally school, school fee accounting software, tally vs school ERP, accountant software for schools"
+  canonical="https://edunodex.in/blog/tally-alternative-for-schools/"
+  ogType="article"
+  ogTitle="Tally for Schools? Why Indian School Accountants Are Moving On in 2026"
+  ogDescription="Tally is the workhorse of Indian SME accounting — but for schools, it's missing fee tracking, parent receipts, and student-level ledgers. Here's what to use instead."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Tally for Schools? Why Indian School Accountants Are Moving On in 2026"
+  twitterDescription="Schools are outgrowing Tally. Here's what school-specific accounting software looks like — and how to switch without disruption."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

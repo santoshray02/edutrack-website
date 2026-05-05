@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-agentic-ai-school-operations-2026-body.html?raw';
+import headHtml from '../../../raw/blog-agentic-ai-school-operations-2026-head.html?raw';
+---
+<BaseLayout
+  title="Agentic AI for School Operations: What &quot;Autopilot&quot; Really Means in 2026 | EdunodeX"
+  description="Most school software has &quot;AI features&quot; bolted on. Agentic AI is different — it watches, decides, and acts on its own, on a schedule, with rules. Here's what that actually looks like in a real Indian school back office in 2026."
+  keywords="agentic AI schools, AI agent school management, school autopilot, autonomous AI for schools, AI school back office, agentic school software India, AI school operations"
+  canonical="https://edunodex.in/blog/agentic-ai-school-operations-2026/"
+  ogType="article"
+  ogTitle="Agentic AI for School Operations: What &quot;Autopilot&quot; Really Means in 2026"
+  ogDescription="Most school software has &quot;AI features&quot; bolted on. Agentic AI is different — it watches, decides, and acts on its own, on a schedule, with rules."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Agentic AI for School Operations: What &quot;Autopilot&quot; Really Means in 2026"
+  twitterDescription="Agentic AI watches, decides, and acts on its own. Here's what that looks like in a real Indian school back office."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

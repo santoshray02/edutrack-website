@@ -1,0 +1,403 @@
+
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation" class="bg-white border-b border-gray-100 px-4 lg:px-6 py-2.5 fixed w-full z-50 top-0">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="/" class="flex items-center">
+                <img src="/images/favicon.png" alt="EdunodeX Logo" class="h-8 mr-2">
+                <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">EdunodeX</span>
+            </a>
+            <div class="flex items-center lg:order-2 space-x-2">
+                <a href="/#contact" class="text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 font-medium rounded-lg text-sm px-4 py-2 shadow-lg">Request Demo</a>
+                <button data-collapse-toggle="blog-mobile-menu" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100" aria-controls="blog-mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="blog-mobile-menu">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li><a href="/#features" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Features</a></li>
+                    <li><a href="/partners.html" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Partners</a></li>
+                    <li><a href="/#contact" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Contact</a></li>
+                    <li><a href="/blog/" class="block py-3 pr-4 pl-3 text-purple-700 font-semibold lg:p-0">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <main class="max-w-3xl mx-auto px-6 pt-20 pb-12">
+
+        <article>
+            <div class="mb-8">
+                <div class="flex items-center gap-3 text-sm text-gray-500 mb-4">
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full font-medium">AI &amp; Technology</span>
+                    <span>May 13, 2026</span>
+                    <span>&middot;</span>
+                    <span>10 min read</span>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">Face Recognition Attendance for Indian Schools: A Practical 2026 Guide</h1>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">EX</div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">EdunodeX Team</p>
+                        <p class="text-xs text-gray-500">Xentovia Tech Pvt Ltd</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero SVG -->
+            <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6 sm:p-10">
+                <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Abstract face detection diagram with detection bracket corners and a checked-in badge, with a parent receiving a notification">
+                    <defs>
+                        <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9333ea"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="brandLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f3e8ff"/>
+                            <stop offset="100%" stop-color="#dbeafe"/>
+                        </linearGradient>
+                    </defs>
+
+                    <rect width="800" height="360" fill="url(#brandLight)" rx="16"/>
+
+                    <!-- Face outline (abstract geometric) -->
+                    <ellipse cx="300" cy="175" rx="80" ry="95" fill="white" stroke="#e9d5ff" stroke-width="2"/>
+                    <!-- Eyes -->
+                    <ellipse cx="275" cy="155" rx="10" ry="12" fill="#ddd6fe"/>
+                    <ellipse cx="325" cy="155" rx="10" ry="12" fill="#ddd6fe"/>
+                    <circle cx="277" cy="157" r="5" fill="#7c3aed"/>
+                    <circle cx="327" cy="157" r="5" fill="#7c3aed"/>
+                    <!-- Nose hint -->
+                    <line x1="300" y1="165" x2="295" y2="185" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="295" y1="185" x2="305" y2="185" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Mouth hint -->
+                    <path d="M280 200 Q300 215 320 200" fill="none" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round"/>
+
+                    <!-- Detection bracket corners (brand gradient ring) -->
+                    <rect x="195" y="65" width="210" height="220" rx="8" fill="none" stroke="url(#brand)" stroke-width="3" stroke-dasharray="0"/>
+                    <!-- Corner brackets only -->
+                    <line x1="195" y1="85" x2="195" y2="65" stroke="#9333ea" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="195" y1="65" x2="215" y2="65" stroke="#9333ea" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="385" y1="65" x2="405" y2="65" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="405" y1="65" x2="405" y2="85" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="195" y1="265" x2="195" y2="285" stroke="#9333ea" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="195" y1="285" x2="215" y2="285" stroke="#9333ea" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="405" y1="285" x2="385" y2="285" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="405" y1="285" x2="405" y2="265" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+
+                    <!-- Checked-in badge -->
+                    <circle cx="405" cy="95" r="22" fill="#16a34a"/>
+                    <polyline points="394,95 401,103 416,86" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+                    <!-- "Checked In" label -->
+                    <rect x="350" y="300" width="110" height="28" rx="8" fill="#16a34a"/>
+                    <text x="405" y="318" text-anchor="middle" font-size="11" fill="white" font-weight="700">CHECKED IN 8:14 AM</text>
+
+                    <!-- Dashed line to parent -->
+                    <line x1="475" y1="175" x2="545" y2="175" stroke="#9333ea" stroke-width="2" stroke-dasharray="5 4" opacity="0.6"/>
+
+                    <!-- Parent silhouette with phone -->
+                    <circle cx="575" cy="145" r="20" fill="#ddd6fe"/>
+                    <path d="M555 185 Q555 165 575 165 Q595 165 595 185" fill="#ddd6fe"/>
+                    <!-- Phone -->
+                    <rect x="605" cy="140" x="605" y="140" width="36" height="56" rx="6" fill="white" stroke="#9333ea" stroke-width="2"/>
+                    <rect x="608" y="148" width="30" height="38" rx="3" fill="#ede9fe"/>
+                    <!-- Notification on phone -->
+                    <rect x="610" y="150" width="26" height="16" rx="3" fill="white"/>
+                    <text x="612" y="159" font-size="6" fill="#7c3aed" font-weight="600">Ananya checked in</text>
+                    <text x="612" y="165" font-size="5" fill="#9ca3af">8:14 AM &#183; St. Xavier&#8217;s</text>
+                    <circle cx="636" cy="143" r="6" fill="#9333ea"/>
+                    <text x="636" y="147" text-anchor="middle" font-size="8" fill="white" font-weight="bold">!</text>
+
+                    <!-- Scan lines (subtle) -->
+                    <line x1="195" y1="175" x2="405" y2="175" stroke="url(#brand)" stroke-width="1.5" opacity="0.3" stroke-dasharray="3 3"/>
+
+                    <!-- Sparkle details -->
+                    <polygon points="130,50 132,58 140,58 134,63 136,71 130,66 124,71 126,63 120,58 128,58" fill="#9333ea" opacity="0.2"/>
+                    <polygon points="680,290 682,297 690,297 684,302 686,310 680,305 674,310 676,302 670,297 678,297" fill="#2563eb" opacity="0.2"/>
+                    <circle cx="130" cy="290" r="4" fill="#9333ea" opacity="0.15"/>
+                    <circle cx="690" cy="50" r="4" fill="#2563eb" opacity="0.15"/>
+                </svg>
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="toc bg-gray-50 rounded-xl p-6 mb-10">
+                <p class="font-semibold text-gray-900 mb-3">Table of Contents</p>
+                <ol class="list-decimal list-inside space-y-2 text-sm">
+                    <li><a href="#why-face">Why Schools Are Moving from Fingerprint and RFID to Face Recognition</a></li>
+                    <li><a href="#how-it-works">How Face Attendance Actually Works in a School</a></li>
+                    <li><a href="#accuracy-reality">The Accuracy Reality: What 99% Means in Practice</a></li>
+                    <li><a href="#dpdp-consent">The DPDP Angle: Why Consent Is Not Optional</a></li>
+                    <li><a href="#hardware">The Hardware You Actually Need</a></li>
+                    <li><a href="#rollout-playbook">Implementation Playbook: 4-Week Rollout</a></li>
+                    <li><a href="#edunodex-face">How EdunodeX Handles Face Attendance with Consent and Audit</a></li>
+                </ol>
+            </nav>
+
+            <div class="prose">
+
+                <p>Schools across India have been burned by oversold biometric technology. The fingerprint scanner that stops reading oily fingers in the monsoon. The RFID tag system where students share cards. The face recognition vendor who promised &#8220;100% accuracy&#8221; and delivered something unusable on a cloudy morning.</p>
+
+                <p>This guide is a reset. We will tell you exactly how face recognition attendance works, what accuracy you can realistically expect, what happens when it fails, and why the India-specific legal angle — the Digital Personal Data Protection Act (DPDP) — makes parental consent not just good practice, but a legal requirement. If you are evaluating this technology for your school, read this before signing any contract.</p>
+
+                <h2 id="why-face">Why Schools Are Moving from Fingerprint and RFID to Face Recognition</h2>
+
+                <p>The shift is happening for practical reasons, not novelty.</p>
+
+                <ul>
+                    <li><strong>No contact required.</strong> Post-2020, parents and school management both became more aware of contact-based hygiene risks. A student walks through the entry, attendance is captured. No touching any shared device.</li>
+                    <li><strong>Speed.</strong> A group of thirty students can be processed at the entry gate in under two minutes during morning rush. Fingerprint readers process one student at a time. RFID requires each child to tap individually.</li>
+                    <li><strong>Works for any age.</strong> Fingerprint sensors struggle with young children — their fingerprint ridges are too fine. Face recognition works reliably from Class 1 upward.</li>
+                    <li><strong>No card-sharing fraud.</strong> RFID systems are routinely gamed by older students marking attendance for a sibling or friend. Face recognition eliminates this entirely.</li>
+                    <li><strong>Weather and environment resilience.</strong> A tablet-based face camera at the entry works in rain, cold, or heat. Fingerprint sensors frequently fail in humid monsoon conditions or after a child has been playing outside.</li>
+                </ul>
+
+                <p>None of this means face recognition is perfect. It is a significant improvement over the alternatives in most conditions. The qualifier &#8220;most conditions&#8221; is important, and we will spend considerable time on it.</p>
+
+                <h2 id="how-it-works">How Face Attendance Actually Works in a School</h2>
+
+                <p>The process has five stages, and understanding each one helps you set realistic expectations and manage rollout.</p>
+
+                <p><strong>Stage 1 — Enrollment.</strong> Each student&#8217;s face is photographed during a one-time enrollment session. Quality matters here: front-facing, good lighting, no obstruction. The system stores a numerical representation of the face (called an embedding) — not the raw photo, which has privacy implications we will address shortly. Students should be re-enrolled if their appearance changes substantially (puberty, dramatic hairstyle change, glasses).</p>
+
+                <p><strong>Stage 2 — Group capture at entry.</strong> A camera mounted at the school gate or entry corridor captures students as they arrive. Some systems use a dedicated tablet; others use an IP camera connected to a wall-mounted processor. Students do not need to stop and pose — they walk through at normal pace.</p>
+
+                <p><strong>Stage 3 — Matching.</strong> The captured faces are compared against the enrolled embeddings for the school. The system computes a similarity score. Above a configured threshold: attendance marked Present. Below threshold: face goes into a review queue for manual confirmation.</p>
+
+                <p><strong>Stage 4 — Attendance posted.</strong> Matched students are immediately marked Present in the attendance register. The entire process takes under two seconds per student from capture to record.</p>
+
+                <p><strong>Stage 5 — Parent notification.</strong> Within a few minutes of school opening, parents receive a WhatsApp message confirming their child&#8217;s check-in. Parents who do not receive this message know to follow up. This also functions as a safety feature: parents know their child arrived at school.</p>
+
+                <h2 id="accuracy-reality">The Accuracy Reality: What 99% Means in Practice</h2>
+
+                <p>Vendors love the &#8220;99% accuracy&#8221; claim. It is technically accurate in a specific, narrow condition. Here is the full picture.</p>
+
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full border border-gray-200 rounded-lg overflow-hidden text-sm">
+                        <thead>
+                            <tr class="bg-purple-50">
+                                <th class="px-4 py-3 text-left font-semibold text-gray-900">Condition</th>
+                                <th class="px-4 py-3 text-center font-semibold text-gray-900">Expected Accuracy</th>
+                                <th class="px-4 py-3 text-center font-semibold text-gray-900">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr>
+                                <td class="px-4 py-3 font-medium">Enrolled face, good lighting, frontal</td>
+                                <td class="px-4 py-3 text-center text-green-700 font-bold">~99%+</td>
+                                <td class="px-4 py-3 text-center text-gray-600 text-xs">Industry-leading models on enrolled faces under controlled conditions. This is the &#8220;lab&#8221; number.</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium">Face mask / surgical mask worn</td>
+                                <td class="px-4 py-3 text-center text-amber-700 font-bold">~70&#8211;85%</td>
+                                <td class="px-4 py-3 text-center text-gray-600 text-xs">Varies significantly by model and mask type. Lower half of face is lost; accuracy drops substantially.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">Identical twins</td>
+                                <td class="px-4 py-3 text-center text-red-700 font-bold">Frequently fails</td>
+                                <td class="px-4 py-3 text-center text-gray-600 text-xs">Even the best models cannot reliably distinguish identical twins. Requires a fallback path (manual or RFID for those students).</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium">Drastic appearance change (new glasses, haircut)</td>
+                                <td class="px-4 py-3 text-center text-amber-700 font-bold">~80%</td>
+                                <td class="px-4 py-3 text-center text-gray-600 text-xs">Re-enrollment after major appearance changes is strongly recommended. Manual marking during transition.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">Very poor lighting (dim corridor, backlight)</td>
+                                <td class="px-4 py-3 text-center text-amber-700 font-bold">~85%</td>
+                                <td class="px-4 py-3 text-center text-gray-600 text-xs">Camera placement and IR-assisted cameras matter. A Rs 3,000 camera in a dim corridor will fail; a properly placed IR camera performs well.</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium">Young children (Class 1&#8211;2, age 6&#8211;7)</td>
+                                <td class="px-4 py-3 text-center text-amber-700 font-bold">~90&#8211;94%</td>
+                                <td class="px-4 py-3 text-center text-gray-600 text-xs">Faces change faster at younger ages; semi-annual re-enrollment recommended. Lower accuracy than adults is normal.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>The practical implication: in a well-configured deployment with good lighting and enrolled faces, you should expect 96&#8211;99% of daily attendance to be captured automatically. The remaining 1&#8211;4% requires a fallback — either manual marking by the teacher or a &#8220;tap to confirm&#8221; option for students the system did not confidently match. This fallback path is not a failure; it is a feature. Any system that claims 100% automatic capture with no fallback is either lying or will generate false records.</p>
+
+                <blockquote>
+                    <p>&#8220;We tested three vendors. All three showed us demo videos with perfect results. Only one was honest about performance in our actual corridor — which has a bright window directly facing the camera in the morning. We went with the honest vendor and planned for camera placement. It has worked well since.&#8221; &mdash; IT Coordinator, CBSE School, Pune</p>
+                </blockquote>
+
+                <h2 id="dpdp-consent">The DPDP Angle: Why Consent Is Not Optional</h2>
+
+                <p>This is the section that many technology vendors gloss over. In India, the <strong>Digital Personal Data Protection Act (DPDP), 2023</strong> is now in effect, and biometric data — including face recognition data — is classified as sensitive personal data under Indian privacy frameworks. For students who are minors (under 18), the law requires verifiable parental consent before any biometric data is collected or processed.</p>
+
+                <p>What this means in practice:</p>
+
+                <ul>
+                    <li><strong>Consent must come first, enrollment second.</strong> You cannot enroll a student&#8217;s face in the system and then obtain consent after the fact. Enrollment without prior consent is a DPDP violation.</li>
+                    <li><strong>The notice must be plain-language.</strong> Parents must be told what data is collected, how it is stored, for how long, who has access, and how it will be deleted. A dense legal notice buried in the admission form is insufficient.</li>
+                    <li><strong>Face embeddings vs raw photos.</strong> The distinction matters. Storing a mathematical embedding of a face (which cannot be reversed into a photo) is less privacy-invasive than storing raw photos. Your system should store embeddings, not raw images, wherever possible.</li>
+                    <li><strong>Retention policy required.</strong> You must define how long face data is kept after a student leaves the school. Best practice: delete embeddings within 30 days of departure unless the student or parent explicitly requests otherwise.</li>
+                    <li><strong>Opt-out path is mandatory.</strong> A parent who withholds or withdraws consent must have an alternative: manual attendance marking or RFID. The child cannot be penalized for the parent&#8217;s choice not to consent to biometric collection.</li>
+                    <li><strong>Audit log of access.</strong> Who accessed face data, when, and for what purpose must be logged. This log should be accessible to the school administration and, on request, to parents.</li>
+                </ul>
+
+                <!-- Consent flow SVG -->
+                <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6">
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 text-center">Consent Flow — 3 Steps Before Enrollment</p>
+                    <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="Three-step consent flow: school sends notice to parent, parent signs digitally, student is enrolled in the face recognition system">
+                        <defs>
+                            <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#9333ea"/>
+                                <stop offset="100%" stop-color="#2563eb"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Step boxes -->
+                        <!-- Step 1 -->
+                        <rect x="20" y="40" width="180" height="80" rx="12" fill="white" stroke="#e9d5ff" stroke-width="2"/>
+                        <circle cx="60" cy="80" r="18" fill="url(#stepGrad)"/>
+                        <text x="60" y="85" text-anchor="middle" font-size="14" fill="white" font-weight="800">1</text>
+                        <text x="90" y="72" font-size="11" font-weight="700" fill="#581c87">School Sends</text>
+                        <text x="90" y="86" font-size="10" fill="#6b7280">Plain-language notice</text>
+                        <text x="90" y="98" font-size="10" fill="#6b7280">via WhatsApp / form</text>
+
+                        <!-- Arrow 1 -->
+                        <line x1="200" y1="80" x2="248" y2="80" stroke="#9333ea" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
+                        <polygon points="248,75 258,80 248,85" fill="#9333ea" opacity="0.7"/>
+
+                        <!-- Step 2 -->
+                        <rect x="260" y="40" width="180" height="80" rx="12" fill="white" stroke="#e9d5ff" stroke-width="2"/>
+                        <circle cx="300" cy="80" r="18" fill="url(#stepGrad)"/>
+                        <text x="300" y="85" text-anchor="middle" font-size="14" fill="white" font-weight="800">2</text>
+                        <text x="330" y="72" font-size="11" font-weight="700" fill="#581c87">Parent Signs</text>
+                        <text x="330" y="86" font-size="10" fill="#6b7280">Digital consent form</text>
+                        <text x="330" y="98" font-size="10" fill="#6b7280">Opt-out path offered</text>
+
+                        <!-- Arrow 2 -->
+                        <line x1="440" y1="80" x2="488" y2="80" stroke="#9333ea" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
+                        <polygon points="488,75 498,80 488,85" fill="#9333ea" opacity="0.7"/>
+
+                        <!-- Step 3 -->
+                        <rect x="500" y="40" width="180" height="80" rx="12" fill="white" stroke="#e9d5ff" stroke-width="2"/>
+                        <circle cx="540" cy="80" r="18" fill="url(#stepGrad)"/>
+                        <text x="540" y="85" text-anchor="middle" font-size="14" fill="white" font-weight="800">3</text>
+                        <text x="570" y="72" font-size="11" font-weight="700" fill="#581c87">Student Enrolled</text>
+                        <text x="570" y="86" font-size="10" fill="#6b7280">Embedding stored,</text>
+                        <text x="570" y="98" font-size="10" fill="#6b7280">not raw photo</text>
+                    </svg>
+                </div>
+
+                <p>Schools that skip the consent step are not just cutting corners — they are creating legal exposure that will only grow as DPDP enforcement matures. Every school we recommend does this right, from Day 1.</p>
+
+                <h2 id="hardware">The Hardware You Actually Need</h2>
+
+                <p>This is where many schools over-invest or under-invest. The good news: enterprise-grade CCTV infrastructure is not necessary for reliable school face attendance.</p>
+
+                <p>A typical deployment for a school gate or entry corridor requires:</p>
+
+                <ul>
+                    <li><strong>One camera per entry point.</strong> A dedicated IP camera or tablet camera with good low-light performance. Look for IR (infrared) night-vision capability — this handles early morning and overcast days. A quality camera costs between Rs 4,000 and Rs 15,000 depending on resolution and IR range.</li>
+                    <li><strong>A local processor or a connected device.</strong> Face matching requires computation. Some systems use a tablet at the gate with onboard processing. Others use a central server (on-premise or cloud) that receives the camera feed. Either model works; the choice depends on your internet reliability.</li>
+                    <li><strong>Wi-Fi or LAN connectivity.</strong> The system needs to communicate with your school management platform to post attendance records. A stable 10 Mbps connection is sufficient for a single camera; multiple cameras need proportionally more bandwidth.</li>
+                    <li><strong>Mounting at the right height and angle.</strong> Aim for a camera at 1.5 to 1.8 metres height, angled slightly downward, facing the direction students walk toward. Avoid mounting where sunlight directly hits the lens in the morning.</li>
+                </ul>
+
+                <p>Total hardware cost for a single entry gate: approximately <strong>Rs 12,000 to Rs 25,000</strong>, excluding the school management software subscription. This is a one-time cost. Contrast this with RFID tag systems, where tags are lost and replaced continuously, or fingerprint readers, which require annual maintenance contracts.</p>
+
+                <h2 id="rollout-playbook">Implementation Playbook: 4-Week Rollout</h2>
+
+                <p>This is the timeline we recommend. Do not skip the shadow mode validation week — it is what separates a successful rollout from a frustrated one.</p>
+
+                <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-right">
+                                <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">Week 1</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Consent Collection &amp; Enrollment</p>
+                                <p class="text-sm text-gray-600 mb-0">Send consent notices to all parents via WhatsApp. Collect signed forms (physical or digital). Enroll only consented students — run enrollment sessions class-by-class during a free period. Document opt-outs and set up fallback (manual marking) for those students.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-right">
+                                <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Week 2</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Shadow Mode Validation</p>
+                                <p class="text-sm text-gray-600 mb-0">Run face attendance in parallel with the existing process. Teachers still mark attendance manually; the system runs in the background and captures its results separately. At the end of each day, compare the two records and identify discrepancies. Adjust camera angle, lighting, and confidence threshold based on what you find.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-right">
+                                <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Week 3</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Continued Validation + Teacher Training</p>
+                                <p class="text-sm text-gray-600 mb-0">Continue shadow mode. Train teachers on the review queue — how to handle the daily list of faces the system was not confident about. Set clear expectations: the system marks most students automatically; teachers handle exceptions. This reduces resistance to changeover.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-right">
+                                <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">Week 4</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Live Switchover</p>
+                                <p class="text-sm text-gray-600 mb-0">Face attendance becomes the official record. Manual marking retained as fallback only. Parent notifications activated — parents receive WhatsApp check-in confirmation daily. Keep a close eye on the first two weeks and resolve any recurring mismatches by re-enrolling affected students.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-right">
+                                <span class="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-semibold">Ongoing</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 mb-1">Monthly Accuracy Audit</p>
+                                <p class="text-sm text-gray-600 mb-0">Review the review-queue volume monthly. If it is rising, identify whether enrollment quality, lighting, or a specific group of students is the cause. Re-enroll students who have had significant appearance changes. Update consent records when new students join.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="edunodex-face">How EdunodeX Handles Face Attendance with Consent and Audit</h2>
+
+                <p><strong>EdunodeX</strong> builds consent management directly into the face attendance workflow — it is not a checkbox you tick and forget.</p>
+
+                <p><strong>Consent-gated enrollment.</strong> The system will not permit a student to be enrolled in face attendance unless their parental consent record is marked as confirmed. Attempting to enroll without consent triggers a warning that must be manually overridden by an administrator who takes explicit responsibility for the record.</p>
+
+                <p><strong>Embeddings, not photos.</strong> EdunodeX stores the mathematical representation of a face for matching purposes. Raw images captured at the gate are not retained after the match is complete. This is a deliberate privacy design choice: if the database were ever compromised, there would be no recoverable face photographs in it.</p>
+
+                <p><strong>Parent check-in notification.</strong> Every matched student triggers a WhatsApp notification to their primary guardian within minutes of the school gate opening. Parents who do not receive a notification know to follow up. This notification is separate from the daily attendance report sent via the parent app.</p>
+
+                <p><strong>Review queue with audit trail.</strong> Faces that fall below the confidence threshold go into a daily review queue. Each item in the queue is resolved by a teacher who either confirms the match or marks attendance manually. The resolution is logged: who reviewed it, what they decided, and when.</p>
+
+                <p><strong>Opt-out respected automatically.</strong> Students whose consent is withdrawn are automatically excluded from face processing and added to the manual marking list for teachers. The opt-out propagates immediately — no configuration change required on the attendance side.</p>
+
+                <p><strong>Data retention policy.</strong> When a student is withdrawn from the school, their face embedding is scheduled for automatic deletion within 30 days unless a retention exception is logged by the administrator.</p>
+
+                <p>Face recognition attendance is a meaningful upgrade over the alternatives — when deployed honestly, with proper consent, realistic accuracy expectations, and a working fallback. The schools that have had bad experiences were sold a black box. EdunodeX is designed to be the opposite: every decision the system makes is visible, every failure has a clear path to resolution, and every parent who consented can see exactly what their consent covers.</p>
+
+            </div>
+        </article>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-br from-purple-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">See Face Attendance Working in Your School</h2>
+            <p class="text-purple-100 mb-6 max-w-lg mx-auto">Start a free trial of EdunodeX. The face attendance module includes built-in consent management, audit trail, and parent check-in notifications.</p>
+            <a href="https://in1.edunodex.in/signup" class="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-lg hover:bg-purple-50 transition">Start Free Trial &rarr;</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-3xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
+            <ul class="flex flex-wrap justify-center gap-4 mb-4 text-gray-600">
+                <li><a href="/" class="hover:text-purple-600">Home</a></li>
+                <li><a href="/#features" class="hover:text-purple-600">Features</a></li>
+                <li><a href="/partners.html" class="hover:text-purple-600">Partners</a></li>
+                <li><a href="/blog/" class="hover:text-purple-600">Blog</a></li>
+                <li><a href="/privacy-policy/" class="hover:text-purple-600">Privacy</a></li>
+                <li><a href="/terms-of-service/" class="hover:text-purple-600">Terms</a></li>
+            </ul>
+            <p>&copy; 2026 Xentovia Tech Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+

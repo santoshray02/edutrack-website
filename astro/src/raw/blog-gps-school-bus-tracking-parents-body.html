@@ -1,0 +1,422 @@
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation" class="bg-white border-b border-gray-100 px-4 lg:px-6 py-2.5 fixed w-full z-50 top-0">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="/" class="flex items-center">
+                <img src="/images/favicon.png" alt="EdunodeX Logo" class="h-8 mr-2">
+                <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">EdunodeX</span>
+            </a>
+            <div class="flex items-center lg:order-2 space-x-2">
+                <a href="/#contact" class="text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 font-medium rounded-lg text-sm px-4 py-2 shadow-lg">Request Demo</a>
+                <button data-collapse-toggle="blog-mobile-menu" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100" aria-controls="blog-mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="blog-mobile-menu">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li><a href="/#features" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Features</a></li>
+                    <li><a href="/partners.html" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Partners</a></li>
+                    <li><a href="/#contact" class="block py-3 pr-4 pl-3 text-gray-700 hover:text-purple-700 lg:p-0">Contact</a></li>
+                    <li><a href="/blog/" class="block py-3 pr-4 pl-3 text-purple-700 font-semibold lg:p-0">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <main class="max-w-3xl mx-auto px-6 pt-20 pb-12">
+
+        <article>
+            <div class="mb-8">
+                <div class="flex items-center gap-3 text-sm text-gray-500 mb-4">
+                    <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full font-medium">Communication</span>
+                    <span>May 18, 2026</span>
+                    <span>&middot;</span>
+                    <span>9 min read</span>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-4">GPS School Bus Tracking for Parents: What's Possible in 2026</h1>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">EX</div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-900">EdunodeX Team</p>
+                        <p class="text-xs text-gray-500">Xentovia Tech Pvt Ltd</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero SVG -->
+            <div class="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50 p-6 sm:p-10">
+                <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" role="img" aria-label="School bus tracking illustration showing a yellow school bus icon on a curved route line with brand gradient, a phone displaying a map icon to the side, and a parent silhouette receiving a notification ping">
+                    <defs>
+                        <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9333ea"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="routeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#9333ea"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f5f3ff"/>
+                            <stop offset="100%" stop-color="#eff6ff"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Map background tile -->
+                    <rect x="80" y="60" width="500" height="280" rx="16" fill="url(#mapBg)" stroke="#e5e7eb" stroke-width="1"/>
+
+                    <!-- Map road lines (light) -->
+                    <line x1="80" y1="180" x2="580" y2="180" stroke="#e5e7eb" stroke-width="8"/>
+                    <line x1="260" y1="60" x2="260" y2="340" stroke="#e5e7eb" stroke-width="6"/>
+                    <line x1="450" y1="60" x2="450" y2="340" stroke="#e5e7eb" stroke-width="6"/>
+                    <line x1="80" y1="260" x2="580" y2="260" stroke="#e5e7eb" stroke-width="5"/>
+                    <line x1="80" y1="110" x2="580" y2="110" stroke="#f3f4f6" stroke-width="4"/>
+
+                    <!-- Route path (brand gradient curved line) -->
+                    <path d="M120,290 C180,280 200,220 260,200 C320,180 340,160 380,155 C420,150 440,160 490,155 C520,152 545,148 560,140" fill="none" stroke="url(#routeGrad)" stroke-width="4" stroke-linecap="round"/>
+
+                    <!-- Stop dots along route -->
+                    <circle cx="120" cy="290" r="7" fill="#9333ea" opacity="0.8"/>
+                    <text x="120" y="310" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="sans-serif">Stop 1</text>
+
+                    <circle cx="260" cy="200" r="7" fill="#7c3aed" opacity="0.8"/>
+                    <text x="260" y="220" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="sans-serif">Stop 2</text>
+
+                    <circle cx="380" cy="155" r="7" fill="#4f46e5" opacity="0.8"/>
+                    <text x="380" y="175" text-anchor="middle" font-size="9" fill="#4338ca" font-family="sans-serif">Stop 3</text>
+
+                    <circle cx="490" cy="155" r="7" fill="#2563eb" opacity="0.8"/>
+                    <text x="490" y="175" text-anchor="middle" font-size="9" fill="#1d4ed8" font-family="sans-serif">Stop 4</text>
+
+                    <!-- School marker -->
+                    <circle cx="560" cy="140" r="10" fill="#2563eb"/>
+                    <rect x="553" y="128" width="14" height="10" rx="1" fill="white" opacity="0.9"/>
+                    <polygon points="560,120 567,128 553,128" fill="white" opacity="0.8"/>
+                    <text x="560" y="160" text-anchor="middle" font-size="9" fill="#1d4ed8" font-weight="700" font-family="sans-serif">School</text>
+
+                    <!-- Bus icon on route (near stop 3) -->
+                    <rect x="340" y="128" width="52" height="28" rx="5" fill="#fef3c7" stroke="url(#brand)" stroke-width="2"/>
+                    <rect x="344" y="132" width="14" height="10" rx="1" fill="#dbeafe"/>
+                    <rect x="362" y="132" width="14" height="10" rx="1" fill="#dbeafe"/>
+                    <rect x="380" y="132" width="8" height="10" rx="1" fill="#dbeafe"/>
+                    <circle cx="350" cy="158" r="5" fill="#374151"/>
+                    <circle cx="383" cy="158" r="5" fill="#374151"/>
+                    <!-- Bus ETA label -->
+                    <rect x="330" y="108" width="70" height="18" rx="4" fill="url(#brand)"/>
+                    <text x="365" y="121" text-anchor="middle" font-size="9" fill="white" font-weight="700" font-family="sans-serif">ETA: 4 min</text>
+                    <line x1="365" y1="126" x2="365" y2="131" stroke="#7c3aed" stroke-width="1.5"/>
+
+                    <!-- Parent silhouette with phone -->
+                    <circle cx="680" cy="120" r="22" fill="#ede9fe" stroke="#9333ea" stroke-width="1.5"/>
+                    <!-- Head -->
+                    <circle cx="680" cy="108" r="9" fill="#9333ea" opacity="0.5"/>
+                    <!-- Body -->
+                    <path d="M664 135 Q680 124 696 135" stroke="#9333ea" stroke-width="2" fill="none" opacity="0.5"/>
+                    <!-- Phone in hand -->
+                    <rect x="671" y="136" width="14" height="22" rx="3" fill="white" stroke="#9333ea" stroke-width="1.5"/>
+                    <rect x="673" y="139" width="10" height="15" rx="1" fill="#dbeafe"/>
+                    <!-- Map pin on phone screen -->
+                    <circle cx="678" cy="144" r="3" fill="#9333ea"/>
+                    <line x1="678" y1="147" x2="678" y2="151" stroke="#9333ea" stroke-width="1"/>
+                    <!-- Notification ping -->
+                    <circle cx="696" cy="112" r="9" fill="#9333ea"/>
+                    <text x="696" y="116" text-anchor="middle" font-size="9" fill="white" font-weight="700">!</text>
+
+                    <text x="680" y="178" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="sans-serif">Parent App</text>
+                    <text x="680" y="190" text-anchor="middle" font-size="9" fill="#6d28d9" font-family="sans-serif">Live View</text>
+
+                    <!-- Title -->
+                    <text x="400" y="352" text-anchor="middle" font-size="12" font-weight="700" fill="#4b5563" font-family="sans-serif">Real-Time School Bus Tracking — Driver App + Parent App + Admin Console</text>
+                </svg>
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="toc bg-gray-50 rounded-xl p-6 mb-10">
+                <p class="font-semibold text-gray-900 mb-3">Table of Contents</p>
+                <ol class="list-decimal list-inside space-y-2 text-sm">
+                    <li><a href="#three-questions">The Three Questions Every Parent Has Every Morning</a></li>
+                    <li><a href="#hardware-reality">The Hardware Reality: You Don't Need a Per-Vehicle GPS Box</a></li>
+                    <li><a href="#driver-experience">The Driver Experience</a></li>
+                    <li><a href="#what-parents-see">What Parents See</a></li>
+                    <li><a href="#school-console">The School-Side Console</a></li>
+                    <li><a href="#implementation-realities">Implementation Realities and Privacy Safeguards</a></li>
+                    <li><a href="#edunodex-transport">How EdunodeX Handles School Transport</a></li>
+                </ol>
+            </nav>
+
+            <div class="prose">
+
+                <p>Every weekday morning, tens of millions of Indian parents send their children off to a school bus and then spend the next 30 to 60 minutes wondering the same three things. Did the bus arrive? Is my child on it? Where is it now? For a parent in Bengaluru dropping a seven-year-old at a bus stop at 6:45 AM, those questions are not idle curiosity. They are genuine safety concerns.</p>
+
+                <p>School transport is one of the highest-anxiety touchpoints in the school-parent relationship. Yet most schools in India still manage it with a driver's personal mobile number, a WhatsApp group for route-specific parents, and an implicit understanding that "no news is good news." When something goes wrong — a breakdown, a delayed route, a child who missed the bus — the information gap is immediate and the anxiety is intense.</p>
+
+                <p>In 2026, GPS-based school bus tracking is no longer a premium feature available only to large schools. The technology has matured, the cost has dropped dramatically, and — crucially — it no longer requires expensive hardware installed in every vehicle. This guide explains what is actually possible, what parents should expect, and what schools need to consider before rolling it out.</p>
+
+                <h2 id="three-questions">The Three Questions Every Parent Has Every Morning</h2>
+
+                <p>Understanding what parents actually need from a bus tracking system starts with understanding their morning experience. A parent who has enrolled their child in school transport goes through a predictable anxiety cycle:</p>
+
+                <p><strong>"Did the bus arrive at our stop?"</strong> The first question arises when the child has been standing at the stop for longer than expected. A parent at home — or already at the office — cannot see the stop. They check their phone for any update and find nothing. They call the driver. The driver's phone rings unanswered (he is driving). The anxiety spikes.</p>
+
+                <p><strong>"Is my child actually on the bus?"</strong> Even after the bus has theoretically arrived at the stop, parents with younger children worry about whether the child actually boarded. In congested urban stops where multiple buses arrive in quick succession, a child can miss their bus and the parent does not know for another 45 minutes.</p>
+
+                <p><strong>"Where is the bus now, and when will it reach school?"</strong> Schools with staggered entry times or distance-based routes have parents worrying about late arrivals. A parent who needs to know whether their child is attending a morning period has no reliable way to check in a non-tracking school.</p>
+
+                <p>A well-implemented GPS tracking system answers all three questions automatically, without the parent making a single call. That is the baseline for what "bus tracking" means in 2026.</p>
+
+                <h2 id="hardware-reality">The Hardware Reality: You Don't Need a Per-Vehicle GPS Box</h2>
+
+                <p>The traditional approach to bus tracking required installing a GPS hardware device in each vehicle — typically costing Rs 5,000–15,000 per unit, plus monthly SIM and data charges, plus installation and maintenance. For a school with 20 buses, this was a Rs 3–5 lakh upfront investment before a single notification was sent to a parent.</p>
+
+                <p>This hardware-first approach created two problems. First, it was expensive enough to deter most small and mid-size schools. Second, hardware in vehicles requires maintenance — devices fail, SIM cards expire, and a bus whose tracker is broken is effectively invisible to parents even though the school is paying a tracking subscription.</p>
+
+                <p>The shift to driver-smartphone-based tracking changes both of these constraints entirely. Modern tracking platforms run the GPS logic on the driver's Android smartphone — a device the driver already carries. The school does not need to install anything in the vehicle. The driver opens the tracking app when they start the route, and the phone's GPS broadcasts the vehicle's location in real time.</p>
+
+                <!-- Hardware comparison table -->
+                <div class="overflow-x-auto mb-8 not-prose">
+                    <table class="min-w-full border border-gray-200 rounded-lg overflow-hidden text-sm">
+                        <thead>
+                            <tr class="bg-purple-50">
+                                <th class="px-4 py-3 text-left font-semibold text-gray-900">Factor</th>
+                                <th class="px-4 py-3 text-center font-semibold text-gray-900">Vehicle GPS Box</th>
+                                <th class="px-4 py-3 text-center font-semibold text-gray-900">Driver-App GPS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr>
+                                <td class="px-4 py-3 font-medium">Hardware cost per vehicle</td>
+                                <td class="px-4 py-3 text-center text-red-700">Rs 5,000 – 15,000 (device only)</td>
+                                <td class="px-4 py-3 text-center text-green-700">Rs 0 (driver's own phone)</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium">Installation time per bus</td>
+                                <td class="px-4 py-3 text-center text-red-700">2–4 hours, requires technician</td>
+                                <td class="px-4 py-3 text-center text-green-700">5 minutes, app download</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">Maintenance requirement</td>
+                                <td class="px-4 py-3 text-center text-red-700">Device replacements, SIM renewals, wiring faults</td>
+                                <td class="px-4 py-3 text-center text-green-700">App updates (automatic); no physical maintenance</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium">Location accuracy</td>
+                                <td class="px-4 py-3 text-center">GPS hardware: high; works without cellular in some models</td>
+                                <td class="px-4 py-3 text-center">Modern smartphone GPS: comparable accuracy in most areas</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">Child boarding tracking</td>
+                                <td class="px-4 py-3 text-center text-red-700">Not included; separate RFID hardware required</td>
+                                <td class="px-4 py-3 text-center text-green-700">Built-in via driver check-in per student; no extra hardware</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium">School's per-bus cost</td>
+                                <td class="px-4 py-3 text-center text-red-700">Rs 500–800/month per bus (hardware amortisation + SIM + platform)</td>
+                                <td class="px-4 py-3 text-center text-green-700">Platform subscription only; typically Rs 100–300/month per bus</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium">What happens when device fails</td>
+                                <td class="px-4 py-3 text-center text-red-700">Bus goes dark; parents get no updates until device is replaced</td>
+                                <td class="px-4 py-3 text-center text-green-700">Driver uses a backup phone or school-provided device on standby</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>The driver-app model also enables something hardware GPS cannot: child-by-child boarding confirmation. A hardware GPS box knows where the bus is. It does not know whether a specific child boarded at stop 3. The driver app, by contrast, allows the driver to tap "boarded" against each child's name at each stop — creating a per-child confirmation that gets pushed to the parent app in real time.</p>
+
+                <h2 id="driver-experience">The Driver Experience</h2>
+
+                <p>A bus tracking system fails if the driver does not use it. The driver experience must be simple enough to operate while managing a vehicle — ideally, operable with one thumb on a mounted phone.</p>
+
+                <p><strong>One-tap trip start.</strong> At the beginning of the route, the driver taps "Start Trip." This activates GPS broadcasting, notifies the school admin that the route has started, and begins generating ETAs for each stop. There should be no login forms, no route selection menus, no complicated setup. The driver's route is pre-configured by the transport admin.</p>
+
+                <p><strong>Automatic stop detection.</strong> As the bus approaches a configured stop, the app highlights it. The driver confirms the stop arrival with a tap. Some platforms use geofencing to auto-trigger stop arrival when the device enters the stop's radius, reducing the tapping burden even further.</p>
+
+                <p><strong>Child check-in at each stop.</strong> At each stop, the driver sees a list of students expected to board. For each child who boards, the driver taps their name. For children who are absent, the driver skips them. This triggers a per-student notification: parents of boarding children receive "Your child boarded at Stop 3 at 7:12 AM." Parents of absent children are notified that their child was not at the stop.</p>
+
+                <p><strong>Drop confirmation at school.</strong> When the bus reaches school, the driver taps "Arrived at School." All remaining student records are marked as dropped, and the school admin console shows the route as complete.</p>
+
+                <p><strong>Breakdown and delay reporting.</strong> If the bus breaks down or is significantly delayed, the driver taps "Report Delay" and selects a reason. The platform immediately sends an auto-alert to all affected parents and to the school's transport admin, including the driver's current GPS location.</p>
+
+                <h2 id="what-parents-see">What Parents See</h2>
+
+                <p>From the parent's perspective, a well-designed school bus tracking system provides a clear, anxiety-reducing view of their child's transport status. Here is what a parent sees in their app on a normal school morning:</p>
+
+                <p><strong>Live map with bus location.</strong> When the driver starts the trip, the parent app shows the bus as a moving icon on a map. The parent can see exactly where the bus is relative to their stop. Depending on the platform's update frequency, this refreshes every 10–30 seconds.</p>
+
+                <p><strong>ETA to their stop.</strong> Below the map, the parent sees an estimated arrival time for their stop — "Bus arrives at your stop in approximately 8 minutes." This is derived from the current GPS location and the known route. For parents managing a morning schedule, this ETA is more useful than the raw map.</p>
+
+                <p><strong>"Child boarded" confirmation.</strong> When the driver marks the child as boarded at their stop, the parent receives a push notification and a WhatsApp message: "Kavya boarded Bus 3 at Stop 7 at 7:24 AM." This is the notification that eliminates the phone call to the driver. The parent can go to work knowing their child is on the bus.</p>
+
+                <p><strong>Drop confirmation at school.</strong> When the bus reaches school and the driver marks arrival, the parent receives a drop confirmation: "Kavya's bus has reached Delhi Public School, Sector 45. All students have arrived safely." This closes the morning anxiety loop completely.</p>
+
+                <p><strong>Route deviation alert.</strong> If the bus deviates significantly from its planned route — defined as more than a configurable distance threshold — the parent receives an alert. This covers scenarios like the driver taking a detour due to road closure, which parents would otherwise have no visibility of.</p>
+
+                <p><strong>Delay notification.</strong> When the driver reports a delay or breakdown, all affected parents receive a WhatsApp message immediately: "Bus 3 is running approximately 20 minutes late due to a traffic jam on MG Road. Your child is safe on the bus." This proactive communication dramatically reduces inbound calls to the school's front desk.</p>
+
+                <h2 id="school-console">The School-Side Console</h2>
+
+                <p>While parents see their child's status, the school's transport admin sees the entire fleet in real time. This visibility enables proactive management rather than reactive fire-fighting:</p>
+
+                <p><strong>Fleet overview dashboard.</strong> A map showing all active routes, with each bus marked as a live icon. Buses that have not started by their scheduled departure time are flagged. Buses running late are highlighted. The transport admin can see at a glance whether all routes are operating normally — without calling each driver.</p>
+
+                <p><strong>Driver attendance and punch-in.</strong> When the driver opens the app and starts a trip, this is recorded as their attendance for that shift. If a driver's app shows no activity by the scheduled departure time, the transport admin is alerted to check on the driver. This replaces manual attendance registers for transport staff.</p>
+
+                <p><strong>Route efficiency reporting.</strong> Over time, the platform accumulates data on actual vs. planned route duration, stop timing adherence, and delay patterns. This data helps the transport team identify chronically delayed stops, re-optimize routes for the new academic year, and justify route changes to parents with data.</p>
+
+                <p><strong>Incident log.</strong> Every breakdown report, delay notification, and route deviation is logged with a timestamp. This creates an audit trail that is useful for parent complaints, insurance claims, and annual transport reviews.</p>
+
+                <p><strong>Transport fee tied to attendance.</strong> In a platform where transport tracking integrates with the fee module, the transport admin can generate per-student transport attendance records. These can be used to verify eligibility for transport fee concessions or to identify students who have switched from bus to other modes without updating the school.</p>
+
+                <h2 id="implementation-realities">Implementation Realities and Privacy Safeguards</h2>
+
+                <p>Rolling out GPS bus tracking is straightforward in principle, but schools should plan for several practical considerations:</p>
+
+                <p><strong>Cellular dead zones.</strong> In areas with poor mobile coverage — common in hilly terrain, rural routes, or certain industrial zones — the driver app's GPS broadcasts will be interrupted. Most platforms handle this gracefully: they buffer location data locally and sync when connectivity resumes. Parents see a "last known location" with a timestamp rather than a blank map. Schools should identify dead zones on each route during onboarding so they can set parent expectations accordingly.</p>
+
+                <p><strong>What happens when the driver's phone battery dies.</strong> A flat battery midway through a route is the most common failure mode for driver-app tracking. Schools should require drivers to carry a charging cable and have a 12V car charger in the vehicle. A backup school-owned device should be available at the depot for emergencies. Some schools provide drivers with a dedicated low-cost smartphone to be used exclusively for the tracking app, eliminating personal-phone issues entirely.</p>
+
+                <p><strong>Driver privacy during non-school hours.</strong> If tracking runs on the driver's personal phone, it should only activate when the driver explicitly starts a trip. Personal location should never be tracked outside of school routes. This should be verified in the platform's data handling terms before deployment.</p>
+
+                <p><strong>Child location privacy — a critical safeguard.</strong> Parents naturally want to know where their child is. But bus tracking data must be handled with strict access controls. The guiding principle is this: each parent sees only their own child's status. A parent can see that Arjun boarded at Stop 4 — they cannot see a list of all students on the bus or the boarding status of other children. Bus location is visible to any parent of a student on that route (since it is shared transport), but individual child boarding events are private to that child's parent only.</p>
+
+                <p>Location data from school bus tracking should not be shared with third parties, used for profiling, or retained beyond a reasonable operational period. Responsible platforms retain trip-level data (route, timing, delays) for operational reporting, and child-specific boarding events only as long as needed for the current academic year's records. Schools should ask any tracking vendor for their explicit data retention and deletion policy before signing.</p>
+
+                <p><strong>Age-appropriate access.</strong> In senior classes where students use public transport or travel independently, bus tracking does not apply. The app should be configured only for students who are registered for school transport, and parents should see only their enrolled children's transport status — not other students.</p>
+
+                <p><strong>What to tell parents about privacy.</strong> Schools that communicate their privacy practices proactively — "your child's exact boarding status is visible only to you, bus location is shared with all parents on this route, we delete trip data at year-end" — receive significantly less parent concern about surveillance than schools that say nothing and let parents imagine the worst.</p>
+
+                <!-- Morning timeline diagram -->
+                <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">A Typical Morning: What Happens When</h3>
+
+                <div class="my-6 not-prose">
+                    <div class="relative">
+                        <!-- Timeline line -->
+                        <div class="absolute left-20 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-400 to-blue-400"></div>
+
+                        <div class="space-y-0">
+                            <!-- Event 1 -->
+                            <div class="flex items-start gap-4 pb-6">
+                                <div class="flex-shrink-0 w-20 text-right pr-4 pt-1">
+                                    <span class="text-sm font-bold text-purple-700">7:00 AM</span>
+                                </div>
+                                <div class="flex-shrink-0 w-4 h-4 rounded-full bg-purple-600 mt-1 relative z-10"></div>
+                                <div class="flex-grow pb-1">
+                                    <p class="font-semibold text-gray-900 text-sm">Driver opens tracking app</p>
+                                    <p class="text-sm text-gray-600">Taps "Start Trip" for Route 3. App activates GPS. School admin console shows Bus 3 as active. Parents on Route 3 receive a push notification: "Bus 3 has started. Live tracking is now active."</p>
+                                </div>
+                            </div>
+
+                            <!-- Event 2 -->
+                            <div class="flex items-start gap-4 pb-6">
+                                <div class="flex-shrink-0 w-20 text-right pr-4 pt-1">
+                                    <span class="text-sm font-bold text-purple-700">7:10 AM</span>
+                                </div>
+                                <div class="flex-shrink-0 w-4 h-4 rounded-full bg-purple-500 mt-1 relative z-10"></div>
+                                <div class="flex-grow pb-1">
+                                    <p class="font-semibold text-gray-900 text-sm">Trip starts, route begins</p>
+                                    <p class="text-sm text-gray-600">Bus leaves depot. Parent apps show live bus location on map. ETA to each stop is calculated and displayed. A parent whose stop is 18 minutes away sees "Bus arrives in approximately 18 minutes."</p>
+                                </div>
+                            </div>
+
+                            <!-- Event 3 -->
+                            <div class="flex items-start gap-4 pb-6">
+                                <div class="flex-shrink-0 w-20 text-right pr-4 pt-1">
+                                    <span class="text-sm font-bold text-indigo-700">7:12 AM</span>
+                                </div>
+                                <div class="flex-shrink-0 w-4 h-4 rounded-full bg-indigo-500 mt-1 relative z-10"></div>
+                                <div class="flex-grow pb-1">
+                                    <p class="font-semibold text-gray-900 text-sm">Child A boards at Stop 1</p>
+                                    <p class="text-sm text-gray-600">Driver taps "Boarded" next to Priya's name. Priya's parent receives: "Priya boarded Bus 3 at Stop 1 — 7:12 AM." Parent goes to work, anxiety resolved.</p>
+                                </div>
+                            </div>
+
+                            <!-- Event 4 -->
+                            <div class="flex items-start gap-4 pb-6">
+                                <div class="flex-shrink-0 w-20 text-right pr-4 pt-1">
+                                    <span class="text-sm font-bold text-blue-700">7:24 AM</span>
+                                </div>
+                                <div class="flex-shrink-0 w-4 h-4 rounded-full bg-blue-500 mt-1 relative z-10"></div>
+                                <div class="flex-grow pb-1">
+                                    <p class="font-semibold text-gray-900 text-sm">Child B boards at Stop 4</p>
+                                    <p class="text-sm text-gray-600">Arjun boards. Parent receives confirmation. Two students were absent at Stop 3 — their parents receive: "Aarav was not at Stop 3. Please contact the school if unexpected."</p>
+                                </div>
+                            </div>
+
+                            <!-- Event 5 -->
+                            <div class="flex items-start gap-4 pb-6">
+                                <div class="flex-shrink-0 w-20 text-right pr-4 pt-1">
+                                    <span class="text-sm font-bold text="text-blue-800">7:35 AM</span>
+                                </div>
+                                <div class="flex-shrink-0 w-4 h-4 rounded-full bg-blue-600 mt-1 relative z-10"></div>
+                                <div class="flex-grow pb-1">
+                                    <p class="font-semibold text-gray-900 text-sm">Bus reaches school</p>
+                                    <p class="text-sm text-gray-600">Driver taps "Arrived at School." All boarded students are marked arrived. Parents receive: "Bus 3 has reached St. Xavier's High School. All students have arrived." School gate logs bus arrival time automatically.</p>
+                                </div>
+                            </div>
+
+                            <!-- Event 6 -->
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-20 text-right pr-4 pt-1">
+                                    <span class="text-sm font-bold text-green-700">7:36 AM</span>
+                                </div>
+                                <div class="flex-shrink-0 w-4 h-4 rounded-full bg-green-500 mt-1 relative z-10"></div>
+                                <div class="flex-grow pb-1">
+                                    <p class="font-semibold text-gray-900 text-sm">Drop confirmed, route closed</p>
+                                    <p class="text-sm text-gray-600">Route 3 is marked complete in the admin console. Driver's morning attendance is logged. Trip data is stored for reporting. No phone calls were made. No WhatsApp messages were sent by staff.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="edunodex-transport">How EdunodeX Handles School Transport: Driver App + Parent App + Admin Console</h2>
+
+                <p>EdunodeX includes school transport management as an integrated module — not a third-party integration or an add-on that requires a separate subscription with a different vendor.</p>
+
+                <p><strong>Driver app for Android.</strong> Drivers use the EdunodeX driver app on their Android smartphone. One-tap trip start, geofence-assisted stop detection, per-student boarding confirmation, and breakdown reporting. The app is designed for use while managing a vehicle — large tap targets, minimal steps, and works on entry-level Android devices with a 4G connection.</p>
+
+                <p><strong>Parent app with live tracking.</strong> Parents see the bus on a live map in the EdunodeX parent app — the same app they use for attendance, fee payments, and report cards. There is no separate app to install for transport tracking. Live location refreshes every 15 seconds during active trips. Per-student boarding confirmations are pushed via both the app and WhatsApp.</p>
+
+                <p><strong>Privacy by design.</strong> Each parent sees only their own child's boarding status. Bus location is visible to all parents on the route (since it is shared transport), but individual child events are parent-specific and encrypted in transit. EdunodeX does not share location data with any third party. Location data is retained for 90 days for operational purposes and then deleted.</p>
+
+                <p><strong>Admin console with fleet view.</strong> The school's transport in-charge sees all active routes on a single dashboard. Driver attendance, route status, and delay flags are visible in real time. Monthly reports on route efficiency and delay patterns are generated automatically.</p>
+
+                <p><strong>Transport fee integration.</strong> Transport fees are managed in the same fee module as tuition and other charges. Parents receive a unified monthly bill. The accountant has one system for all fee types. Transport attendance data can be referenced when processing fee waivers or adjustments.</p>
+
+                <blockquote>
+                    <p>"We have 14 buses and nearly 600 transport students. Before we had proper tracking, I spent the first 45 minutes of every school day on the phone with parents asking where Bus 7 was. Now, the app answers that before they even think to call. I can actually focus on my other work." &mdash; Sunita Agarwal, Transport In-Charge, CBSE School, Pune</p>
+                </blockquote>
+
+                <p>GPS school bus tracking in 2026 is not a luxury feature — it is an expectation from parents who are paying Rs 2,000–4,000 per month in transport fees and trusting a school with their child's safety. The technology is affordable, the implementation is straightforward, and the impact on parent confidence and school reputation is immediate. Schools that have not yet deployed tracking are typically one bad incident away from doing so reactively — and proactive deployment is always better than reactive.</p>
+
+                <p>EdunodeX's free trial includes the transport module. Schools can onboard their routes, configure stops, and test the parent notification flow before the academic year begins. No card required.</p>
+
+            </div>
+        </article>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-br from-purple-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Give Parents Real-Time Visibility on Every Bus</h2>
+            <p class="text-purple-100 mb-6 max-w-lg mx-auto">Driver app, parent live tracking, and admin fleet console — all included. No hardware required. Try EdunodeX free, no card required.</p>
+            <a href="https://in1.edunodex.in/signup" class="inline-block bg-white text-purple-700 font-semibold px-8 py-3 rounded-lg hover:bg-purple-50 transition">Start Free Trial &rarr;</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-3xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
+            <ul class="flex flex-wrap justify-center gap-4 mb-4 text-gray-600">
+                <li><a href="/" class="hover:text-purple-600">Home</a></li>
+                <li><a href="/#features" class="hover:text-purple-600">Features</a></li>
+                <li><a href="/partners.html" class="hover:text-purple-600">Partners</a></li>
+                <li><a href="/blog/" class="hover:text-purple-600">Blog</a></li>
+                <li><a href="/privacy-policy/" class="hover:text-purple-600">Privacy</a></li>
+                <li><a href="/terms-of-service/" class="hover:text-purple-600">Terms</a></li>
+            </ul>
+            <p>&copy; 2026 Xentovia Tech Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+

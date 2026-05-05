@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-dpdp-act-compliance-schools-india-body.html?raw';
+import headHtml from '../../../raw/blog-dpdp-act-compliance-schools-india-head.html?raw';
+---
+<BaseLayout
+  title="DPDP Act Compliance for Indian Schools: Your 2026 Action Checklist | EdunodeX"
+  description="India's Digital Personal Data Protection Act applies fully to schools — student data, parent consent, biometric attendance, CCTV, and vendor management. Here's a practical 2026 compliance checklist for principals and school owners."
+  keywords="DPDP Act schools India, student data privacy India, school compliance DPDP 2026, biometric consent schools, parent consent student data, DPDP rules schools, data protection schools India"
+  canonical="https://edunodex.in/blog/dpdp-act-compliance-schools-india/"
+  ogType="article"
+  ogTitle="DPDP Act Compliance for Indian Schools: Your 2026 Action Checklist"
+  ogDescription="India's DPDP Act applies fully to schools. A practical 2026 checklist covering student data, parent consent, biometric attendance, vendor management, and penalties."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="DPDP Act Compliance for Indian Schools: Your 2026 Action Checklist"
+  twitterDescription="Practical DPDP checklist for Indian school owners and principals — student data, consent, biometric, vendor obligations."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-gst-compliant-fee-receipts-schools-body.html?raw';
+import headHtml from '../../../raw/blog-gst-compliant-fee-receipts-schools-head.html?raw';
+---
+<BaseLayout
+  title="GST-Compliant Fee Receipts for Indian Schools: A 2026 Practical Guide | EdunodeX"
+  description="What GST rules apply to Indian school fees, when receipts are mandatory, how the e-invoicing thresholds affect schools with transport and hostel revenue, and how to issue compliant receipts at scale."
+  keywords="GST school fees India, GST receipts school, school fee receipt format, GST exemption schools, e-invoicing schools, GST for educational institutions India, school accounting GST"
+  canonical="https://edunodex.in/blog/gst-compliant-fee-receipts-schools/"
+  ogType="article"
+  ogTitle="GST-Compliant Fee Receipts for Indian Schools: A 2026 Practical Guide"
+  ogDescription="What GST rules apply to Indian school fees, when receipts are mandatory, and how to issue compliant receipts at scale in 2026."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="GST-Compliant Fee Receipts for Indian Schools: A 2026 Practical Guide"
+  twitterDescription="GST exemptions, mandatory receipt fields, e-invoicing thresholds, and the 5 most common compliance failures in Indian school fee receipts."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

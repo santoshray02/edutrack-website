@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-edunodex-vs-fedena-comparison-body.html?raw';
+import headHtml from '../../../raw/blog-edunodex-vs-fedena-comparison-head.html?raw';
+---
+<BaseLayout
+  title="EdunodeX vs Fedena: Open-Source vs Modern SaaS for Indian Schools in 2026 | EdunodeX"
+  description="Fedena is a popular open-source school ERP — but 'free' software has hidden costs. Comparing EdunodeX (managed SaaS) with Fedena (self-hosted open-source) on TCO, features, and fit for Indian schools."
+  keywords="Fedena alternative, Fedena vs EdunodeX, open source school ERP, Fedena review, free school management software, self hosted school ERP, fedena open source India"
+  canonical="https://edunodex.in/blog/edunodex-vs-fedena-comparison/"
+  ogType="article"
+  ogTitle="EdunodeX vs Fedena: Open-Source vs Modern SaaS for Indian Schools in 2026"
+  ogDescription="Fedena is a popular open-source school ERP — but 'free' software has hidden costs. Comparing EdunodeX with Fedena on TCO, features, and fit for Indian schools."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="EdunodeX vs Fedena: Open-Source vs Modern SaaS for Indian Schools in 2026"
+  twitterDescription="Is Fedena's open-source model really cheaper? A total cost of ownership comparison for Indian schools."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

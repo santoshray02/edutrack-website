@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-dropout-risk-prediction-schools-body.html?raw';
+import headHtml from '../../../raw/blog-dropout-risk-prediction-schools-head.html?raw';
+---
+<BaseLayout
+  title="Predicting Student Dropout Risk: How Indian Schools Are Using AI in 2026 | EdunodeX"
+  description="Identifying at-risk students 60–90 days before they drop out — what signals AI watches, how to act on a flag without alarming families, what works and what doesn't in Indian schools today."
+  keywords="dropout prediction school, at-risk students AI, student retention India schools, school dropout prevention AI, early warning system schools, dropout risk model school, student attrition prediction"
+  canonical="https://edunodex.in/blog/dropout-risk-prediction-schools/"
+  ogType="article"
+  ogTitle="Predicting Student Dropout Risk: How Indian Schools Are Using AI in 2026"
+  ogDescription="Identifying at-risk students 60–90 days before they drop out — what signals AI watches, and how to act without alarming families."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Predicting Student Dropout Risk: How Indian Schools Are Using AI in 2026"
+  twitterDescription="Six signals that predict dropout 60–90 days early, an intervention playbook, and why privacy design matters as much as accuracy."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

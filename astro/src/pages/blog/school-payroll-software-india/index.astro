@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-school-payroll-software-india-body.html?raw';
+import headHtml from '../../../raw/blog-school-payroll-software-india-head.html?raw';
+---
+<BaseLayout
+  title="School Payroll Software in India: What Principals Should Look for in 2026 | EdunodeX"
+  description="Schools have payroll quirks — academic-year increments, school-specific leave types, contract teachers, multi-role pay. Here's the buyer's guide for school-specific payroll software in India."
+  keywords="school payroll software India, payroll for schools, school staff salary software, teacher payroll India, school HR software, school PF ESI compliance"
+  canonical="https://edunodex.in/blog/school-payroll-software-india/"
+  ogType="article"
+  ogTitle="School Payroll Software in India: What Principals Should Look for in 2026"
+  ogDescription="Schools have payroll quirks generic tools miss — academic-year increments, contract teachers, multi-role pay. Here's the complete buyer's guide."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="School Payroll Software in India: What Principals Should Look for in 2026"
+  twitterDescription="PF, ESI, PT, TDS u/s 192, Form 16, academic-year increments, contract conversion — the 12-feature checklist for school payroll software."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

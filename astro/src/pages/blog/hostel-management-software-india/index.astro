@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-hostel-management-software-india-body.html?raw';
+import headHtml from '../../../raw/blog-hostel-management-software-india-head.html?raw';
+---
+<BaseLayout
+  title="Hostel Management Software for Indian Schools and Boarding Institutions in 2026 | EdunodeX"
+  description="Boarding schools and college hostels have unique software needs — room allocation, mess attendance, leave/outpass approvals, parent visibility for children far from home. Here's what to look for in 2026."
+  keywords="hostel management software India, boarding school software, mess management software, school hostel ERP, college hostel software India, residential school software, hostel ERP CBSE"
+  canonical="https://edunodex.in/blog/hostel-management-software-india/"
+  ogType="article"
+  ogTitle="Hostel Management Software for Indian Schools and Boarding Institutions in 2026"
+  ogDescription="Boarding schools and college hostels have unique software needs — room allocation, mess attendance, leave/outpass approvals, parent visibility for children far from home."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Hostel Management Software for Indian Schools and Boarding Institutions in 2026"
+  twitterDescription="Room allocation, mess attendance, outpass workflows, and parent visibility — what boarding school software must handle in 2026."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

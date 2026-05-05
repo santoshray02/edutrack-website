@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-face-recognition-attendance-schools-india-body.html?raw';
+import headHtml from '../../../raw/blog-face-recognition-attendance-schools-india-head.html?raw';
+---
+<BaseLayout
+  title="Face Recognition Attendance for Indian Schools: A Practical 2026 Guide | EdunodeX"
+  description="How face recognition attendance actually works in Indian schools — accuracy you can expect, parental consent under DPDP, hardware requirements, privacy traps to avoid, and a real implementation playbook."
+  keywords="face recognition attendance school, AI attendance schools India, biometric attendance students, face attendance CBSE schools, vision attendance school, automated attendance schools, contactless attendance India"
+  canonical="https://edunodex.in/blog/face-recognition-attendance-schools-india/"
+  ogType="article"
+  ogTitle="Face Recognition Attendance for Indian Schools: A Practical 2026 Guide"
+  ogDescription="How face recognition attendance actually works — accuracy, DPDP consent, hardware, and a 4-week rollout playbook for Indian schools."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="Face Recognition Attendance for Indian Schools: A Practical 2026 Guide"
+  twitterDescription="What 99% accuracy really means, DPDP consent obligations, and a 4-week rollout playbook for Indian schools."
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>

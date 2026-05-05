@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import bodyHtml from '../../../raw/blog-edunodex-vs-entab-comparison-body.html?raw';
+import headHtml from '../../../raw/blog-edunodex-vs-entab-comparison-head.html?raw';
+---
+<BaseLayout
+  title="EdunodeX vs Entab CampusCare: An Honest 2026 Comparison for Indian Schools | EdunodeX"
+  description="Comparing EdunodeX with Entab CampusCare across deployment, mobile experience, AI capabilities, pricing model, and onboarding speed — and which is the better fit for which kind of Indian school in 2026."
+  keywords="Entab alternative, Entab CampusCare review, EdunodeX vs Entab, school management software India comparison, modern Entab alternative, Entab vs EdunodeX 2026"
+  canonical="https://edunodex.in/blog/edunodex-vs-entab-comparison/"
+  ogType="article"
+  ogTitle="EdunodeX vs Entab CampusCare: An Honest 2026 Comparison for Indian Schools"
+  ogDescription="Comparing EdunodeX with Entab CampusCare across deployment, mobile experience, AI capabilities, pricing model, and onboarding speed for Indian schools in 2026."
+  ogImage="https://edunodex.in/images/og-image.jpg"
+  twitterTitle="EdunodeX vs Entab CampusCare: An Honest 2026 Comparison for Indian Schools"
+  twitterDescription="Deployment, mobile, AI, onboarding — which school management platform fits your school in 2026?"
+  twitterImage="https://edunodex.in/images/og-image.jpg"
+  bodyClass="bg-white font-sans antialiased"
+  includeFlowbite={true}
+  includeSalesChat={false}
+>
+  <Fragment slot="head" set:html={headHtml} />
+  <Fragment set:html={bodyHtml} />
+</BaseLayout>
